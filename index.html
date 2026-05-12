@@ -726,7 +726,7 @@
 
             async function loadDefaultCSV() {
                 try {
-                    const response = await fetch('./蛋.csv');
+                    const response = await fetch('./egg.csv');
                     if (!response.ok) throw new Error('文件未找到');
                     const text = await response.text();
                     const { names, matrix } = parseMatrixCSV(text);
