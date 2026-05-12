@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
     </script>
     <style>
+        /* ... 样式部分保持不变 ... */
         :root {
             --bg: #fdf8f2;
             --card: #fff9f0;
@@ -351,25 +352,13 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         @keyframes slideUp {
-            from {
-                transform: translateY(30px);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         .modal-content {
@@ -674,7 +663,6 @@
     <script>
         (async function () {
             // ---------- 动态数据 ----------
-            // 初始默认值（若 CSV 加载成功会被覆盖）
             let petNames = ["燃薪虫", "双灯鱼", "月牙雪熊", "粉粉星", "空空颅", "嗜光嗡嗡", "贝瑟", "粉星仔", "格兰种子", "奇丽草",
                 "红绒十字", "呼呼猪", "大耳帽兜", "酷拉", "恶魔狼", "机械方方", "火红尾"
             ];
@@ -682,7 +670,6 @@
             let maleStock = new Array(petNames.length).fill(0);
             let femaleCheckboxStates = new Array(petNames.length).fill(false);
             let maleCheckboxStates = new Array(petNames.length).fill(false);
-            // 兼容映射（动态构建）
             let compatibleMap = new Map();
 
             // ---------- CSV 解析与加载 ----------
@@ -691,32 +678,23 @@
                 const lines = text.split(/\r?\n/);
                 for (const line of lines) {
                     const cols = line.split(',').map(s => s.trim());
-                    // 忽略完全空白行（如多余的逗号行）
                     if (cols.some(c => c !== '')) {
                         rows.push(cols);
                     }
                 }
                 if (rows.length < 2) throw new Error('CSV 至少需要标题行和一行数据。');
-
                 const header = rows[0];
                 const names = [];
                 for (let j = 1; j < header.length; j++) {
-                    if (header[j] !== '') {
-                        names.push(header[j]);
-                    }
+                    if (header[j] !== '') names.push(header[j]);
                 }
-
                 const n = names.length;
                 const matrix = Array.from({ length: n }, () => Array(n).fill(false));
-
                 for (let i = 1; i < rows.length; i++) {
                     const row = rows[i];
                     const rowName = row[0];
                     const rowIndex = names.indexOf(rowName);
-                    if (rowIndex === -1) {
-                        console.warn(`未知精灵: ${rowName}，跳过该行`);
-                        continue;
-                    }
+                    if (rowIndex === -1) continue;
                     for (let j = 1; j < row.length; j++) {
                         const colIndex = j - 1;
                         if (colIndex < n && row[j] === '1') {
@@ -733,13 +711,11 @@
                     if (!response.ok) throw new Error('文件未找到');
                     const text = await response.text();
                     const { names, matrix } = parseMatrixCSV(text);
-
                     petNames = names;
                     compatibleMap = new Map();
                     for (let i = 0; i < names.length; i++) {
                         compatibleMap.set(i, new Set());
                     }
-                    // 双向添加关系
                     for (let i = 0; i < names.length; i++) {
                         for (let j = 0; j < names.length; j++) {
                             if (matrix[i][j]) {
@@ -748,14 +724,11 @@
                             }
                         }
                     }
-
                     femaleCounts = new Array(names.length).fill(0);
                     maleStock = new Array(names.length).fill(0);
                     femaleCheckboxStates = new Array(names.length).fill(false);
                     maleCheckboxStates = new Array(names.length).fill(false);
-
                     refreshUI();
-                    console.log(`✅ 已从egg.csv 加载 ${names.length} 只精灵`);
                     return true;
                 } catch (err) {
                     console.warn('⚠️ 自动加载 CSV 失败，使用内置默认数据:', err.message);
@@ -763,7 +736,6 @@
                 }
             }
 
-            // ---------- 若 CSV 加载失败，回退到内置矩阵 ----------
             function buildDefaultData() {
                 petNames = ["燃薪虫", "双灯鱼", "月牙雪熊", "粉粉星", "空空颅", "嗜光嗡嗡", "贝瑟", "粉星仔", "格兰种子", "奇丽草",
                     "红绒十字", "呼呼猪", "大耳帽兜", "酷拉", "恶魔狼", "机械方方", "火红尾"
@@ -855,11 +827,8 @@
             let originalPlacement = null;
 
             function getNestTotal() { return Math.max(1, Math.min(10, parseInt(nestCountInput.value) || 6)); }
-
             function getMaxFemales() { return Math.max(0, getNestTotal() - 1); }
-
             function getFemaleTotal() { return femaleCounts.reduce((a, b) => a + b, 0); }
-
             function getMaleStockTotal() { return maleStock.reduce((a, b) => a + b, 0); }
 
             function refreshUI() {
@@ -1053,8 +1022,7 @@
             modalConfirm.addEventListener('click', () => closeModal(true));
             modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) cancelModal(); });
             document.addEventListener('keydown', e => {
-                if (e.key === 'Escape' && modalOverlay.style.display ===
-                    'flex') cancelModal();
+                if (e.key === 'Escape' && modalOverlay.style.display === 'flex') cancelModal();
             });
             openFemaleModalBtn.addEventListener('click', () => openModal('female'));
             openMaleModalBtn.addEventListener('click', () => openModal('male'));
@@ -1067,8 +1035,7 @@
                 femaleInstances.forEach(fi => {
                     const possibleSpecies = new Set();
                     maleSlots.forEach(m => {
-                        if (compatibleMap.get(m.species).has(fi.species)) possibleSpecies.add(m
-                            .species);
+                        if (compatibleMap.get(m.species).has(fi.species)) possibleSpecies.add(m.species);
                     });
                     if (possibleSpecies.size === 1) {
                         const uniqueSp = possibleSpecies.values().next().value;
@@ -1367,48 +1334,67 @@
                 });
             }
 
+            // ================= 优化后的 generatePlacement =================
             function generatePlacement() {
                 if (!lastResultData || lastResultData.error) return;
                 const res = lastResultData;
-                const females = res.femaleInstances,
-                    maleSlots = res.allMaleSlots;
+                const femaleInstances = res.femaleInstances;
+                const maleSlots = res.allMaleSlots;
+
                 const males = maleSlots.map((sm, idx) => ({ id: `m-${idx}`, species: sm.species, idx }));
-                const createFemales = (strict) => females.map((fi, idx) => {
-                    const fMales = [];
+
+                // 计算每个雄性拥有的唯一依赖雌性数量（该雌性只能与此雄性交配）
+                const maleUniqueCount = new Array(males.length).fill(0);
+                femaleInstances.forEach(fi => {
+                    const compatibleMaleIndices = [];
                     males.forEach(m => {
-                        if (compatibleMap.get(m.species).has(fi.species)) fMales.push(m
-                            .idx);
+                        if (compatibleMap.get(m.species).has(fi.species)) compatibleMaleIndices.push(m.idx);
                     });
-                    if (fMales.length === 0) return null;
-                    const stepLimit = Math.min(fMales.length, 2);
-                    const constraints = fMales.map(mi => {
-                        let min = 1,
-                            max = stepLimit;
-                        if (stepLimit === 2) {
-                            const other = females.some((gfi, gidx) => gidx !== idx && males.filter(
-                                m => compatibleMap.get(m.species).has(gfi.species)).length ===
-                                1 && males.filter(m => compatibleMap.get(m.species).has(gfi
-                                    .species))[0].idx === mi);
-                            if (other) {
-                                min = 2;
-                                max = 2;
-                            } else if (strict) {
-                                min = 1;
-                                max = 1;
+                    if (compatibleMaleIndices.length === 1) {
+                        maleUniqueCount[compatibleMaleIndices[0]]++;
+                    }
+                });
+
+                const createFemales = (strictMode) => {
+                    return femaleInstances.map((fi, idx) => {
+                        const fMales = [];
+                        males.forEach(m => {
+                            if (compatibleMap.get(m.species).has(fi.species)) fMales.push(m.idx);
+                        });
+                        if (fMales.length === 0) return null;
+                        const stepLimit = Math.min(fMales.length, 2);
+                        const constraints = fMales.map(mi => {
+                            let minDist = 1, maxDist = stepLimit;
+                            const isUniqueDep = (fMales.length === 1 && fMales[0] === mi); // 当前雌性是否是该雄性的唯一依赖
+                            const maleHasUniqueDep = maleUniqueCount[mi] > 0;               // 该雄性是否有唯一依赖雌性
+
+                            if (isUniqueDep) {
+                                // 唯一依赖雌性：如果对应雄性唯一依赖总数 ≤ 4，强制距离1；否则允许距离1~2（自动升级）
+                                if (maleUniqueCount[mi] <= 4) {
+                                    minDist = 1; maxDist = 1;
+                                } else {
+                                    minDist = 1; maxDist = 2;
+                                }
+                            } else if (maleHasUniqueDep) {
+                                // 非唯一依赖，但该雄性存在唯一依赖雌性，强制距离2以让出近位
+                                minDist = 2; maxDist = 2;
+                            } else if (strictMode) {
+                                // 没有依赖冲突时，尝试严格距离1
+                                minDist = 1; maxDist = 1;
                             }
-                        }
-                        return { maleIdx: mi, minDist: min, maxDist: max };
-                    });
-                    return {
-                        id: `f-${idx}`, species: fi.species, males: fMales, stepLimit, constraints,
-                        idx
-                    };
-                }).filter(f => f !== null);
+                            // 否则使用默认的 minDist=1, maxDist=stepLimit
+                            return { maleIdx: mi, minDist, maxDist };
+                        });
+                        return {
+                            id: `f-${idx}`, species: fi.species, males: fMales, stepLimit, constraints, idx
+                        };
+                    }).filter(f => f !== null);
+                };
 
                 let best = null,
                     bestArea = Infinity,
                     found = 0;
-                const total = females.length + maleSlots.length;
+                const total = femaleInstances.length + maleSlots.length;
                 for (let t = 0; t < 200 && found < (total > 7 ? 3 : 1); t++) {
                     let fem = createFemales(true);
                     let pl = solvePlacement(fem, males);
@@ -1419,21 +1405,14 @@
                     if (pl) {
                         pl = compactPlacement(pl);
                         found++;
-                        let minX = GRID_SIZE,
-                            maxX = 0,
-                            minY = GRID_SIZE,
-                            maxY = 0;
+                        let minX = GRID_SIZE, maxX = 0, minY = GRID_SIZE, maxY = 0;
                         pl.maleCoords.forEach(c => {
-                            minX = Math.min(minX, c.x);
-                            maxX = Math.max(maxX, c.x);
-                            minY = Math.min(minY, c.y);
-                            maxY = Math.max(maxY, c.y);
+                            minX = Math.min(minX, c.x); maxX = Math.max(maxX, c.x);
+                            minY = Math.min(minY, c.y); maxY = Math.max(maxY, c.y);
                         });
                         pl.femaleCoords.forEach(c => {
-                            minX = Math.min(minX, c.x);
-                            maxX = Math.max(maxX, c.x);
-                            minY = Math.min(minY, c.y);
-                            maxY = Math.max(maxY, c.y);
+                            minX = Math.min(minX, c.x); maxX = Math.max(maxX, c.x);
+                            minY = Math.min(minY, c.y); maxY = Math.max(maxY, c.y);
                         });
                         const area = (maxX - minX + 1) * (maxY - minY + 1);
                         if (area < bestArea) {
@@ -1449,7 +1428,7 @@
                     maleCoords: best.maleCoords,
                     femaleCoords: best.femaleCoords,
                     maleSlots: maleSlots,
-                    femaleInstances: females
+                    femaleInstances: femaleInstances
                 };
                 originalPlacement = {
                     maleCoords: best.maleCoords.map(c => ({ ...c })),
@@ -1465,8 +1444,8 @@
                 const minX = Math.min(...all.map(c => c.x)),
                     minY = Math.min(...all.map(c => c.y));
                 return {
-                    maleCoords: pl.maleCoords.map(c => ({ x: c.x - minX, y: c.y - minY })), femaleCoords: pl
-                        .femaleCoords.map(c => ({ x: c.x - minX, y: c.y - minY }))
+                    maleCoords: pl.maleCoords.map(c => ({ x: c.x - minX, y: c.y - minY })),
+                    femaleCoords: pl.femaleCoords.map(c => ({ x: c.x - minX, y: c.y - minY }))
                 };
             }
 
@@ -1482,8 +1461,8 @@
                 const offX = Math.floor((GRID_SIZE - w) / 2) - minX,
                     offY = Math.floor((GRID_SIZE - h) / 2) - minY;
                 return {
-                    maleCoords: pl.maleCoords.map(c => ({ x: c.x + offX, y: c.y + offY })), femaleCoords: pl
-                        .femaleCoords.map(c => ({ x: c.x + offX, y: c.y + offY }))
+                    maleCoords: pl.maleCoords.map(c => ({ x: c.x + offX, y: c.y + offY })),
+                    femaleCoords: pl.femaleCoords.map(c => ({ x: c.x + offX, y: c.y + offY }))
                 };
             }
 
@@ -1502,8 +1481,8 @@
                             for (const c of f.constraints) {
                                 const mx = maleCoords[c.maleIdx].x,
                                     my = maleCoords[c.maleIdx].y;
-                                if (Math.abs(x - mx) + Math.abs(y - my) < c.minDist || Math.abs(x - mx) + Math.abs(y -
-                                    my) > c.maxDist) { ok = false; break; }
+                                const dist = Math.abs(x - mx) + Math.abs(y - my);
+                                if (dist < c.minDist || dist > c.maxDist) { ok = false; break; }
                             }
                             if (ok) cand.push({ x, y });
                         }
@@ -1562,12 +1541,7 @@
                 const queue = [{ x: targetX, y: targetY, dist: 0 }];
                 const visited = new Set();
                 visited.add(key);
-                const dirs = [
-                    [0, 1],
-                    [0, -1],
-                    [1, 0],
-                    [-1, 0]
-                ];
+                const dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]];
                 let head = 0;
                 while (head < queue.length) {
                     const { x, y, dist } = queue[head++];
@@ -1628,7 +1602,6 @@
                 svg.appendChild(squaresGroup);
 
                 function toSvgX(x) { return x * scale; }
-
                 function toSvgY(y) { return y * scale; }
 
                 function drawLines() {
@@ -1649,8 +1622,8 @@
                     });
                     const minDistMap = new Map();
                     lines.forEach(l => {
-                        if (!l.isLocked && (!minDistMap.has(l.mi) || l.dist < minDistMap.get(l
-                            .mi))) minDistMap.set(l.mi, l.dist);
+                        if (!l.isLocked && (!minDistMap.has(l.mi) || l.dist < minDistMap.get(l.mi)))
+                            minDistMap.set(l.mi, l.dist);
                     });
 
                     lines.forEach(l => {
@@ -1763,16 +1736,14 @@
                     const draggableElements = svg.querySelectorAll('.female-square, .male-square');
                     let dragTarget = null;
                     let originalCoord = null;
-                    let startClientX = 0,
-                        startClientY = 0;
+                    let startClientX = 0, startClientY = 0;
 
                     function onStart(e, type, index) {
                         e.preventDefault();
                         const clientX = e.touches ? e.touches[0].clientX : e.clientX;
                         const clientY = e.touches ? e.touches[0].clientY : e.clientY;
                         dragTarget = { type, index };
-                        const points = type === 'female' ? currentPlacement.femaleCoords : currentPlacement
-                            .maleCoords;
+                        const points = type === 'female' ? currentPlacement.femaleCoords : currentPlacement.maleCoords;
                         originalCoord = { ...points[index] };
                         startClientX = clientX;
                         startClientY = clientY;
@@ -1894,13 +1865,10 @@
             nestCountInput.addEventListener('input', refreshUI);
             nestCountInput.addEventListener('change', refreshUI);
 
-            // ---------- 启动数据初始化 ----------
             const loaded = await loadDefaultCSV();
             if (!loaded) {
-                // 回退到内置默认数据
                 buildDefaultData();
             }
-            // refreshUI 已在 loadDefaultCSV 或 buildDefaultData 中调用
         })();
     </script>
 </body>
