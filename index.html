@@ -352,13 +352,25 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes slideUp {
-            from { transform: translateY(30px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         .modal-content {
@@ -594,6 +606,7 @@
           backdrop-filter: blur(4px);">
             ⭐ GitHub 开源项目，点击访问
         </a>
+        <span>当前版本3.1</span>
         <div class="section">
             <label>🏠 你有几个精灵窝？（上限10）</label>
             <div class="nest-row-inline">
@@ -1039,24 +1052,23 @@
             openFemaleModalBtn.addEventListener('click', () => openModal('female'));
             openMaleModalBtn.addEventListener('click', () => openModal('male'));
 
+            // 修改后的 calcUniquePairs：基于个体数量判断唯一依赖
             function calcUniquePairs(femaleInstances, maleSlots) {
                 maleSlots.forEach(m => {
                     m.lockedForIds = [];
                     m.locked = false;
                 });
                 femaleInstances.forEach(fi => {
-                    const possibleSpecies = new Set();
-                    maleSlots.forEach(m => {
-                        if (compatibleMap.get(m.species).has(fi.species)) possibleSpecies.add(m.species);
+                    const compatibleMaleIndices = [];
+                    maleSlots.forEach((m, idx) => {
+                        if (compatibleMap.get(m.species).has(fi.species)) {
+                            compatibleMaleIndices.push(idx);
+                        }
                     });
-                    if (possibleSpecies.size === 1) {
-                        const uniqueSp = possibleSpecies.values().next().value;
-                        maleSlots.forEach(m => {
-                            if (m.species === uniqueSp) {
-                                m.lockedForIds.push(fi.id);
-                                m.locked = true;
-                            }
-                        });
+                    if (compatibleMaleIndices.length === 1) {
+                        const maleIdx = compatibleMaleIndices[0];
+                        maleSlots[maleIdx].lockedForIds.push(fi.id);
+                        maleSlots[maleIdx].locked = true;
                     }
                 });
             }
@@ -1355,6 +1367,16 @@
 
                 const males = maleSlots.map((sm, idx) => ({ id: `m-${idx}`, species: sm.species, idx }));
 
+                // 计算每个雄性的可交配雌性总数
+                const maleCompatCount = new Array(males.length).fill(0);
+                femaleInstances.forEach(fi => {
+                    males.forEach(m => {
+                        if (compatibleMap.get(m.species).has(fi.species)) {
+                            maleCompatCount[m.idx]++;
+                        }
+                    });
+                });
+
                 // 计算每个雄性拥有的唯一依赖雌性数量（该雌性只能与此雄性交配）
                 const maleUniqueCount = new Array(males.length).fill(0);
                 femaleInstances.forEach(fi => {
@@ -1367,6 +1389,17 @@
                     }
                 });
 
+                // 构建男性近距离目标数组（优先3，可降至2）
+                const buildNearbyTargets = (level) => {
+                    return males.map((_, mi) => {
+                        if (maleCompatCount[mi] >= 4) {
+                            // 目标取 level，但不能超过可交配雌性总数
+                            return Math.min(level, maleCompatCount[mi]);
+                        }
+                        return 0; // 不检查
+                    });
+                };
+
                 const createFemales = (strictMode) => {
                     return femaleInstances.map((fi, idx) => {
                         const fMales = [];
@@ -1377,24 +1410,30 @@
                         const stepLimit = Math.min(fMales.length, 2);
                         const constraints = fMales.map(mi => {
                             let minDist = 1, maxDist = stepLimit;
-                            const isUniqueDep = (fMales.length === 1 && fMales[0] === mi); // 当前雌性是否是该雄性的唯一依赖
-                            const maleHasUniqueDep = maleUniqueCount[mi] > 0;               // 该雄性是否有唯一依赖雌性
+                            const isUniqueDep = (fMales.length === 1 && fMales[0] === mi);
+                            const maleHasUniqueDep = maleUniqueCount[mi] > 0;
+
+                            // 如果该雄性可交配雌性 >= 4，允许 maxDist 放宽到 4
+                            if (maleCompatCount[mi] >= 4) {
+                                maxDist = Math.max(maxDist, 4);
+                            }
 
                             if (isUniqueDep) {
-                                // 唯一依赖雌性：如果对应雄性唯一依赖总数 ≤ 4，强制距离1；否则允许距离1~2（自动升级）
                                 if (maleUniqueCount[mi] <= 4) {
-                                    minDist = 1; maxDist = 1;
+                                    minDist = 1; maxDist = Math.max(maxDist, 1);
+                                    if (maleCompatCount[mi] < 4) maxDist = 1;
+                                    else maxDist = Math.max(maxDist, 4);
                                 } else {
-                                    minDist = 1; maxDist = 2;
+                                    minDist = 1; maxDist = Math.max(maxDist, 2);
+                                    if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4);
                                 }
                             } else if (maleHasUniqueDep) {
-                                // 非唯一依赖，但该雄性存在唯一依赖雌性，强制距离2以让出近位
-                                minDist = 2; maxDist = 2;
+                                minDist = 2; maxDist = Math.max(maxDist, 2);
+                                if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4);
                             } else if (strictMode) {
-                                // 没有依赖冲突时，尝试严格距离1
-                                minDist = 1; maxDist = 1;
+                                minDist = 1; maxDist = Math.max(maxDist, 1);
+                                if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4);
                             }
-                            // 否则使用默认的 minDist=1, maxDist=stepLimit
                             return { maleIdx: mi, minDist, maxDist };
                         });
                         return {
@@ -1407,32 +1446,41 @@
                     bestArea = Infinity,
                     found = 0;
                 const total = femaleInstances.length + maleSlots.length;
-                for (let t = 0; t < 200 && found < (total > 7 ? 3 : 1); t++) {
-                    let fem = createFemales(true);
-                    let pl = solvePlacement(fem, males);
-                    if (!pl) {
-                        fem = createFemales(false);
-                        pl = solvePlacement(fem, males);
-                    }
-                    if (pl) {
-                        pl = compactPlacement(pl);
-                        found++;
-                        let minX = GRID_SIZE, maxX = 0, minY = GRID_SIZE, maxY = 0;
-                        pl.maleCoords.forEach(c => {
-                            minX = Math.min(minX, c.x); maxX = Math.max(maxX, c.x);
-                            minY = Math.min(minY, c.y); maxY = Math.max(maxY, c.y);
-                        });
-                        pl.femaleCoords.forEach(c => {
-                            minX = Math.min(minX, c.x); maxX = Math.max(maxX, c.x);
-                            minY = Math.min(minY, c.y); maxY = Math.max(maxY, c.y);
-                        });
-                        const area = (maxX - minX + 1) * (maxY - minY + 1);
-                        if (area < bestArea) {
-                            bestArea = area;
-                            best = pl;
+
+                // 尝试优先级：先 strict + 目标3，再 strict + 目标2，再非strict + 目标3，再非strict + 目标2
+                const strategyList = [];
+                strategyList.push({ strict: true, level: 3 });
+                strategyList.push({ strict: true, level: 2 });
+                strategyList.push({ strict: false, level: 3 });
+                strategyList.push({ strict: false, level: 2 });
+
+                for (const strategy of strategyList) {
+                    const targets = buildNearbyTargets(strategy.level);
+                    const fem = createFemales(strategy.strict);
+                    for (let t = 0; t < 200 && found < (total > 7 ? 3 : 1); t++) {
+                        let pl = solvePlacement(fem, males, targets);
+                        if (pl) {
+                            pl = compactPlacement(pl);
+                            found++;
+                            let minX = GRID_SIZE, maxX = 0, minY = GRID_SIZE, maxY = 0;
+                            pl.maleCoords.forEach(c => {
+                                minX = Math.min(minX, c.x); maxX = Math.max(maxX, c.x);
+                                minY = Math.min(minY, c.y); maxY = Math.max(maxY, c.y);
+                            });
+                            pl.femaleCoords.forEach(c => {
+                                minX = Math.min(minX, c.x); maxX = Math.max(maxX, c.x);
+                                minY = Math.min(minY, c.y); maxY = Math.max(maxY, c.y);
+                            });
+                            const area = (maxX - minX + 1) * (maxY - minY + 1);
+                            if (area < bestArea) {
+                                bestArea = area;
+                                best = pl;
+                            }
                         }
                     }
+                    if (best) break; // 一旦找到解就不再尝试更低优先级的策略
                 }
+
                 if (!best) return;
                 best = compactPlacement(best);
                 best = centerPlacement(best);
@@ -1478,11 +1526,41 @@
                 };
             }
 
-            function solvePlacement(females, males) {
+            function solvePlacement(females, males, maleNearbyTargets) {
                 const M = males.length;
 
-                function tryPlace(sorted, start, occupied, maleCoords) {
-                    if (start >= sorted.length) return true;
+                function checkMaleConstraints(maleCoords, femaleCoords, femalesList, malesList, targets) {
+                    for (let mi = 0; mi < malesList.length; mi++) {
+                        const target = targets[mi];
+                        if (target > 0) {
+                            const mx = maleCoords[mi].x;
+                            const my = maleCoords[mi].y;
+                            let nearbyCount = 0;
+                            for (let fi = 0; fi < femaleCoords.length; fi++) {
+                                const fc = femaleCoords[fi];
+                                const dist = Math.abs(mx - fc.x) + Math.abs(my - fc.y);
+                                if (dist <= 2) {
+                                    if (compatibleMap.get(malesList[mi].species).has(femalesList[fi].species)) {
+                                        nearbyCount++;
+                                    }
+                                }
+                            }
+                            if (nearbyCount < target) {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
+
+                function tryPlace(sorted, start, occupied, maleCoords, targets) {
+                    if (start >= sorted.length) {
+                        const femaleCoords = sorted.map(f => f.coord);
+                        if (checkMaleConstraints(maleCoords, femaleCoords, females, males, targets)) {
+                            return true;
+                        }
+                        return false;
+                    }
                     const f = sorted[start],
                         cand = [];
                     for (let y = 0; y < GRID_SIZE; y++)
@@ -1510,7 +1588,7 @@
                         const key = p.y * GRID_SIZE + p.x;
                         occupied.add(key);
                         f.coord = p;
-                        if (tryPlace(sorted, start + 1, occupied, maleCoords)) return true;
+                        if (tryPlace(sorted, start + 1, occupied, maleCoords, targets)) return true;
                         occupied.delete(key);
                     }
                     return false;
@@ -1534,7 +1612,7 @@
                     const sorted = [...females].sort((a, b) => a.stepLimit !== b.stepLimit ? a.stepLimit - b.stepLimit :
                         a.males.length - b.males.length);
                     const occCopy = new Set(occupied);
-                    if (tryPlace(sorted, 0, occCopy, maleCoords)) {
+                    if (tryPlace(sorted, 0, occCopy, maleCoords, maleNearbyTargets)) {
                         sorted.forEach(f => {
                             const orig = females.find(e => e.id === f.id);
                             orig.coord = f.coord;
