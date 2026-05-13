@@ -13,7 +13,7 @@
 ---
 
 ## 🎬 B站视频教程
-[点击观看完整演示与讲解](https://www.bilibili.com/video/BV1X79oB1ETW/?spm_id_from=333.1387.homepage.video_card.click&vd_source=e16eca063102daa8013a6331d9d70109)
+[点击观看完整演示与讲解](https://www.bilibili.com/video/BV1tF5L6bEob/?spm_id_from=333.1387.homepage.video_card.click&vd_source=e16eca063102daa8013a6331d9d70109)
 
 ---
 
