@@ -24,7 +24,7 @@
     // ==================== 数据加载 ====================
     async function loadPetsJSON() {
         try {
-            const resp = await fetch('./data/Pets.json?t=' + Date.now());
+            const resp = await fetch('./data/pets.json?t=' + Date.now());
             if (!resp.ok) throw new Error('pets.json 加载失败');
             const pets = await resp.json();
             petIds = pets.map(p => p.id);
@@ -61,7 +61,7 @@
         for (let i = 0; i < n; i++) compatibleMap.set(i, new Set());
         for (let i = 0; i < n; i++) {
             if (eggGroups[i].length === 0) continue;
-            compatibleMap.get(i).add(i); // 自身可配对（同品种）
+            compatibleMap.get(i).add(i); // 自身可配
             for (let j = i + 1; j < n; j++) {
                 if (eggGroups[j].length === 0) continue;
                 if (hasCommonGroup(eggGroups[i], eggGroups[j])) {
@@ -203,7 +203,7 @@
         });
         if (!hasMale) maleSelectedDisplay.innerHTML = '<span class="empty-hint">暂未选择</span>';
 
-        // 移除按钮事件（保持不变）
+        // 移除按钮事件
         document.querySelectorAll('.tag-remove').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -220,9 +220,8 @@
         });
     }
 
-    // 内联编辑函数
+    // 内联编辑
     function startInlineEdit(tag, idx, type) {
-        // 找到数量显示元素
         const qtySpan = tag.querySelector('.tag-qty');
         if (!qtySpan) return;
         const currentVal = type === 'female' ? femaleCounts[idx] : maleStock[idx];
@@ -505,7 +504,7 @@
     document.getElementById('searchBtn').addEventListener('click', () => performSearch(document.getElementById('petSearchInput').value));
     document.getElementById('petSearchInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') performSearch(e.target.value); });
 
-    // ==================== 配窝推荐算法 ====================
+    // ==================== 配窝推荐算法（修复溢出） ====================
     let lastResultData = null;
     const GRID_SIZE = 7;
     let currentPlacement = { maleCoords: [], femaleCoords: [], maleSlots: [], femaleInstances: [] };
@@ -556,6 +555,21 @@
                 lockedFemaleIds.add(dep.female.id);
                 tempReserve.set(mSp, tempReserve.get(mSp) - 1);
                 if (tempReserve.get(mSp) <= 0) tempReserve.delete(mSp);
+            }
+        }
+
+        // ★ 修复：如果预留数量超过所需雄性数量，截断并保留最稀缺的配对
+        if (reservedPairs.length > requiredMales) {
+            const maleCoverCount = new Map();
+            for (const [mSp] of stockMap) {
+                maleCoverCount.set(mSp, femaleInstances.filter(f => compatibleMap.get(mSp).has(f.species)).length);
+            }
+            reservedPairs.sort((a, b) => (maleCoverCount.get(a.maleSpecies) || 0) - (maleCoverCount.get(b.maleSpecies) || 0));
+            const removedPairs = reservedPairs.splice(requiredMales);
+            for (const rp of removedPairs) {
+                lockedFemaleIds.delete(rp.femaleId);
+                reservedMales.delete(rp.maleSpecies);
+                tempReserve.set(rp.maleSpecies, (tempReserve.get(rp.maleSpecies) || 0) + 1);
             }
         }
 
@@ -693,7 +707,6 @@
         allMaleSlots.forEach((m, i) => { if (!maleSpeciesIdx[m.species]) maleSpeciesIdx[m.species] = []; maleSpeciesIdx[m.species].push({ ...m, inst: i }); });
         nestVisualDiv.innerHTML = '';
 
-        // 为未被覆盖的雌性构建 ID 集合
         const uncoveredIds = new Set(uncoveredFemales.map(f => f.id));
 
         femaleInstances.forEach(f => {
@@ -702,12 +715,10 @@
             div.className = 'nest-item female';
             div.innerHTML = `<span class="icon">♀️</span><span>${getDisplayName(f.species, idx, total)}</span>`;
 
-            // 如果是未被覆盖的雌性，添加明显的红色警告覆盖层
             if (uncoveredIds.has(f.id)) {
                 const overlay = document.createElement('span');
                 overlay.style.cssText = 'position:absolute; top:0; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background: rgba(255,100,100,0.35); border-radius: 20px; z-index:1;';
                 const icon = document.createElement('span');
-                // 在原有样式基础上增加：上移 transform + 半透明 rgba 颜色
                 icon.style.cssText = 'font-size:2.5rem; font-weight:bold; color: rgba(221, 21, 204, 0.45); text-shadow: 0 0 8px white; line-height:1; transform: translateY(-12px);';
                 icon.textContent = '⚠️';
                 overlay.appendChild(icon);
@@ -772,14 +783,13 @@
         });
     }
 
-    // ==================== 位置图生成（排除未被覆盖的雌性） ====================
+    // ==================== 位置图生成（排除未被覆盖雌性） ====================
     function generatePlacement() {
         if (!lastResultData || lastResultData.error) return;
         const res = lastResultData;
         const originalFemaleInstances = res.femaleInstances;
         const uncoveredFemales = res.uncoveredFemales;
 
-        // 只保留已被覆盖的雌性
         const uncoveredIds = new Set(uncoveredFemales.map(f => f.id));
         const coveredFemaleInstances = originalFemaleInstances.filter(f => !uncoveredIds.has(f.id));
 
@@ -869,7 +879,7 @@
             maleCoords: best.maleCoords,
             femaleCoords: best.femaleCoords,
             maleSlots: maleSlots,
-            femaleInstances: coveredFemaleInstances  // 使用过滤后的雌性列表
+            femaleInstances: coveredFemaleInstances
         };
         originalPlacement = {
             maleCoords: best.maleCoords.map(c => ({ ...c })),
