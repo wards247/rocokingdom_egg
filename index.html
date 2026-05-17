@@ -1,106 +1,151 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes, viewport-fit=cover">
     <title>洛克王国 · 异色生蛋智能配窝助手</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1 style="display: block;">
-            <div style="text-align: left;">🥚 异色生蛋 · 智能配窝</div>
-            <div style="text-align: right; font-size: 1rem;">By薯多芬上校</div>
-        </h1>
-        <span class="sub-label">推荐父母至少有一方为异色</span>
-        <a href="https://github.com/heartsArsonist/rocokingdom_egg" target="_blank" rel="noopener noreferrer" style="margin-left: 2em;
-          background: #ffedd5;
-          color: #9a3412;
-          padding: 4px 14px;
-          border: 1px solid #fdba74;
-          border-radius: 20px;
-          font-size: 0.85rem;
-          font-weight: 500;
-          text-decoration: none;
-          backdrop-filter: blur(4px);">
+        <header class="app-header">
+            <h1>🥚 智能配窝助手
+                <a href="https://github.com/heartsArsonist/rocokingdom_egg" target="_blank" title="📙点击可转跳到B站相关视频查看使用说明"
+                    style="display:inline-block;
+            width:24px; height:24px;
+            border-radius:50%;
+            border:2px solid #c28b5c;
+            text-align:center;
+            line-height:20px;
+            color:#c28b5c;
+            font-weight:bold;
+            text-decoration:none;
+            font-size:16px;
+            margin-left:8px;
+            cursor:help;
+            vertical-align:middle;">
+                    ?
+                </a>
+            </h1>
+            <span class="author">By 薯多芬上校</span>
+            <span class="version">V4.0</span>
+        </header>
+
+        <a href="https://github.com/heartsArsonist/rocokingdom_egg" target="_blank" rel="noopener noreferrer"
+            class="github-link">
             ⭐ GitHub 开源项目，点击访问
         </a>
-        <span>当前版本V3.3</span>
-        <div class="section">
-            <label>🏠 你有几个精灵窝？（上限10）</label>
-            <div class="nest-row-inline">
-                <input type="number" id="nestCount" value="10" min="1" max="10" step="1">
-                <span style="color:#7b6148;font-weight:500;">个窝</span>
-                <span class="badge" id="capacityHint">至少留1个雄性窝</span>
+
+
+        <div class="control-stack">
+            <!-- 1. 精灵窝数量，内置模式切换 -->
+            <div class="control-card nest-card">
+                <label>🏠 精灵窝数量</label>
+                <div class="nest-row-inline">
+                    <input type="number" id="nestCount" value="10" min="1" max="10" step="1">
+                    <span class="unit">个窝</span>
+                    <span class="badge" id="capacityHint">至少留1个雄性窝</span>
+                    <!-- 模式切换移至右侧 -->
+                    <div class="mode-area" style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
+                        <button id="toggleShinyBtn" class="btn btn-outline mode-btn">🔄 切换至异色配对模式</button>
+                        <span id="shinyModeStatus" class="mode-status">当前：普通模式</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. 雌性选择 -->
+            <div class="control-card female-card">
+                <label>♀️ 雌性精灵</label>
+                <div class="dual-panel">
+                    <div class="add-side">
+                        <button id="openFemaleModalBtn" class="btn btn-outline add-btn">📋 添加雌性</button>
+                        <span class="sub-label">上限 <strong id="maxFemaleDisplay">9</strong> 只</span>
+                        <button class="clear-btn" id="clearFemaleBtn">清空</button>
+                    </div>
+                    <div class="display-panel" id="femaleSelectedDisplay">
+                        <span class="empty-hint">暂未选择</span>
+                    </div>
+                </div>
+                <div class="stats">
+                    <span class="badge" id="femaleTotalBadge">总数: 0</span>
+                    <span id="femaleLimitWarn" class="warn-text"></span>
+                </div>
+            </div>
+
+            <!-- 3. 雄性库存 -->
+            <div class="control-card male-card">
+                <label>♂️ 雄性库存</label>
+                <div class="dual-panel">
+                    <div class="add-side">
+                        <button id="openMaleModalBtn" class="btn btn-outline add-btn">📋 添加雄性</button>
+                        <span class="sub-label">输入你实际拥有的数量</span>
+                        <button class="clear-btn" id="clearMaleBtn">清空</button>
+                    </div>
+                    <div class="display-panel" id="maleSelectedDisplay">
+                        <span class="empty-hint">暂未选择</span>
+                    </div>
+                </div>
+                <div class="stats">
+                    <span class="badge" id="maleTotalBadge">库存: 0 只</span>
+                </div>
             </div>
         </div>
-        <div class="section" id="femaleSection">
-            <label>♀️ 选择要孵蛋的雌性精灵</label>
-            <span class="sub-label">雌性总数不能超过 <strong>窝数-1</strong>，当前上限：<span id="maxFemaleDisplay">5</span></span>
-            <button id="openFemaleModalBtn" class="btn btn-outline" style="width:100%;justify-content:center;">📋
-                点击添加雌性精灵</button>
-            <div class="selected-pets-display" id="femaleSelectedDisplay"><span class="empty-hint">暂未选择雌性精灵</span></div>
-            <button class="clear-btn" id="clearFemaleBtn">清空</button>
-            <div class="nest-row-inline" style="margin-top:10px;">
-                <span class="badge" id="femaleTotalBadge">雌性总数: 0</span>
-                <span id="femaleLimitWarn" style="color:#b34a4a;font-weight:600;font-size:0.85rem;"></span>
-            </div>
-        </div>
-        <div class="section" id="maleSection">
-            <label>♂️ 你可提供的雄性精灵</label>
-            <span class="sub-label">仅从库存中推荐雄性，数量即你实际拥有的只数</span>
-            <button id="openMaleModalBtn" class="btn btn-outline" style="width:100%;justify-content:center;">📋
-                点击添加雄性精灵</button>
-            <div class="selected-pets-display" id="maleSelectedDisplay"><span class="empty-hint">暂未选择雄性精灵</span></div>
-            <button class="clear-btn" id="clearMaleBtn">清空</button>
-            <div class="nest-row-inline" style="margin-top:10px;">
-                <span class="badge" id="maleTotalBadge">雄性库存: 0 只</span>
-            </div>
-        </div>
+
         <div class="btn-group">
             <button id="generateBtn" class="btn">✨ 智能推荐配窝方案</button>
             <button id="placementBtn" class="btn btn-outline" style="display:none;">📍 生成位置图</button>
             <button id="resetBtn" class="btn btn-outline">🔄 重置全部</button>
         </div>
+
         <div id="globalMsg"></div>
+
         <div id="resultArea" style="display:none;">
-            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
-                <h3 style="color:#5a3e28;margin:0;">📋 推荐配窝方案</h3>
-                <button id="exportBtn" class="btn btn-outline" style="padding:8px 18px;font-size:0.9rem;">📸
-                    导出图片</button>
+            <div class="result-header">
+                <h3>📋 推荐配窝方案</h3>
+                <button id="exportBtn" class="btn btn-outline export-btn">📸 导出图片</button>
             </div>
             <div id="resultContent">
                 <div id="nestVisual" class="nest-visual"></div>
-                <div class="male-cards" id="maleDetails"></div>
-                <div id="coverageSummary" style="font-weight:500;margin-top:8px;"></div>
+                <div id="maleDetails" class="male-cards"></div>
+                <div id="coverageSummary" class="summary"></div>
             </div>
         </div>
+
         <div id="placementArea" style="display:none;">
-            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
-                <h3 style="color:#5a3e28;margin:0;">🗺️ 精灵窝放置位置推荐 (7×7)(曼哈顿步数限制≤2)</h3>
-                <button id="exportPlacementBtn" class="btn btn-outline" style="padding:8px 18px;font-size:0.9rem;">📸
-                    导出位置图</button>
+            <div class="placement-header">
+                <h3>🗺️ 精灵窝位置推荐 (7×7 曼哈顿距离≤2)</h3>
+                <button id="exportPlacementBtn" class="btn btn-outline export-btn">📸 导出位置图</button>
             </div>
             <div class="svg-container" id="svgContainer"></div>
-            <div style="text-align:center;font-size:0.8rem;color:#7b6148;">♀️雌性 · ♂️雄性 ·精灵窝之间有连线代表在配对范围内☑️
-            </div>
-            <div style="text-align:center;font-size:0.8rem;color:#7b6148;"> 🟩绿线=优先配对 🟥红线=唯一配对
+            <div class="legend">
+                <span>♀️雌性 · ♂️雄性 · 连线代表可配对范围</span>
+                <span>🟩绿线=优先配对 🟥红线=唯一配对</span>
             </div>
         </div>
-        <div style="margin-top:16px;text-align:center;color:#957b62;font-size:0.8rem;">⚡ 杜绝雄性闲置 · 唯一依赖优先 · 均衡覆盖</div>
+
+        <footer>⚡ 杜绝雄性闲置 · 唯一依赖优先 · 均衡覆盖</footer>
     </div>
+
+    <!-- 模态弹窗 -->
     <div class="modal-overlay" id="modalOverlay" style="display:none;">
         <div class="modal-content">
             <div class="modal-header">
                 <span class="modal-title" id="modalTitle">选择精灵</span>
                 <button class="modal-close-btn" id="modalCloseBtn">✕</button>
             </div>
-            <div class="modal-body" id="modalBody">
-                <div class="pet-grid-modal" id="modalPetGrid"></div>
+            <div class="modal-body">
+                <div class="search-box" id="searchBox">
+                    <input type="text" id="petSearchInput" placeholder="输入名称关键词（如“喵喵”）" autocomplete="off">
+                    <button id="searchBtn" class="btn">🔍 搜索</button>
+                </div>
+                <div id="searchResults" class="search-results"></div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline" id="modalCancel">取消</button>
@@ -108,6 +153,8 @@
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
