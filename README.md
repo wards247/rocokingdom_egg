@@ -1,4 +1,4 @@
-<h1 align="center">🥚 洛克王国 · 异色生蛋智能配窝助手 V4.1</h1>
+<h1 align="center">🥚 洛克王国 · 异色生蛋智能配窝助手 V4.2</h1>
 
 <p align="center">
   <strong>杜绝♂️雄性闲置 · 唯一依赖优先 · 均衡覆盖</strong><br>
