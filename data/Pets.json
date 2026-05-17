@@ -1,0 +1,8382 @@
+[
+  {
+    "id": 3001,
+    "name": "喵喵",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3002,
+    "name": "水蓝蓝",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3003,
+    "name": "火花",
+    "egg_groups": [
+      2,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3004,
+    "name": "迪莫",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3005,
+    "name": "水灵",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3033,
+    "has_shiny": false
+  },
+  {
+    "id": 3006,
+    "name": "火神",
+    "egg_groups": [
+      2,
+      12
+    ],
+    "evolves_from_id": 3032,
+    "has_shiny": false
+  },
+  {
+    "id": 3007,
+    "name": "魔力猫",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3025,
+    "has_shiny": false
+  },
+  {
+    "id": 3008,
+    "name": "草头鸭",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3009,
+    "name": "赤毛鸡仔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3010,
+    "name": "恶魔叮",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3011,
+    "name": "恶魔狼",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3012,
+    "name": "鸭吉吉",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3013,
+    "name": "铠甲虫",
+    "egg_groups": [
+      4,
+      5
+    ],
+    "evolves_from_id": 3038,
+    "has_shiny": false
+  },
+  {
+    "id": 3014,
+    "name": "阿米亚特",
+    "egg_groups": [
+      2,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3015,
+    "name": "阿米樱",
+    "egg_groups": [
+      2,
+      11
+    ],
+    "evolves_from_id": 3014,
+    "has_shiny": false
+  },
+  {
+    "id": 3016,
+    "name": "罗隐",
+    "egg_groups": [
+      2,
+      11
+    ],
+    "evolves_from_id": 3015,
+    "has_shiny": false
+  },
+  {
+    "id": 3017,
+    "name": "蹦蹦种子",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3018,
+    "name": "蹦蹦草",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3017,
+    "has_shiny": false
+  },
+  {
+    "id": 3019,
+    "name": "蹦蹦花",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3018,
+    "has_shiny": false
+  },
+  {
+    "id": 3020,
+    "name": "地鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3021,
+    "name": "遁鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3020,
+    "has_shiny": false
+  },
+  {
+    "id": 3022,
+    "name": "遁地鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3021,
+    "has_shiny": false
+  },
+  {
+    "id": 3023,
+    "name": "火云斗鸡",
+    "egg_groups": [],
+    "evolves_from_id": 3009,
+    "has_shiny": false
+  },
+  {
+    "id": 3024,
+    "name": "伊丽莎白",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3025,
+    "name": "喵呜",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3001,
+    "has_shiny": false
+  },
+  {
+    "id": 3026,
+    "name": "绿草精灵",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3027,
+    "name": "蒲公英娃娃",
+    "egg_groups": [
+      5,
+      8
+    ],
+    "evolves_from_id": 3034,
+    "has_shiny": false
+  },
+  {
+    "id": 3028,
+    "name": "冬羽雀",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3533,
+    "has_shiny": false
+  },
+  {
+    "id": 3029,
+    "name": "奇丽草",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3030,
+    "name": "奇丽叶",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3029,
+    "has_shiny": true
+  },
+  {
+    "id": 3031,
+    "name": "奇丽花",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3030,
+    "has_shiny": true
+  },
+  {
+    "id": 3032,
+    "name": "焰火",
+    "egg_groups": [
+      2,
+      12
+    ],
+    "evolves_from_id": 3003,
+    "has_shiny": false
+  },
+  {
+    "id": 3033,
+    "name": "波波拉",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3002,
+    "has_shiny": false
+  },
+  {
+    "id": 3034,
+    "name": "蒲公英",
+    "egg_groups": [
+      5,
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3035,
+    "name": "魔草巫灵",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": 3026,
+    "has_shiny": false
+  },
+  {
+    "id": 3036,
+    "name": "鸭吉吉",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3037,
+    "name": "岚鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3028,
+    "has_shiny": false
+  },
+  {
+    "id": 3038,
+    "name": "小甲虫",
+    "egg_groups": [
+      4,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3039,
+    "name": "叮叮恶魔",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3010,
+    "has_shiny": false
+  },
+  {
+    "id": 3040,
+    "name": "丢丢",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3041,
+    "name": "卡卡虫",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3040,
+    "has_shiny": false
+  },
+  {
+    "id": 3042,
+    "name": "卡瓦重",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3041,
+    "has_shiny": false
+  },
+  {
+    "id": 3043,
+    "name": "伊贝儿",
+    "egg_groups": [
+      8,
+      10
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3044,
+    "name": "伊贝粉粉",
+    "egg_groups": [
+      8,
+      10
+    ],
+    "evolves_from_id": 3043,
+    "has_shiny": false
+  },
+  {
+    "id": 3045,
+    "name": "锥尾羊",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3046,
+    "name": "铃兰羊",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3045,
+    "has_shiny": false
+  },
+  {
+    "id": 3047,
+    "name": "花影羚羊",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3046,
+    "has_shiny": false
+  },
+  {
+    "id": 3048,
+    "name": "圣光迪莫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3049,
+    "name": "白发懒人",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3050,
+    "name": "记忆石",
+    "egg_groups": [
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3051,
+    "name": "圣草迪莫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3052,
+    "name": "煤球憨憨",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3053,
+    "name": "害羞球球",
+    "egg_groups": [],
+    "evolves_from_id": 3052,
+    "has_shiny": false
+  },
+  {
+    "id": 3054,
+    "name": "害羞球球",
+    "egg_groups": [],
+    "evolves_from_id": 3053,
+    "has_shiny": false
+  },
+  {
+    "id": 3055,
+    "name": "板板壳",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3056,
+    "name": "咔咔壳",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3055,
+    "has_shiny": false
+  },
+  {
+    "id": 3057,
+    "name": "水泡壳",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3056,
+    "has_shiny": false
+  },
+  {
+    "id": 3058,
+    "name": "一窝蜂",
+    "egg_groups": [
+      4,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3059,
+    "name": "黄蜂后",
+    "egg_groups": [
+      4,
+      5
+    ],
+    "evolves_from_id": 3058,
+    "has_shiny": false
+  },
+  {
+    "id": 3060,
+    "name": "小灵面",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3061,
+    "name": "暗影灵面",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3060,
+    "has_shiny": false
+  },
+  {
+    "id": 3062,
+    "name": "小独角兽",
+    "egg_groups": [
+      2,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3063,
+    "name": "白金独角兽",
+    "egg_groups": [
+      2,
+      6
+    ],
+    "evolves_from_id": 3062,
+    "has_shiny": false
+  },
+  {
+    "id": 3064,
+    "name": "幽影树",
+    "egg_groups": [
+      7,
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3065,
+    "name": "忽幽狸",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3066,
+    "name": "影狸",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3065,
+    "has_shiny": false
+  },
+  {
+    "id": 3067,
+    "name": "卷毛鸭",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": 3008,
+    "has_shiny": false
+  },
+  {
+    "id": 3069,
+    "name": "锤头鹳",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3070,
+    "name": "护主犬",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3071,
+    "name": "音速犬",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3070,
+    "has_shiny": false
+  },
+  {
+    "id": 3072,
+    "name": "格兰种子",
+    "egg_groups": [
+      7,
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3073,
+    "name": "格兰花",
+    "egg_groups": [
+      7,
+      8
+    ],
+    "evolves_from_id": 3072,
+    "has_shiny": true
+  },
+  {
+    "id": 3074,
+    "name": "格兰球",
+    "egg_groups": [
+      7,
+      8
+    ],
+    "evolves_from_id": 3073,
+    "has_shiny": true
+  },
+  {
+    "id": 3075,
+    "name": "灵狐",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3076,
+    "name": "九尾狐",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3075,
+    "has_shiny": false
+  },
+  {
+    "id": 3077,
+    "name": "尖嘴狐仙",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3076,
+    "has_shiny": false
+  },
+  {
+    "id": 3078,
+    "name": "烈钻鸟",
+    "egg_groups": [
+      2,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3079,
+    "name": "长尾火鸟",
+    "egg_groups": [
+      2,
+      5
+    ],
+    "evolves_from_id": 3078,
+    "has_shiny": false
+  },
+  {
+    "id": 3080,
+    "name": "火羽",
+    "egg_groups": [
+      2,
+      5
+    ],
+    "evolves_from_id": 3079,
+    "has_shiny": false
+  },
+  {
+    "id": 3081,
+    "name": "治愈兔",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3082,
+    "name": "红丝绒",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": 3081,
+    "has_shiny": true
+  },
+  {
+    "id": 3083,
+    "name": "可爱猿",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3084,
+    "name": "炽热猿",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": 3083,
+    "has_shiny": false
+  },
+  {
+    "id": 3085,
+    "name": "火焰猿",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": 3084,
+    "has_shiny": false
+  },
+  {
+    "id": 3086,
+    "name": "可立鸡",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3087,
+    "name": "晕晕鸡",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": 3086,
+    "has_shiny": false
+  },
+  {
+    "id": 3088,
+    "name": "绅士鸡",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": 3087,
+    "has_shiny": false
+  },
+  {
+    "id": 3089,
+    "name": "武者鸡",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": 3087,
+    "has_shiny": false
+  },
+  {
+    "id": 3090,
+    "name": "火尾瓦特",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3091,
+    "name": "火尾战士",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": 3090,
+    "has_shiny": false
+  },
+  {
+    "id": 3092,
+    "name": "烈火守护",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": 3091,
+    "has_shiny": false
+  },
+  {
+    "id": 3093,
+    "name": "呆小路",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3094,
+    "name": "舞动路路",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3093,
+    "has_shiny": false
+  },
+  {
+    "id": 3095,
+    "name": "白发路路",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3094,
+    "has_shiny": false
+  },
+  {
+    "id": 3097,
+    "name": "灵蔓草王",
+    "egg_groups": [],
+    "evolves_from_id": 3160,
+    "has_shiny": false
+  },
+  {
+    "id": 3098,
+    "name": "绿耳松鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3099,
+    "name": "抱枕松鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3098,
+    "has_shiny": false
+  },
+  {
+    "id": 3100,
+    "name": "蹦床松鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3099,
+    "has_shiny": false
+  },
+  {
+    "id": 3101,
+    "name": "动力猿",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": 3049,
+    "has_shiny": false
+  },
+  {
+    "id": 3102,
+    "name": "瞌睡王",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": 3101,
+    "has_shiny": false
+  },
+  {
+    "id": 3103,
+    "name": "布是石",
+    "egg_groups": [
+      2,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3104,
+    "name": "布是岩",
+    "egg_groups": [
+      2,
+      11
+    ],
+    "evolves_from_id": 3103,
+    "has_shiny": false
+  },
+  {
+    "id": 3105,
+    "name": "布克棱岩",
+    "egg_groups": [
+      2,
+      11
+    ],
+    "evolves_from_id": 3104,
+    "has_shiny": false
+  },
+  {
+    "id": 3106,
+    "name": "石肤蜥",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3107,
+    "name": "石刺蜥",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3106,
+    "has_shiny": false
+  },
+  {
+    "id": 3108,
+    "name": "石冠王蜥",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3107,
+    "has_shiny": false
+  },
+  {
+    "id": 3109,
+    "name": "仪使者",
+    "egg_groups": [
+      7,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3110,
+    "name": "仪式之星",
+    "egg_groups": [
+      7,
+      11
+    ],
+    "evolves_from_id": 3109,
+    "has_shiny": false
+  },
+  {
+    "id": 3111,
+    "name": "仪式巨像",
+    "egg_groups": [
+      7,
+      11
+    ],
+    "evolves_from_id": 3110,
+    "has_shiny": false
+  },
+  {
+    "id": 3112,
+    "name": "甜田螺",
+    "egg_groups": [
+      7,
+      10
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3113,
+    "name": "壳乙螺",
+    "egg_groups": [
+      7,
+      10
+    ],
+    "evolves_from_id": 3112,
+    "has_shiny": false
+  },
+  {
+    "id": 3114,
+    "name": "卡洛儿",
+    "egg_groups": [
+      7,
+      10
+    ],
+    "evolves_from_id": 3113,
+    "has_shiny": false
+  },
+  {
+    "id": 3115,
+    "name": "风铃鲨",
+    "egg_groups": [
+      5,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3116,
+    "name": "蓝蝶鲨",
+    "egg_groups": [
+      5,
+      13
+    ],
+    "evolves_from_id": 3115,
+    "has_shiny": false
+  },
+  {
+    "id": 3117,
+    "name": "彩蝶鲨",
+    "egg_groups": [
+      5,
+      13
+    ],
+    "evolves_from_id": 3116,
+    "has_shiny": false
+  },
+  {
+    "id": 3118,
+    "name": "果冻",
+    "egg_groups": [
+      12,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3119,
+    "name": "翡翠水母",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3120,
+    "name": "琉璃水母",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": 3119,
+    "has_shiny": false
+  },
+  {
+    "id": 3121,
+    "name": "大耳帽兜",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3122,
+    "name": "帽兜娃娃",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": 3121,
+    "has_shiny": true
+  },
+  {
+    "id": 3123,
+    "name": "雪影娃娃",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": 3122,
+    "has_shiny": true
+  },
+  {
+    "id": 3124,
+    "name": "脆筒甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3125,
+    "name": "香草甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3124,
+    "has_shiny": false
+  },
+  {
+    "id": 3126,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3125,
+    "has_shiny": false
+  },
+  {
+    "id": 3127,
+    "name": "小狮鹫",
+    "egg_groups": [
+      5,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3128,
+    "name": "神圣狮鹫",
+    "egg_groups": [
+      5,
+      6
+    ],
+    "evolves_from_id": 3127,
+    "has_shiny": false
+  },
+  {
+    "id": 3129,
+    "name": "皇家狮鹫",
+    "egg_groups": [
+      5,
+      6
+    ],
+    "evolves_from_id": 3128,
+    "has_shiny": false
+  },
+  {
+    "id": 3130,
+    "name": "圆眼蜘蛛",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3131,
+    "name": "尖角蜘蛛",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": 3130,
+    "has_shiny": false
+  },
+  {
+    "id": 3132,
+    "name": "芋香巨角蛛",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": 3131,
+    "has_shiny": false
+  },
+  {
+    "id": 3133,
+    "name": "小螂",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3134,
+    "name": "兵螂",
+    "egg_groups": [],
+    "evolves_from_id": 3133,
+    "has_shiny": false
+  },
+  {
+    "id": 3135,
+    "name": "飞天刀螂",
+    "egg_groups": [],
+    "evolves_from_id": 3134,
+    "has_shiny": false
+  },
+  {
+    "id": 3136,
+    "name": "毛毛",
+    "egg_groups": [
+      4,
+      10
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3137,
+    "name": "爬爬",
+    "egg_groups": [
+      4,
+      10
+    ],
+    "evolves_from_id": 3136,
+    "has_shiny": false
+  },
+  {
+    "id": 3138,
+    "name": "化蝶",
+    "egg_groups": [
+      4,
+      10
+    ],
+    "evolves_from_id": 3137,
+    "has_shiny": false
+  },
+  {
+    "id": 3139,
+    "name": "小草虫",
+    "egg_groups": [
+      4,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3140,
+    "name": "草衣虫",
+    "egg_groups": [
+      4,
+      9
+    ],
+    "evolves_from_id": 3139,
+    "has_shiny": false
+  },
+  {
+    "id": 3141,
+    "name": "花衣蝶",
+    "egg_groups": [
+      4,
+      9
+    ],
+    "evolves_from_id": 3140,
+    "has_shiny": false
+  },
+  {
+    "id": 3142,
+    "name": "小夜",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3143,
+    "name": "紫夜",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": 3142,
+    "has_shiny": false
+  },
+  {
+    "id": 3144,
+    "name": "朔夜伊芙",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": 3143,
+    "has_shiny": false
+  },
+  {
+    "id": 3145,
+    "name": "小灵菇",
+    "egg_groups": [
+      8,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3146,
+    "name": "幻灵菇",
+    "egg_groups": [
+      8,
+      12
+    ],
+    "evolves_from_id": 3145,
+    "has_shiny": false
+  },
+  {
+    "id": 3147,
+    "name": "幻影灵菇",
+    "egg_groups": [
+      8,
+      12
+    ],
+    "evolves_from_id": 3146,
+    "has_shiny": false
+  },
+  {
+    "id": 3148,
+    "name": "空空颅",
+    "egg_groups": [
+      2,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3149,
+    "name": "夜宿颅",
+    "egg_groups": [
+      2,
+      12
+    ],
+    "evolves_from_id": 3148,
+    "has_shiny": true
+  },
+  {
+    "id": 3150,
+    "name": "夜枭",
+    "egg_groups": [
+      2,
+      12
+    ],
+    "evolves_from_id": 3149,
+    "has_shiny": true
+  },
+  {
+    "id": 3151,
+    "name": "多多",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3152,
+    "name": "多啦多",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": 3151,
+    "has_shiny": false
+  },
+  {
+    "id": 3153,
+    "name": "古啦多",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": 3152,
+    "has_shiny": false
+  },
+  {
+    "id": 3154,
+    "name": "裘洛",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3155,
+    "name": "裘力",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": 3154,
+    "has_shiny": false
+  },
+  {
+    "id": 3156,
+    "name": "裘卡",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": 3155,
+    "has_shiny": false
+  },
+  {
+    "id": 3157,
+    "name": "花魁蜂后",
+    "egg_groups": [
+      4,
+      5
+    ],
+    "evolves_from_id": 3059,
+    "has_shiny": false
+  },
+  {
+    "id": 3158,
+    "name": "武斗酷猫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3159,
+    "name": "紫蔓宝宝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3160,
+    "name": "紫蔓祭祀",
+    "egg_groups": [],
+    "evolves_from_id": 3159,
+    "has_shiny": false
+  },
+  {
+    "id": 3161,
+    "name": "春团",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3162,
+    "name": "春兔",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": 3161,
+    "has_shiny": false
+  },
+  {
+    "id": 3165,
+    "name": "伏地兽",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3166,
+    "name": "贪食鼹",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3165,
+    "has_shiny": false
+  },
+  {
+    "id": 3167,
+    "name": "巨噬针鼹",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3166,
+    "has_shiny": false
+  },
+  {
+    "id": 3168,
+    "name": "阿布",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3169,
+    "name": "超能阿布",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3168,
+    "has_shiny": false
+  },
+  {
+    "id": 3170,
+    "name": "石石",
+    "egg_groups": [
+      11,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3171,
+    "name": "巨灵石",
+    "egg_groups": [
+      11,
+      12
+    ],
+    "evolves_from_id": 3170,
+    "has_shiny": false
+  },
+  {
+    "id": 3172,
+    "name": "雪豆丁",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3173,
+    "name": "雪蛮人",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": 3172,
+    "has_shiny": false
+  },
+  {
+    "id": 3174,
+    "name": "雪巨人",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": 3173,
+    "has_shiny": false
+  },
+  {
+    "id": 3175,
+    "name": "咔咔羽毛",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3176,
+    "name": "咔咔雀",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3175,
+    "has_shiny": false
+  },
+  {
+    "id": 3177,
+    "name": "咔咔鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3176,
+    "has_shiny": false
+  },
+  {
+    "id": 3178,
+    "name": "矮脚爬爬",
+    "egg_groups": [
+      2,
+      4
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3179,
+    "name": "恶魔红钻",
+    "egg_groups": [
+      2,
+      4
+    ],
+    "evolves_from_id": 3178,
+    "has_shiny": false
+  },
+  {
+    "id": 3180,
+    "name": "小帕尔",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3181,
+    "name": "帕尔萨斯",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3180,
+    "has_shiny": false
+  },
+  {
+    "id": 3182,
+    "name": "龙息帕尔",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3181,
+    "has_shiny": false
+  },
+  {
+    "id": 3183,
+    "name": "瑰眼仔",
+    "egg_groups": [
+      2,
+      4
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3184,
+    "name": "耳翎瑰魅",
+    "egg_groups": [
+      2,
+      4
+    ],
+    "evolves_from_id": 3183,
+    "has_shiny": false
+  },
+  {
+    "id": 3185,
+    "name": "邪眼巨魔",
+    "egg_groups": [
+      2,
+      4
+    ],
+    "evolves_from_id": 3184,
+    "has_shiny": false
+  },
+  {
+    "id": 3186,
+    "name": "小光",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3187,
+    "name": "迷迷眼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3188,
+    "name": "拉特",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3189,
+    "name": "酷拉",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3188,
+    "has_shiny": true
+  },
+  {
+    "id": 3190,
+    "name": "电咩咩",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3191,
+    "name": "粉咩咩",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3190,
+    "has_shiny": false
+  },
+  {
+    "id": 3192,
+    "name": "电球咩咩",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3191,
+    "has_shiny": false
+  },
+  {
+    "id": 3193,
+    "name": "小星光",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3194,
+    "name": "星光狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3193,
+    "has_shiny": false
+  },
+  {
+    "id": 3195,
+    "name": "闪电环",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3196,
+    "name": "刺电环",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3195,
+    "has_shiny": false
+  },
+  {
+    "id": 3197,
+    "name": "荆棘电环",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3196,
+    "has_shiny": false
+  },
+  {
+    "id": 3198,
+    "name": "粉粉星",
+    "egg_groups": [
+      7,
+      10
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3199,
+    "name": "小皮球",
+    "egg_groups": [
+      7,
+      10
+    ],
+    "evolves_from_id": 3198,
+    "has_shiny": true
+  },
+  {
+    "id": 3200,
+    "name": "机械方方",
+    "egg_groups": [
+      9,
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3201,
+    "name": "多彩方方",
+    "egg_groups": [
+      9,
+      15
+    ],
+    "evolves_from_id": 3200,
+    "has_shiny": false
+  },
+  {
+    "id": 3202,
+    "name": "立方人",
+    "egg_groups": [
+      9,
+      15
+    ],
+    "evolves_from_id": 3201,
+    "has_shiny": false
+  },
+  {
+    "id": 3203,
+    "name": "贝瑟",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3204,
+    "name": "贝加尔",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": 3203,
+    "has_shiny": true
+  },
+  {
+    "id": 3205,
+    "name": "贝古斯",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": 3204,
+    "has_shiny": true
+  },
+  {
+    "id": 3206,
+    "name": "多西",
+    "egg_groups": [
+      2,
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3207,
+    "name": "库多西",
+    "egg_groups": [
+      2,
+      15
+    ],
+    "evolves_from_id": 3206,
+    "has_shiny": false
+  },
+  {
+    "id": 3208,
+    "name": "波多西",
+    "egg_groups": [
+      2,
+      15
+    ],
+    "evolves_from_id": 3207,
+    "has_shiny": false
+  },
+  {
+    "id": 3209,
+    "name": "小翼龙",
+    "egg_groups": [
+      5,
+      14
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3210,
+    "name": "翼龙",
+    "egg_groups": [
+      5,
+      14
+    ],
+    "evolves_from_id": 3209,
+    "has_shiny": false
+  },
+  {
+    "id": 3211,
+    "name": "伊雷龙",
+    "egg_groups": [
+      14
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3213,
+    "name": "黑炎宝宝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3214,
+    "name": "黑炎",
+    "egg_groups": [],
+    "evolves_from_id": 3213,
+    "has_shiny": false
+  },
+  {
+    "id": 3215,
+    "name": "海豹战士",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3216,
+    "name": "海豹船长",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": 3215,
+    "has_shiny": false
+  },
+  {
+    "id": 3217,
+    "name": "呼拉猫",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3218,
+    "name": "增肌猫",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": 3217,
+    "has_shiny": false
+  },
+  {
+    "id": 3219,
+    "name": "健猫教练",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": 3218,
+    "has_shiny": false
+  },
+  {
+    "id": 3225,
+    "name": "古钟蛇",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3226,
+    "name": "寒音蛇",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": 3225,
+    "has_shiny": false
+  },
+  {
+    "id": 3227,
+    "name": "菊花梨",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3228,
+    "name": "友爱天天",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3229,
+    "name": "友爱星飞",
+    "egg_groups": [],
+    "evolves_from_id": 3228,
+    "has_shiny": false
+  },
+  {
+    "id": 3230,
+    "name": "加灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3231,
+    "name": "加益",
+    "egg_groups": [],
+    "evolves_from_id": 3230,
+    "has_shiny": false
+  },
+  {
+    "id": 3232,
+    "name": "加尔",
+    "egg_groups": [],
+    "evolves_from_id": 3231,
+    "has_shiny": false
+  },
+  {
+    "id": 3233,
+    "name": "加尔",
+    "egg_groups": [],
+    "evolves_from_id": 3232,
+    "has_shiny": false
+  },
+  {
+    "id": 3234,
+    "name": "牵线木偶",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3235,
+    "name": "帅帅魔偶",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": 3234,
+    "has_shiny": false
+  },
+  {
+    "id": 3236,
+    "name": "超能球球",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3237,
+    "name": "小怂猫",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3238,
+    "name": "怒目怂猫",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3237,
+    "has_shiny": false
+  },
+  {
+    "id": 3239,
+    "name": "哭哭菇",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3240,
+    "name": "怖须菇",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3239,
+    "has_shiny": false
+  },
+  {
+    "id": 3241,
+    "name": "怖哭菇",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3240,
+    "has_shiny": false
+  },
+  {
+    "id": 3242,
+    "name": "呆火鸟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3243,
+    "name": "喷火鸟",
+    "egg_groups": [],
+    "evolves_from_id": 3242,
+    "has_shiny": false
+  },
+  {
+    "id": 3244,
+    "name": "绒绒",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3245,
+    "name": "小绒茧",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3244,
+    "has_shiny": false
+  },
+  {
+    "id": 3246,
+    "name": "绒仙子",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3245,
+    "has_shiny": false
+  },
+  {
+    "id": 3248,
+    "name": "绿洲象",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3249,
+    "name": "流星猛犸",
+    "egg_groups": [],
+    "evolves_from_id": 3248,
+    "has_shiny": false
+  },
+  {
+    "id": 3250,
+    "name": "小鹬",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3251,
+    "name": "鄙目鹬",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3250,
+    "has_shiny": false
+  },
+  {
+    "id": 3252,
+    "name": "高脚鹬",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3251,
+    "has_shiny": false
+  },
+  {
+    "id": 3253,
+    "name": "速粒小子",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3254,
+    "name": "速粒冲锋",
+    "egg_groups": [],
+    "evolves_from_id": 3253,
+    "has_shiny": false
+  },
+  {
+    "id": 3255,
+    "name": "奔波鼠",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3256,
+    "name": "流浪鼠",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3255,
+    "has_shiny": false
+  },
+  {
+    "id": 3257,
+    "name": "布鲁斯",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3258,
+    "name": "雪顶布鲁斯",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": 3257,
+    "has_shiny": false
+  },
+  {
+    "id": 3259,
+    "name": "冰钻布鲁斯",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": 3258,
+    "has_shiny": false
+  },
+  {
+    "id": 3260,
+    "name": "古拉海象",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3261,
+    "name": "大古拉海象",
+    "egg_groups": [],
+    "evolves_from_id": 3260,
+    "has_shiny": false
+  },
+  {
+    "id": 3262,
+    "name": "呼呼猪",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3263,
+    "name": "獠牙猪",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3262,
+    "has_shiny": true
+  },
+  {
+    "id": 3264,
+    "name": "卡波",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3265,
+    "name": "卡拉波斯",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3264,
+    "has_shiny": false
+  },
+  {
+    "id": 3266,
+    "name": "胆小鳗鱼",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3267,
+    "name": "闪电鳗鱼",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": 3266,
+    "has_shiny": false
+  },
+  {
+    "id": 3268,
+    "name": "大头骨龙",
+    "egg_groups": [
+      2,
+      14
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3269,
+    "name": "寂灭骨龙",
+    "egg_groups": [
+      2,
+      14
+    ],
+    "evolves_from_id": 3268,
+    "has_shiny": false
+  },
+  {
+    "id": 3276,
+    "name": "绿翼鸟",
+    "egg_groups": [
+      5,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3277,
+    "name": "魔翼鸟",
+    "egg_groups": [
+      5,
+      7
+    ],
+    "evolves_from_id": 3276,
+    "has_shiny": false
+  },
+  {
+    "id": 3278,
+    "name": "魔眷鸟",
+    "egg_groups": [
+      5,
+      7
+    ],
+    "evolves_from_id": 3277,
+    "has_shiny": false
+  },
+  {
+    "id": 3279,
+    "name": "雪绒鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3280,
+    "name": "雪绒鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3281,
+    "name": "雪绒鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3282,
+    "name": "冬羽雀",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3279,
+    "has_shiny": false
+  },
+  {
+    "id": 3283,
+    "name": "冬羽雀",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3280,
+    "has_shiny": false
+  },
+  {
+    "id": 3284,
+    "name": "冬羽雀",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3281,
+    "has_shiny": false
+  },
+  {
+    "id": 3285,
+    "name": "岚鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3282,
+    "has_shiny": false
+  },
+  {
+    "id": 3286,
+    "name": "岚鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3283,
+    "has_shiny": false
+  },
+  {
+    "id": 3287,
+    "name": "岚鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3284,
+    "has_shiny": false
+  },
+  {
+    "id": 3288,
+    "name": "丢丢",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3289,
+    "name": "丢丢",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3290,
+    "name": "丢丢",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3291,
+    "name": "卡卡虫",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3288,
+    "has_shiny": false
+  },
+  {
+    "id": 3292,
+    "name": "卡卡虫",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3289,
+    "has_shiny": false
+  },
+  {
+    "id": 3293,
+    "name": "卡卡虫",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3290,
+    "has_shiny": false
+  },
+  {
+    "id": 3294,
+    "name": "卡瓦重",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3291,
+    "has_shiny": false
+  },
+  {
+    "id": 3295,
+    "name": "卡瓦重",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3292,
+    "has_shiny": false
+  },
+  {
+    "id": 3296,
+    "name": "卡瓦重",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3293,
+    "has_shiny": false
+  },
+  {
+    "id": 3297,
+    "name": "蹦蹦种子",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3298,
+    "name": "蹦蹦种子",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3299,
+    "name": "蹦蹦种子",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3300,
+    "name": "蹦蹦草",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3297,
+    "has_shiny": false
+  },
+  {
+    "id": 3301,
+    "name": "蹦蹦草",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3298,
+    "has_shiny": false
+  },
+  {
+    "id": 3302,
+    "name": "蹦蹦草",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3299,
+    "has_shiny": false
+  },
+  {
+    "id": 3303,
+    "name": "蹦蹦花",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3300,
+    "has_shiny": false
+  },
+  {
+    "id": 3304,
+    "name": "蹦蹦花",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3301,
+    "has_shiny": false
+  },
+  {
+    "id": 3305,
+    "name": "蹦蹦花",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3302,
+    "has_shiny": false
+  },
+  {
+    "id": 3307,
+    "name": "矿晶虫",
+    "egg_groups": [
+      10,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3308,
+    "name": "晶石蜗",
+    "egg_groups": [
+      10,
+      11
+    ],
+    "evolves_from_id": 3307,
+    "has_shiny": false
+  },
+  {
+    "id": 3309,
+    "name": "犀角鸟",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3310,
+    "name": "光纤兽",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3309,
+    "has_shiny": false
+  },
+  {
+    "id": 3311,
+    "name": "疾光千兽",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3310,
+    "has_shiny": false
+  },
+  {
+    "id": 3312,
+    "name": "若叶蜥",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3313,
+    "name": "立叶蜥",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3314,
+    "name": "蝶叶巨蜥",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3315,
+    "name": "小鼠獭",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3316,
+    "name": "燕尾獭",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": 3315,
+    "has_shiny": false
+  },
+  {
+    "id": 3317,
+    "name": "卷胡巨獭",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": 3316,
+    "has_shiny": false
+  },
+  {
+    "id": 3319,
+    "name": "粉星仔",
+    "egg_groups": [
+      5,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3320,
+    "name": "粉耳星兔",
+    "egg_groups": [
+      5,
+      7
+    ],
+    "evolves_from_id": 3319,
+    "has_shiny": true
+  },
+  {
+    "id": 3321,
+    "name": "觅觅蝠",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3322,
+    "name": "翻翻蝠",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3323,
+    "name": "夜游魔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3327,
+    "name": "独角龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3328,
+    "name": "坚角龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3329,
+    "name": "爆角龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3330,
+    "name": "海盔虫",
+    "egg_groups": [
+      2,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3331,
+    "name": "刺盔虫",
+    "egg_groups": [
+      2,
+      13
+    ],
+    "evolves_from_id": 3330,
+    "has_shiny": false
+  },
+  {
+    "id": 3332,
+    "name": "千棘盔",
+    "egg_groups": [
+      2,
+      13
+    ],
+    "evolves_from_id": 3331,
+    "has_shiny": false
+  },
+  {
+    "id": 3333,
+    "name": "雪娃娃",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3334,
+    "name": "冰封怨灵",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3333,
+    "has_shiny": false
+  },
+  {
+    "id": 3335,
+    "name": "雪灵",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3334,
+    "has_shiny": false
+  },
+  {
+    "id": 3336,
+    "name": "格格布",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3337,
+    "name": "格布布",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3338,
+    "name": "冰虎宝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3339,
+    "name": "冰晶虎",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3340,
+    "name": "古齿帝牙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3341,
+    "name": "雪灵兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3342,
+    "name": "幻雪兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3343,
+    "name": "饮雪狂兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3344,
+    "name": "乖乖鹄",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3345,
+    "name": "蓝珠天鹅",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": 3344,
+    "has_shiny": false
+  },
+  {
+    "id": 3346,
+    "name": "翠顶夫人",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": 3345,
+    "has_shiny": false
+  },
+  {
+    "id": 3347,
+    "name": "芽眼魔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3348,
+    "name": "叶眼魔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3349,
+    "name": "障眼魔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3350,
+    "name": "红绒十字",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": 3082,
+    "has_shiny": true
+  },
+  {
+    "id": 3351,
+    "name": "霹雳宝宝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3352,
+    "name": "雷鸣小子",
+    "egg_groups": [],
+    "evolves_from_id": 3351,
+    "has_shiny": false
+  },
+  {
+    "id": 3353,
+    "name": "雷暴奔奔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3354,
+    "name": "钻地小子",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3355,
+    "name": "闪电小子",
+    "egg_groups": [],
+    "evolves_from_id": 3354,
+    "has_shiny": false
+  },
+  {
+    "id": 3356,
+    "name": "魔能陀螺",
+    "egg_groups": [],
+    "evolves_from_id": 3355,
+    "has_shiny": false
+  },
+  {
+    "id": 3357,
+    "name": "电动长颈鹿",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3358,
+    "name": "奔乐鹿",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3357,
+    "has_shiny": false
+  },
+  {
+    "id": 3359,
+    "name": "爵士鹿",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3358,
+    "has_shiny": false
+  },
+  {
+    "id": 3360,
+    "name": "蝴蝶陶陶",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3361,
+    "name": "铆钉毛毛",
+    "egg_groups": [],
+    "evolves_from_id": 3360,
+    "has_shiny": false
+  },
+  {
+    "id": 3362,
+    "name": "徘徊爪爪",
+    "egg_groups": [],
+    "evolves_from_id": 3361,
+    "has_shiny": false
+  },
+  {
+    "id": 3363,
+    "name": "路路",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3364,
+    "name": "路路尼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3365,
+    "name": "古路尼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3367,
+    "name": "嘟嘟煲",
+    "egg_groups": [
+      7,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3368,
+    "name": "嘟嘟锅",
+    "egg_groups": [
+      7,
+      11
+    ],
+    "evolves_from_id": 3367,
+    "has_shiny": false
+  },
+  {
+    "id": 3369,
+    "name": "幽星光",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3370,
+    "name": "曜星光",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3369,
+    "has_shiny": false
+  },
+  {
+    "id": 3371,
+    "name": "暮星辰",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3370,
+    "has_shiny": false
+  },
+  {
+    "id": 3372,
+    "name": "春花兔",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": 3162,
+    "has_shiny": false
+  },
+  {
+    "id": 3373,
+    "name": "逗逗",
+    "egg_groups": [
+      2,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3374,
+    "name": "气球猫",
+    "egg_groups": [
+      2,
+      6
+    ],
+    "evolves_from_id": 3373,
+    "has_shiny": false
+  },
+  {
+    "id": 3375,
+    "name": "梦想三三",
+    "egg_groups": [
+      2,
+      6
+    ],
+    "evolves_from_id": 3374,
+    "has_shiny": false
+  },
+  {
+    "id": 3376,
+    "name": "旋叶虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3377,
+    "name": "风滚暮虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": 3483,
+    "has_shiny": false
+  },
+  {
+    "id": 3378,
+    "name": "菇菇丁",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3379,
+    "name": "多菇丁",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3378,
+    "has_shiny": false
+  },
+  {
+    "id": 3380,
+    "name": "九幽菇",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": 3379,
+    "has_shiny": false
+  },
+  {
+    "id": 3381,
+    "name": "深蓝鲸",
+    "egg_groups": [
+      2,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3382,
+    "name": "双灯鱼",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3383,
+    "name": "利灯鱼",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": 3382,
+    "has_shiny": false
+  },
+  {
+    "id": 3384,
+    "name": "豆丁鱼",
+    "egg_groups": [
+      13,
+      14
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3385,
+    "name": "快鳍鱼",
+    "egg_groups": [
+      13,
+      14
+    ],
+    "evolves_from_id": 3384,
+    "has_shiny": false
+  },
+  {
+    "id": 3386,
+    "name": "龙鱼",
+    "egg_groups": [
+      13,
+      14
+    ],
+    "evolves_from_id": 3385,
+    "has_shiny": false
+  },
+  {
+    "id": 3387,
+    "name": "科多多",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3388,
+    "name": "科多索",
+    "egg_groups": [],
+    "evolves_from_id": 3387,
+    "has_shiny": false
+  },
+  {
+    "id": 3392,
+    "name": "凡雀",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3393,
+    "name": "紫翎鹰",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3392,
+    "has_shiny": false
+  },
+  {
+    "id": 3394,
+    "name": "凡鹰",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3393,
+    "has_shiny": false
+  },
+  {
+    "id": 3395,
+    "name": "里奥",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3396,
+    "name": "灵羽勇士",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3395,
+    "has_shiny": false
+  },
+  {
+    "id": 3397,
+    "name": "圣羽翼王",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": 3396,
+    "has_shiny": false
+  },
+  {
+    "id": 3398,
+    "name": "星尘虫",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3399,
+    "name": "落星虫",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": 3398,
+    "has_shiny": false
+  },
+  {
+    "id": 3400,
+    "name": "陨星虫",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": 3399,
+    "has_shiny": false
+  },
+  {
+    "id": 3401,
+    "name": "伊里斯",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3402,
+    "name": "碎晶蝎",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3403,
+    "name": "晶尾蝎",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3404,
+    "name": "蝎子王",
+    "egg_groups": [],
+    "evolves_from_id": 3403,
+    "has_shiny": false
+  },
+  {
+    "id": 3405,
+    "name": "幽冥眼",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3061,
+    "has_shiny": false
+  },
+  {
+    "id": 3406,
+    "name": "缇塔",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3407,
+    "name": "声波缇塔",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": 3406,
+    "has_shiny": false
+  },
+  {
+    "id": 3408,
+    "name": "齿轮小子",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3409,
+    "name": "机甲小子",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": 3408,
+    "has_shiny": false
+  },
+  {
+    "id": 3410,
+    "name": "权杖-Ⅱ",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3411,
+    "name": "权杖-V",
+    "egg_groups": [
+      15
+    ],
+    "evolves_from_id": 3410,
+    "has_shiny": false
+  },
+  {
+    "id": 3412,
+    "name": "伊兰亚龙",
+    "egg_groups": [
+      14
+    ],
+    "evolves_from_id": 3211,
+    "has_shiny": false
+  },
+  {
+    "id": 3416,
+    "name": "格斗小五",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3417,
+    "name": "格斗小六",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3418,
+    "name": "格斗小八",
+    "egg_groups": [
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3419,
+    "name": "厉毒小萝",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3420,
+    "name": "厉毒修萝",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": 3419,
+    "has_shiny": false
+  },
+  {
+    "id": 3421,
+    "name": "破梦者",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3422,
+    "name": "食梦者",
+    "egg_groups": [],
+    "evolves_from_id": 3421,
+    "has_shiny": false
+  },
+  {
+    "id": 3423,
+    "name": "空灵兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3424,
+    "name": "空灵斗士",
+    "egg_groups": [],
+    "evolves_from_id": 3423,
+    "has_shiny": false
+  },
+  {
+    "id": 3425,
+    "name": "三叶草龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3426,
+    "name": "花叶龙",
+    "egg_groups": [],
+    "evolves_from_id": 3425,
+    "has_shiny": false
+  },
+  {
+    "id": 3427,
+    "name": "麦香驼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3428,
+    "name": "臭臭锥",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3429,
+    "name": "埃欧熔锥",
+    "egg_groups": [],
+    "evolves_from_id": 3428,
+    "has_shiny": false
+  },
+  {
+    "id": 3430,
+    "name": "海枝枝",
+    "egg_groups": [
+      8,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3431,
+    "name": "海枝枝",
+    "egg_groups": [
+      8,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3432,
+    "name": "海枝枝",
+    "egg_groups": [
+      8,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3433,
+    "name": "海枝枝",
+    "egg_groups": [
+      8,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3434,
+    "name": "小电企鹅",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3435,
+    "name": "电企鹅",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3434,
+    "has_shiny": false
+  },
+  {
+    "id": 3436,
+    "name": "柴渣虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3437,
+    "name": "燃薪虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": 3436,
+    "has_shiny": true
+  },
+  {
+    "id": 3438,
+    "name": "梦游",
+    "egg_groups": [
+      7,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3439,
+    "name": "梦悠悠",
+    "egg_groups": [
+      7,
+      12
+    ],
+    "evolves_from_id": 3438,
+    "has_shiny": false
+  },
+  {
+    "id": 3440,
+    "name": "梦游",
+    "egg_groups": [
+      7,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3441,
+    "name": "梦悠悠",
+    "egg_groups": [
+      7,
+      12
+    ],
+    "evolves_from_id": 3440,
+    "has_shiny": false
+  },
+  {
+    "id": 3442,
+    "name": "小星光",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3443,
+    "name": "星光狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3442,
+    "has_shiny": false
+  },
+  {
+    "id": 3444,
+    "name": "噼啪鸟",
+    "egg_groups": [
+      2,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3445,
+    "name": "雪毛角羚牛",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3446,
+    "name": "雪毛角羚牛",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3447,
+    "name": "雪毛角羚牛",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3448,
+    "name": "晶石蜗",
+    "egg_groups": [
+      10,
+      11
+    ],
+    "evolves_from_id": 3307,
+    "has_shiny": false
+  },
+  {
+    "id": 3449,
+    "name": "晶石蜗",
+    "egg_groups": [
+      10,
+      11
+    ],
+    "evolves_from_id": 3307,
+    "has_shiny": false
+  },
+  {
+    "id": 3450,
+    "name": "晶石蜗",
+    "egg_groups": [
+      10,
+      11
+    ],
+    "evolves_from_id": 3307,
+    "has_shiny": false
+  },
+  {
+    "id": 3451,
+    "name": "晶石蜗",
+    "egg_groups": [
+      10,
+      11
+    ],
+    "evolves_from_id": 3307,
+    "has_shiny": false
+  },
+  {
+    "id": 3452,
+    "name": "鸭吉吉",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3453,
+    "name": "鸭吉吉",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3454,
+    "name": "地鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3455,
+    "name": "遁鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3454,
+    "has_shiny": false
+  },
+  {
+    "id": 3456,
+    "name": "遁地鼠",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3455,
+    "has_shiny": false
+  },
+  {
+    "id": 3457,
+    "name": "月牙雪熊",
+    "egg_groups": [
+      2,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3458,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3125,
+    "has_shiny": false
+  },
+  {
+    "id": 3459,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3125,
+    "has_shiny": false
+  },
+  {
+    "id": 3460,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3479,
+    "has_shiny": false
+  },
+  {
+    "id": 3461,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3479,
+    "has_shiny": false
+  },
+  {
+    "id": 3462,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3479,
+    "has_shiny": false
+  },
+  {
+    "id": 3463,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3478,
+    "has_shiny": false
+  },
+  {
+    "id": 3464,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3478,
+    "has_shiny": false
+  },
+  {
+    "id": 3465,
+    "name": "圣代甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3478,
+    "has_shiny": false
+  },
+  {
+    "id": 3466,
+    "name": "星云旅者",
+    "egg_groups": [
+      6,
+      12
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3467,
+    "name": "小狮鹫",
+    "egg_groups": [
+      5,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3468,
+    "name": "神圣狮鹫",
+    "egg_groups": [
+      5,
+      6
+    ],
+    "evolves_from_id": 3467,
+    "has_shiny": false
+  },
+  {
+    "id": 3469,
+    "name": "皇家狮鹫",
+    "egg_groups": [
+      5,
+      6
+    ],
+    "evolves_from_id": 3468,
+    "has_shiny": false
+  },
+  {
+    "id": 3470,
+    "name": "化蝶",
+    "egg_groups": [
+      4,
+      10
+    ],
+    "evolves_from_id": 3137,
+    "has_shiny": false
+  },
+  {
+    "id": 3471,
+    "name": "化蝶",
+    "egg_groups": [
+      4,
+      10
+    ],
+    "evolves_from_id": 3137,
+    "has_shiny": false
+  },
+  {
+    "id": 3472,
+    "name": "化蝶",
+    "egg_groups": [
+      4,
+      10
+    ],
+    "evolves_from_id": 3137,
+    "has_shiny": false
+  },
+  {
+    "id": 3473,
+    "name": "布瓜蝌",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3474,
+    "name": "上岸蛙",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3473,
+    "has_shiny": false
+  },
+  {
+    "id": 3475,
+    "name": "海盔虫",
+    "egg_groups": [
+      2,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3476,
+    "name": "刺盔虫",
+    "egg_groups": [
+      2,
+      13
+    ],
+    "evolves_from_id": 3475,
+    "has_shiny": false
+  },
+  {
+    "id": 3477,
+    "name": "千棘盔",
+    "egg_groups": [
+      2,
+      13
+    ],
+    "evolves_from_id": 3476,
+    "has_shiny": false
+  },
+  {
+    "id": 3478,
+    "name": "香草甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3124,
+    "has_shiny": false
+  },
+  {
+    "id": 3479,
+    "name": "香草甜甜",
+    "egg_groups": [
+      10,
+      12
+    ],
+    "evolves_from_id": 3124,
+    "has_shiny": false
+  },
+  {
+    "id": 3480,
+    "name": "圣羽翼王",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3481,
+    "name": "暗影灵面",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3060,
+    "has_shiny": false
+  },
+  {
+    "id": 3482,
+    "name": "幽冥眼",
+    "egg_groups": [
+      12
+    ],
+    "evolves_from_id": 3481,
+    "has_shiny": false
+  },
+  {
+    "id": 3483,
+    "name": "蓬叶虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": 3376,
+    "has_shiny": false
+  },
+  {
+    "id": 3484,
+    "name": "螺旋帕帕",
+    "egg_groups": [
+      5,
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3485,
+    "name": "落陨星兔",
+    "egg_groups": [
+      5,
+      7
+    ],
+    "evolves_from_id": 3319,
+    "has_shiny": false
+  },
+  {
+    "id": 3486,
+    "name": "晶石蜗",
+    "egg_groups": [
+      10,
+      11
+    ],
+    "evolves_from_id": 3307,
+    "has_shiny": false
+  },
+  {
+    "id": 3487,
+    "name": "小丑豆豆",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3488,
+    "name": "小丑兔",
+    "egg_groups": [],
+    "evolves_from_id": 3487,
+    "has_shiny": false
+  },
+  {
+    "id": 3489,
+    "name": "小丑公爵",
+    "egg_groups": [],
+    "evolves_from_id": 3488,
+    "has_shiny": false
+  },
+  {
+    "id": 3490,
+    "name": "吸泥鸥",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3491,
+    "name": "泥吼牙",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": 3490,
+    "has_shiny": false
+  },
+  {
+    "id": 3492,
+    "name": "兽花蕾",
+    "egg_groups": [
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3493,
+    "name": "肥草球",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3494,
+    "name": "赫拉",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3495,
+    "name": "鸭吉吉",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3496,
+    "name": "旋叶虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3497,
+    "name": "蓬叶虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": 3496,
+    "has_shiny": false
+  },
+  {
+    "id": 3498,
+    "name": "风滚暮虫",
+    "egg_groups": [
+      4,
+      8
+    ],
+    "evolves_from_id": 3497,
+    "has_shiny": false
+  },
+  {
+    "id": 3499,
+    "name": "公平鸽",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3500,
+    "name": "石肤蜥",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3501,
+    "name": "石刺蜥",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3500,
+    "has_shiny": false
+  },
+  {
+    "id": 3502,
+    "name": "石冠王蜥",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3501,
+    "has_shiny": false
+  },
+  {
+    "id": 3503,
+    "name": "线球鼠",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3504,
+    "name": "慈母鼠",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3505,
+    "name": "夜回犀牛",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3506,
+    "name": "花怨鳗",
+    "egg_groups": [
+      3,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3507,
+    "name": "鳗尾兽",
+    "egg_groups": [
+      3,
+      13
+    ],
+    "evolves_from_id": 3506,
+    "has_shiny": false
+  },
+  {
+    "id": 3508,
+    "name": "波波螺",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3509,
+    "name": "消波螺",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3508,
+    "has_shiny": false
+  },
+  {
+    "id": 3510,
+    "name": "嗜波螺",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3509,
+    "has_shiny": false
+  },
+  {
+    "id": 3511,
+    "name": "波波螺",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3512,
+    "name": "消波螺",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3511,
+    "has_shiny": false
+  },
+  {
+    "id": 3513,
+    "name": "嗜波螺",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": 3512,
+    "has_shiny": false
+  },
+  {
+    "id": 3514,
+    "name": "圣水迪莫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3515,
+    "name": "圣火迪莫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3516,
+    "name": "板板壳",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3517,
+    "name": "咔咔壳",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3516,
+    "has_shiny": false
+  },
+  {
+    "id": 3518,
+    "name": "水泡壳",
+    "egg_groups": [
+      3
+    ],
+    "evolves_from_id": 3517,
+    "has_shiny": false
+  },
+  {
+    "id": 3519,
+    "name": "海闪星",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3520,
+    "name": "海魔星",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3521,
+    "name": "里拉鳐",
+    "egg_groups": [
+      7,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3522,
+    "name": "水星尾",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3523,
+    "name": "水星龙弦",
+    "egg_groups": [],
+    "evolves_from_id": 3522,
+    "has_shiny": false
+  },
+  {
+    "id": 3524,
+    "name": "阿瓦鲨",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3525,
+    "name": "阿瓦鲨",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3526,
+    "name": "抹茶布丁",
+    "egg_groups": [
+      12,
+      13
+    ],
+    "evolves_from_id": 3118,
+    "has_shiny": false
+  },
+  {
+    "id": 3527,
+    "name": "椰浆布丁",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": 3118,
+    "has_shiny": false
+  },
+  {
+    "id": 3528,
+    "name": "熔岩布丁",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": 3118,
+    "has_shiny": false
+  },
+  {
+    "id": 3529,
+    "name": "号儿鱼",
+    "egg_groups": [
+      7,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3530,
+    "name": "圆号鱼",
+    "egg_groups": [
+      7,
+      13
+    ],
+    "evolves_from_id": 3529,
+    "has_shiny": false
+  },
+  {
+    "id": 3531,
+    "name": "小雪人",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3532,
+    "name": "雪怪",
+    "egg_groups": [],
+    "evolves_from_id": 3531,
+    "has_shiny": false
+  },
+  {
+    "id": 3533,
+    "name": "雪绒鸟",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3534,
+    "name": "斑斑",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3535,
+    "name": "斑枭",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": 3534,
+    "has_shiny": false
+  },
+  {
+    "id": 3536,
+    "name": "乌达",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3537,
+    "name": "迷你乌",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": 3536,
+    "has_shiny": false
+  },
+  {
+    "id": 3538,
+    "name": "乌拉塔",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": 3537,
+    "has_shiny": false
+  },
+  {
+    "id": 3539,
+    "name": "乌达",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3540,
+    "name": "迷你乌",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": 3539,
+    "has_shiny": false
+  },
+  {
+    "id": 3541,
+    "name": "乌拉塔",
+    "egg_groups": [
+      2
+    ],
+    "evolves_from_id": 3540,
+    "has_shiny": false
+  },
+  {
+    "id": 3542,
+    "name": "未完虫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3543,
+    "name": "多灵",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3544,
+    "name": "多灵主",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": 3543,
+    "has_shiny": false
+  },
+  {
+    "id": 3545,
+    "name": "圣剑侍从",
+    "egg_groups": [
+      2,
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3546,
+    "name": "圣剑-X",
+    "egg_groups": [
+      2,
+      15
+    ],
+    "evolves_from_id": 3545,
+    "has_shiny": false
+  },
+  {
+    "id": 3547,
+    "name": "帕帕斯卡",
+    "egg_groups": [
+      5,
+      15
+    ],
+    "evolves_from_id": 3484,
+    "has_shiny": false
+  },
+  {
+    "id": 3548,
+    "name": "小银翼龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3549,
+    "name": "银翼龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3550,
+    "name": "棋棋",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3551,
+    "name": "棋骑士",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3550,
+    "has_shiny": false
+  },
+  {
+    "id": 3552,
+    "name": "棋绮后",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3550,
+    "has_shiny": false
+  },
+  {
+    "id": 3553,
+    "name": "棋齐垒",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3550,
+    "has_shiny": false
+  },
+  {
+    "id": 3554,
+    "name": "棋祈督",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3550,
+    "has_shiny": false
+  },
+  {
+    "id": 3555,
+    "name": "棋棋",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3556,
+    "name": "棋骑士",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3555,
+    "has_shiny": false
+  },
+  {
+    "id": 3557,
+    "name": "棋绮后",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3555,
+    "has_shiny": false
+  },
+  {
+    "id": 3558,
+    "name": "棋齐垒",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3555,
+    "has_shiny": false
+  },
+  {
+    "id": 3559,
+    "name": "棋祈督",
+    "egg_groups": [
+      7
+    ],
+    "evolves_from_id": 3555,
+    "has_shiny": false
+  },
+  {
+    "id": 3560,
+    "name": "乌咩",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3561,
+    "name": "乌角驮驮",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3562,
+    "name": "堇楹苞",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3563,
+    "name": "蔓羽兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3564,
+    "name": "厉毒鸩兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3565,
+    "name": "栗鼠",
+    "egg_groups": [
+      6,
+      10
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3566,
+    "name": "壳栗丝鼠",
+    "egg_groups": [
+      6,
+      10
+    ],
+    "evolves_from_id": 3565,
+    "has_shiny": false
+  },
+  {
+    "id": 3567,
+    "name": "落陨星兔",
+    "egg_groups": [
+      5,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3568,
+    "name": "小黑猫",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3569,
+    "name": "黑猫巫师",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": 3568,
+    "has_shiny": false
+  },
+  {
+    "id": 3570,
+    "name": "河马巴斯",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3571,
+    "name": "黑羽夫人",
+    "egg_groups": [
+      3,
+      5
+    ],
+    "evolves_from_id": 3345,
+    "has_shiny": false
+  },
+  {
+    "id": 3572,
+    "name": "爆焰仔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3573,
+    "name": "爆焰喷喷",
+    "egg_groups": [],
+    "evolves_from_id": 3572,
+    "has_shiny": false
+  },
+  {
+    "id": 3574,
+    "name": "热团团",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3575,
+    "name": "焰米龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3576,
+    "name": "圣凯布米龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3577,
+    "name": "墨鱿士",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3578,
+    "name": "混乱鱿彩",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": 3577,
+    "has_shiny": false
+  },
+  {
+    "id": 3579,
+    "name": "秩序鱿墨",
+    "egg_groups": [
+      10,
+      13
+    ],
+    "evolves_from_id": 3577,
+    "has_shiny": false
+  },
+  {
+    "id": 3580,
+    "name": "利刺毒蝎",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3581,
+    "name": "剧毒魔蝎",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3582,
+    "name": "刺轮砣",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3583,
+    "name": "月亮砣",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": 3582,
+    "has_shiny": false
+  },
+  {
+    "id": 3584,
+    "name": "刺轮砣",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3585,
+    "name": "月亮砣",
+    "egg_groups": [
+      13
+    ],
+    "evolves_from_id": 3584,
+    "has_shiny": false
+  },
+  {
+    "id": 3586,
+    "name": "梦残卷",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3587,
+    "name": "曲率龙卷",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3588,
+    "name": "曲率飞鱼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3589,
+    "name": "玳龟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3590,
+    "name": "玳塔",
+    "egg_groups": [],
+    "evolves_from_id": 3589,
+    "has_shiny": false
+  },
+  {
+    "id": 3591,
+    "name": "十字蝌蚪",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3592,
+    "name": "十字蛙",
+    "egg_groups": [],
+    "evolves_from_id": 3591,
+    "has_shiny": false
+  },
+  {
+    "id": 3593,
+    "name": "深渊蛙",
+    "egg_groups": [],
+    "evolves_from_id": 3592,
+    "has_shiny": false
+  },
+  {
+    "id": 3594,
+    "name": "松仔",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3595,
+    "name": "松叶羊",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3594,
+    "has_shiny": false
+  },
+  {
+    "id": 3596,
+    "name": "针叶巡林",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3595,
+    "has_shiny": false
+  },
+  {
+    "id": 3597,
+    "name": "水滴蛇",
+    "egg_groups": [
+      3,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3598,
+    "name": "水蛇锁",
+    "egg_groups": [
+      3,
+      7
+    ],
+    "evolves_from_id": 3597,
+    "has_shiny": false
+  },
+  {
+    "id": 3599,
+    "name": "游蛇魔使",
+    "egg_groups": [
+      3,
+      7
+    ],
+    "evolves_from_id": 3598,
+    "has_shiny": false
+  },
+  {
+    "id": 3600,
+    "name": "小勇狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3601,
+    "name": "炽焰狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3600,
+    "has_shiny": false
+  },
+  {
+    "id": 3602,
+    "name": "炽心勇狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3601,
+    "has_shiny": false
+  },
+  {
+    "id": 3603,
+    "name": "毛头小蛛",
+    "egg_groups": [
+      4,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3604,
+    "name": "捕尘长绒",
+    "egg_groups": [
+      4,
+      7
+    ],
+    "evolves_from_id": 3603,
+    "has_shiny": false
+  },
+  {
+    "id": 3605,
+    "name": "食尘短绒",
+    "egg_groups": [
+      4,
+      7
+    ],
+    "evolves_from_id": 3603,
+    "has_shiny": false
+  },
+  {
+    "id": 3606,
+    "name": "画精灵",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3607,
+    "name": "画像守护",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3606,
+    "has_shiny": false
+  },
+  {
+    "id": 3608,
+    "name": "画间法师手",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3607,
+    "has_shiny": false
+  },
+  {
+    "id": 3609,
+    "name": "画间沉铁兽",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3607,
+    "has_shiny": false
+  },
+  {
+    "id": 3610,
+    "name": "书魔虫",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3611,
+    "name": "书卷守护",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3610,
+    "has_shiny": false
+  },
+  {
+    "id": 3612,
+    "name": "古卷执政官",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3611,
+    "has_shiny": false
+  },
+  {
+    "id": 3613,
+    "name": "古卷匣魔像",
+    "egg_groups": [
+      2,
+      7
+    ],
+    "evolves_from_id": 3611,
+    "has_shiny": false
+  },
+  {
+    "id": 3614,
+    "name": "嗜光嗡嗡",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3615,
+    "name": "窃光蚊",
+    "egg_groups": [
+      4
+    ],
+    "evolves_from_id": 3614,
+    "has_shiny": true
+  },
+  {
+    "id": 3616,
+    "name": "不咕钟",
+    "egg_groups": [
+      5,
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3617,
+    "name": "溯源钟",
+    "egg_groups": [
+      5,
+      15
+    ],
+    "evolves_from_id": 3616,
+    "has_shiny": false
+  },
+  {
+    "id": 3618,
+    "name": "小箱怪",
+    "egg_groups": [
+      7,
+      15
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3619,
+    "name": "迷迷箱怪",
+    "egg_groups": [
+      7,
+      15
+    ],
+    "evolves_from_id": 3618,
+    "has_shiny": false
+  },
+  {
+    "id": 3620,
+    "name": "学院呱呱",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3621,
+    "name": "古钟蛇",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3622,
+    "name": "寒音蛇",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": 3621,
+    "has_shiny": false
+  },
+  {
+    "id": 3623,
+    "name": "噬影蚕",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3624,
+    "name": "吞噬",
+    "egg_groups": [],
+    "evolves_from_id": 3623,
+    "has_shiny": false
+  },
+  {
+    "id": 3625,
+    "name": "小冥龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3626,
+    "name": "冥古龙",
+    "egg_groups": [],
+    "evolves_from_id": 3625,
+    "has_shiny": false
+  },
+  {
+    "id": 3627,
+    "name": "矮核球",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3628,
+    "name": "星脉兽",
+    "egg_groups": [],
+    "evolves_from_id": 3627,
+    "has_shiny": false
+  },
+  {
+    "id": 3629,
+    "name": "巡天幻星",
+    "egg_groups": [],
+    "evolves_from_id": 3628,
+    "has_shiny": false
+  },
+  {
+    "id": 3630,
+    "name": "地银链",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3631,
+    "name": "地银链",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3632,
+    "name": "地底银鳞",
+    "egg_groups": [],
+    "evolves_from_id": 3630,
+    "has_shiny": false
+  },
+  {
+    "id": 3633,
+    "name": "荆伞兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3634,
+    "name": "荆棘魔伞",
+    "egg_groups": [],
+    "evolves_from_id": 3633,
+    "has_shiny": false
+  },
+  {
+    "id": 3635,
+    "name": "蝶兰花",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3636,
+    "name": "蝶兰花仙",
+    "egg_groups": [],
+    "evolves_from_id": 3635,
+    "has_shiny": false
+  },
+  {
+    "id": 3637,
+    "name": "桃花苞",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3638,
+    "name": "桃胖子",
+    "egg_groups": [],
+    "evolves_from_id": 3637,
+    "has_shiny": false
+  },
+  {
+    "id": 3639,
+    "name": "桃花仙",
+    "egg_groups": [],
+    "evolves_from_id": 3638,
+    "has_shiny": false
+  },
+  {
+    "id": 3640,
+    "name": "菌宝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3641,
+    "name": "竹笙仔",
+    "egg_groups": [],
+    "evolves_from_id": 3640,
+    "has_shiny": false
+  },
+  {
+    "id": 3642,
+    "name": "鬼笔伯爵",
+    "egg_groups": [],
+    "evolves_from_id": 3641,
+    "has_shiny": false
+  },
+  {
+    "id": 3643,
+    "name": "芝芝酥",
+    "egg_groups": [],
+    "evolves_from_id": 3640,
+    "has_shiny": false
+  },
+  {
+    "id": 3644,
+    "name": "药尾灵螈",
+    "egg_groups": [],
+    "evolves_from_id": 3643,
+    "has_shiny": false
+  },
+  {
+    "id": 3645,
+    "name": "三坛枞",
+    "egg_groups": [],
+    "evolves_from_id": 3640,
+    "has_shiny": false
+  },
+  {
+    "id": 3646,
+    "name": "六月星菌",
+    "egg_groups": [],
+    "evolves_from_id": 3645,
+    "has_shiny": false
+  },
+  {
+    "id": 3647,
+    "name": "小红侍",
+    "egg_groups": [],
+    "evolves_from_id": 3640,
+    "has_shiny": false
+  },
+  {
+    "id": 3648,
+    "name": "红膏女爵",
+    "egg_groups": [],
+    "evolves_from_id": 3647,
+    "has_shiny": false
+  },
+  {
+    "id": 3649,
+    "name": "鹿鸣笙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3650,
+    "name": "笙韵鹿灵",
+    "egg_groups": [],
+    "evolves_from_id": 3649,
+    "has_shiny": false
+  },
+  {
+    "id": 3651,
+    "name": "笔童",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3652,
+    "name": "笔仙",
+    "egg_groups": [],
+    "evolves_from_id": 3651,
+    "has_shiny": false
+  },
+  {
+    "id": 3653,
+    "name": "笔圣",
+    "egg_groups": [],
+    "evolves_from_id": 3652,
+    "has_shiny": false
+  },
+  {
+    "id": 3654,
+    "name": "好鳄椰",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3655,
+    "name": "超级鳄椰",
+    "egg_groups": [],
+    "evolves_from_id": 3654,
+    "has_shiny": false
+  },
+  {
+    "id": 3656,
+    "name": "海豚宝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3657,
+    "name": "泡泡豚",
+    "egg_groups": [],
+    "evolves_from_id": 3656,
+    "has_shiny": false
+  },
+  {
+    "id": 3658,
+    "name": "海豚勇士",
+    "egg_groups": [],
+    "evolves_from_id": 3657,
+    "has_shiny": false
+  },
+  {
+    "id": 3659,
+    "name": "加油海葵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3660,
+    "name": "加油蟹",
+    "egg_groups": [],
+    "evolves_from_id": 3659,
+    "has_shiny": false
+  },
+  {
+    "id": 3661,
+    "name": "脆鸣鸟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3662,
+    "name": "警卫鸟",
+    "egg_groups": [],
+    "evolves_from_id": 3661,
+    "has_shiny": false
+  },
+  {
+    "id": 3663,
+    "name": "量风碗",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3664,
+    "name": "测风蝉",
+    "egg_groups": [],
+    "evolves_from_id": 3663,
+    "has_shiny": false
+  },
+  {
+    "id": 3665,
+    "name": "丁丁猫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3666,
+    "name": "猫山咪钥",
+    "egg_groups": [],
+    "evolves_from_id": 3665,
+    "has_shiny": false
+  },
+  {
+    "id": 3667,
+    "name": "仙羽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3668,
+    "name": "一点红",
+    "egg_groups": [],
+    "evolves_from_id": 3667,
+    "has_shiny": false
+  },
+  {
+    "id": 3669,
+    "name": "念珠鹤",
+    "egg_groups": [],
+    "evolves_from_id": 3668,
+    "has_shiny": false
+  },
+  {
+    "id": 3670,
+    "name": "蛐曲儿",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3671,
+    "name": "长翎将军",
+    "egg_groups": [],
+    "evolves_from_id": 3670,
+    "has_shiny": false
+  },
+  {
+    "id": 3672,
+    "name": "曲鸣大将",
+    "egg_groups": [],
+    "evolves_from_id": 3670,
+    "has_shiny": false
+  },
+  {
+    "id": 3673,
+    "name": "荆棘笼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3674,
+    "name": "惩戒巨笼",
+    "egg_groups": [],
+    "evolves_from_id": 3673,
+    "has_shiny": false
+  },
+  {
+    "id": 3675,
+    "name": "守夜烛",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3676,
+    "name": "流明坎德拉",
+    "egg_groups": [],
+    "evolves_from_id": 3675,
+    "has_shiny": false
+  },
+  {
+    "id": 3677,
+    "name": "烟花团",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3678,
+    "name": "烟花伯爵",
+    "egg_groups": [],
+    "evolves_from_id": 3677,
+    "has_shiny": false
+  },
+  {
+    "id": 3679,
+    "name": "蒸汽胖胖",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3680,
+    "name": "蒸汽胖可",
+    "egg_groups": [],
+    "evolves_from_id": 3679,
+    "has_shiny": false
+  },
+  {
+    "id": 3681,
+    "name": "剪影影",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3682,
+    "name": "影子剪纸",
+    "egg_groups": [],
+    "evolves_from_id": 3681,
+    "has_shiny": false
+  },
+  {
+    "id": 3683,
+    "name": "咕咕帽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3684,
+    "name": "咕德帽帽",
+    "egg_groups": [],
+    "evolves_from_id": 3683,
+    "has_shiny": false
+  },
+  {
+    "id": 3685,
+    "name": "幽冥狐",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3686,
+    "name": "魅惑狐仙",
+    "egg_groups": [],
+    "evolves_from_id": 3685,
+    "has_shiny": false
+  },
+  {
+    "id": 3687,
+    "name": "丹凤蓝狐",
+    "egg_groups": [],
+    "evolves_from_id": 3686,
+    "has_shiny": false
+  },
+  {
+    "id": 3688,
+    "name": "蔷薇茧",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3689,
+    "name": "具足秘剑",
+    "egg_groups": [],
+    "evolves_from_id": 3688,
+    "has_shiny": false
+  },
+  {
+    "id": 3690,
+    "name": "问卜兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3691,
+    "name": "卜甲梦龟",
+    "egg_groups": [],
+    "evolves_from_id": 3690,
+    "has_shiny": false
+  },
+  {
+    "id": 3692,
+    "name": "梦杯",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3693,
+    "name": "长生梦兽",
+    "egg_groups": [],
+    "evolves_from_id": 3692,
+    "has_shiny": false
+  },
+  {
+    "id": 3694,
+    "name": "毛线虫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3695,
+    "name": "梭织团团",
+    "egg_groups": [],
+    "evolves_from_id": 3694,
+    "has_shiny": false
+  },
+  {
+    "id": 3696,
+    "name": "针织哼哼",
+    "egg_groups": [],
+    "evolves_from_id": 3694,
+    "has_shiny": false
+  },
+  {
+    "id": 3697,
+    "name": "稻草人",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3698,
+    "name": "稻草守护者",
+    "egg_groups": [],
+    "evolves_from_id": 3697,
+    "has_shiny": false
+  },
+  {
+    "id": 3699,
+    "name": "不香芋",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3700,
+    "name": "去污香芋",
+    "egg_groups": [],
+    "evolves_from_id": 3699,
+    "has_shiny": false
+  },
+  {
+    "id": 3701,
+    "name": "嗜污香芋",
+    "egg_groups": [],
+    "evolves_from_id": 3699,
+    "has_shiny": false
+  },
+  {
+    "id": 3702,
+    "name": "啄疫鸟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3703,
+    "name": "瘟疫医鸟",
+    "egg_groups": [],
+    "evolves_from_id": 3702,
+    "has_shiny": false
+  },
+  {
+    "id": 3704,
+    "name": "优优",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3705,
+    "name": "绒光优优",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3704,
+    "has_shiny": false
+  },
+  {
+    "id": 3706,
+    "name": "蜜果骸",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3707,
+    "name": "半朽蜜果灵",
+    "egg_groups": [],
+    "evolves_from_id": 3706,
+    "has_shiny": false
+  },
+  {
+    "id": 3708,
+    "name": "小鼓象",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3709,
+    "name": "巨鼓象",
+    "egg_groups": [],
+    "evolves_from_id": 3708,
+    "has_shiny": false
+  },
+  {
+    "id": 3710,
+    "name": "咬咬小子",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3711,
+    "name": "胡桃王子",
+    "egg_groups": [],
+    "evolves_from_id": 3710,
+    "has_shiny": false
+  },
+  {
+    "id": 3712,
+    "name": "封印守卫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3713,
+    "name": "封印使者",
+    "egg_groups": [],
+    "evolves_from_id": 3712,
+    "has_shiny": false
+  },
+  {
+    "id": 3714,
+    "name": "上古战龙",
+    "egg_groups": [],
+    "evolves_from_id": 3713,
+    "has_shiny": false
+  },
+  {
+    "id": 3715,
+    "name": "格斗小七",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3716,
+    "name": "糖串串",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3717,
+    "name": "可烤汪",
+    "egg_groups": [],
+    "evolves_from_id": 3716,
+    "has_shiny": false
+  },
+  {
+    "id": 3718,
+    "name": "足尖元件",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3719,
+    "name": "离心舞者",
+    "egg_groups": [],
+    "evolves_from_id": 3718,
+    "has_shiny": false
+  },
+  {
+    "id": 3720,
+    "name": "松仔",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3721,
+    "name": "松叶羊",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3720,
+    "has_shiny": false
+  },
+  {
+    "id": 3722,
+    "name": "针叶巡林",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3721,
+    "has_shiny": false
+  },
+  {
+    "id": 3723,
+    "name": "水滴蛇",
+    "egg_groups": [
+      3,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3724,
+    "name": "水蛇锁",
+    "egg_groups": [
+      3,
+      7
+    ],
+    "evolves_from_id": 3723,
+    "has_shiny": false
+  },
+  {
+    "id": 3725,
+    "name": "游蛇魔使",
+    "egg_groups": [
+      3,
+      7
+    ],
+    "evolves_from_id": 3724,
+    "has_shiny": false
+  },
+  {
+    "id": 3726,
+    "name": "小勇狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3727,
+    "name": "炽焰狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3726,
+    "has_shiny": false
+  },
+  {
+    "id": 3728,
+    "name": "炽心勇狮",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3727,
+    "has_shiny": false
+  },
+  {
+    "id": 3729,
+    "name": "猴唛仔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3730,
+    "name": "音碟吼",
+    "egg_groups": [],
+    "evolves_from_id": 3729,
+    "has_shiny": false
+  },
+  {
+    "id": 3731,
+    "name": "骨朵鸟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3732,
+    "name": "紫花雀",
+    "egg_groups": [],
+    "evolves_from_id": 3731,
+    "has_shiny": false
+  },
+  {
+    "id": 3733,
+    "name": "钨丝贝贝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3734,
+    "name": "辉光幕机",
+    "egg_groups": [],
+    "evolves_from_id": 3733,
+    "has_shiny": false
+  },
+  {
+    "id": 3735,
+    "name": "机墓方舟",
+    "egg_groups": [],
+    "evolves_from_id": 3734,
+    "has_shiny": false
+  },
+  {
+    "id": 3736,
+    "name": "炫光迪迪",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3737,
+    "name": "​​霹雳迪迪",
+    "egg_groups": [],
+    "evolves_from_id": 3736,
+    "has_shiny": false
+  },
+  {
+    "id": 3738,
+    "name": "小怂猫",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3739,
+    "name": "怒目怂猫",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": 3738,
+    "has_shiny": false
+  },
+  {
+    "id": 3740,
+    "name": "方方狐",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3741,
+    "name": "狐脸擦擦",
+    "egg_groups": [
+      6,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3742,
+    "name": "鸭吉吉",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3743,
+    "name": "加油蟹",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 3744,
+    "name": "火红尾",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": true
+  },
+  {
+    "id": 3745,
+    "name": "雅丹鬃",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": 3744,
+    "has_shiny": false
+  },
+  {
+    "id": 3746,
+    "name": "雪影娃娃·春日",
+    "egg_groups": [
+      7,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4005,
+    "name": "圣水守护",
+    "egg_groups": [],
+    "evolves_from_id": 3005,
+    "has_shiny": false
+  },
+  {
+    "id": 4006,
+    "name": "烈火战神",
+    "egg_groups": [],
+    "evolves_from_id": 3006,
+    "has_shiny": false
+  },
+  {
+    "id": 4007,
+    "name": "叶冕魔力猫",
+    "egg_groups": [],
+    "evolves_from_id": 3007,
+    "has_shiny": false
+  },
+  {
+    "id": 4011,
+    "name": "恶魔狼王",
+    "egg_groups": [],
+    "evolves_from_id": 3011,
+    "has_shiny": false
+  },
+  {
+    "id": 4012,
+    "name": "鸭吉吉国王",
+    "egg_groups": [],
+    "evolves_from_id": 3012,
+    "has_shiny": false
+  },
+  {
+    "id": 4019,
+    "name": "蹦蹦果",
+    "egg_groups": [],
+    "evolves_from_id": 3019,
+    "has_shiny": false
+  },
+  {
+    "id": 4020,
+    "name": "千棘海针",
+    "egg_groups": [],
+    "evolves_from_id": 3332,
+    "has_shiny": false
+  },
+  {
+    "id": 4021,
+    "name": "女王蜂",
+    "egg_groups": [],
+    "evolves_from_id": 3157,
+    "has_shiny": false
+  },
+  {
+    "id": 4022,
+    "name": "奇丽果",
+    "egg_groups": [],
+    "evolves_from_id": 3031,
+    "has_shiny": false
+  },
+  {
+    "id": 4050,
+    "name": "首领-记忆石",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4064,
+    "name": "幻影荆棘",
+    "egg_groups": [],
+    "evolves_from_id": 3064,
+    "has_shiny": false
+  },
+  {
+    "id": 4069,
+    "name": "首领-锤头鹳",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4070,
+    "name": "首领-火羽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4071,
+    "name": "首领-蒲公英",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4072,
+    "name": "迷嶂布莱克",
+    "egg_groups": [],
+    "evolves_from_id": 3105,
+    "has_shiny": false
+  },
+  {
+    "id": 4073,
+    "name": "神谕鲨",
+    "egg_groups": [],
+    "evolves_from_id": 3117,
+    "has_shiny": false
+  },
+  {
+    "id": 4074,
+    "name": "霜翼领主",
+    "egg_groups": [],
+    "evolves_from_id": 3037,
+    "has_shiny": false
+  },
+  {
+    "id": 4075,
+    "name": "首领-罗隐",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4076,
+    "name": "伊里斯",
+    "egg_groups": [],
+    "evolves_from_id": 3063,
+    "has_shiny": false
+  },
+  {
+    "id": 4077,
+    "name": "噜噜",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4078,
+    "name": "风暴战犬",
+    "egg_groups": [],
+    "evolves_from_id": 3071,
+    "has_shiny": false
+  },
+  {
+    "id": 4079,
+    "name": "钻石蜗",
+    "egg_groups": [],
+    "evolves_from_id": 3308,
+    "has_shiny": false
+  },
+  {
+    "id": 4080,
+    "name": "首领-瞌睡王",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4081,
+    "name": "首领-獠牙猪",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4082,
+    "name": "首领-魔眷鸟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4083,
+    "name": "黑猫密探",
+    "egg_groups": [],
+    "evolves_from_id": 3569,
+    "has_shiny": false
+  },
+  {
+    "id": 4084,
+    "name": "祭礼巨像",
+    "egg_groups": [],
+    "evolves_from_id": 3111,
+    "has_shiny": false
+  },
+  {
+    "id": 4085,
+    "name": "雪影冰灵",
+    "egg_groups": [],
+    "evolves_from_id": 3123,
+    "has_shiny": false
+  },
+  {
+    "id": 4086,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 4087,
+    "name": "奇梦咪",
+    "egg_groups": [],
+    "evolves_from_id": 3375,
+    "has_shiny": false
+  },
+  {
+    "id": 4088,
+    "name": "波普鹿",
+    "egg_groups": [],
+    "evolves_from_id": 3359,
+    "has_shiny": false
+  },
+  {
+    "id": 4089,
+    "name": "圣剑骑士",
+    "egg_groups": [],
+    "evolves_from_id": 3546,
+    "has_shiny": false
+  },
+  {
+    "id": 4090,
+    "name": "伊兰龙",
+    "egg_groups": [],
+    "evolves_from_id": 3412,
+    "has_shiny": false
+  },
+  {
+    "id": 4091,
+    "name": "裘卡老师",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4092,
+    "name": "首领-厉毒修萝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4093,
+    "name": "公平鸽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4094,
+    "name": "琉璃君主",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4095,
+    "name": "饮雪狂兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4096,
+    "name": "奇梦咪",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4097,
+    "name": "奇梦咪",
+    "egg_groups": [],
+    "evolves_from_id": 4096,
+    "has_shiny": false
+  },
+  {
+    "id": 4098,
+    "name": "雪影冰灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4099,
+    "name": "雪影冰灵",
+    "egg_groups": [],
+    "evolves_from_id": 4098,
+    "has_shiny": false
+  },
+  {
+    "id": 4100,
+    "name": "古齿帝牙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4101,
+    "name": "暮风隐者",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4102,
+    "name": "淤泥乌泽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 4103,
+    "name": "卷发巨獭",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 5001,
+    "name": "钻石蜗",
+    "egg_groups": [],
+    "evolves_from_id": 3308,
+    "has_shiny": false
+  },
+  {
+    "id": 5002,
+    "name": "彩虹独角兽",
+    "egg_groups": [],
+    "evolves_from_id": 3063,
+    "has_shiny": false
+  },
+  {
+    "id": 5003,
+    "name": "叶冕魔力猫",
+    "egg_groups": [],
+    "evolves_from_id": 3007,
+    "has_shiny": false
+  },
+  {
+    "id": 5004,
+    "name": "蹦蹦果",
+    "egg_groups": [],
+    "evolves_from_id": 3019,
+    "has_shiny": false
+  },
+  {
+    "id": 5005,
+    "name": "奇丽果",
+    "egg_groups": [],
+    "evolves_from_id": 3031,
+    "has_shiny": false
+  },
+  {
+    "id": 5006,
+    "name": "鸭吉吉国王",
+    "egg_groups": [],
+    "evolves_from_id": 3012,
+    "has_shiny": false
+  },
+  {
+    "id": 5007,
+    "name": "黑猫密探",
+    "egg_groups": [],
+    "evolves_from_id": 3569,
+    "has_shiny": false
+  },
+  {
+    "id": 5008,
+    "name": "迷嶂布莱克",
+    "egg_groups": [],
+    "evolves_from_id": 3105,
+    "has_shiny": false
+  },
+  {
+    "id": 5009,
+    "name": "祭礼巨像",
+    "egg_groups": [],
+    "evolves_from_id": 3111,
+    "has_shiny": false
+  },
+  {
+    "id": 5010,
+    "name": "圣水守护",
+    "egg_groups": [],
+    "evolves_from_id": 3005,
+    "has_shiny": false
+  },
+  {
+    "id": 5011,
+    "name": "神谕鲨",
+    "egg_groups": [],
+    "evolves_from_id": 3117,
+    "has_shiny": false
+  },
+  {
+    "id": 5012,
+    "name": "千棘海针",
+    "egg_groups": [],
+    "evolves_from_id": 3332,
+    "has_shiny": false
+  },
+  {
+    "id": 5013,
+    "name": "雪影冰灵",
+    "egg_groups": [],
+    "evolves_from_id": 3123,
+    "has_shiny": false
+  },
+  {
+    "id": 5014,
+    "name": "霜翼领主",
+    "egg_groups": [],
+    "evolves_from_id": 3037,
+    "has_shiny": false
+  },
+  {
+    "id": 5015,
+    "name": "女王蜂",
+    "egg_groups": [],
+    "evolves_from_id": 3157,
+    "has_shiny": false
+  },
+  {
+    "id": 5016,
+    "name": "恶魔狼王",
+    "egg_groups": [],
+    "evolves_from_id": 3011,
+    "has_shiny": false
+  },
+  {
+    "id": 5017,
+    "name": "烈火战神",
+    "egg_groups": [],
+    "evolves_from_id": 3006,
+    "has_shiny": false
+  },
+  {
+    "id": 5018,
+    "name": "风暴战犬",
+    "egg_groups": [],
+    "evolves_from_id": 3071,
+    "has_shiny": false
+  },
+  {
+    "id": 5019,
+    "name": "幻影荆棘",
+    "egg_groups": [],
+    "evolves_from_id": 3064,
+    "has_shiny": false
+  },
+  {
+    "id": 5020,
+    "name": "波普鹿",
+    "egg_groups": [],
+    "evolves_from_id": 3359,
+    "has_shiny": false
+  },
+  {
+    "id": 5021,
+    "name": "圣剑骑士",
+    "egg_groups": [],
+    "evolves_from_id": 3546,
+    "has_shiny": false
+  },
+  {
+    "id": 5022,
+    "name": "伊兰龙",
+    "egg_groups": [],
+    "evolves_from_id": 3412,
+    "has_shiny": false
+  },
+  {
+    "id": 5023,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5024,
+    "name": "奇梦咪",
+    "egg_groups": [],
+    "evolves_from_id": 3375,
+    "has_shiny": false
+  },
+  {
+    "id": 5025,
+    "name": "圣光迪莫",
+    "egg_groups": [],
+    "evolves_from_id": 3004,
+    "has_shiny": false
+  },
+  {
+    "id": 5026,
+    "name": "圣草迪莫",
+    "egg_groups": [],
+    "evolves_from_id": 3004,
+    "has_shiny": false
+  },
+  {
+    "id": 5027,
+    "name": "圣火迪莫",
+    "egg_groups": [],
+    "evolves_from_id": 3004,
+    "has_shiny": false
+  },
+  {
+    "id": 5028,
+    "name": "圣水迪莫",
+    "egg_groups": [],
+    "evolves_from_id": 3004,
+    "has_shiny": false
+  },
+  {
+    "id": 5029,
+    "name": "千棘海针",
+    "egg_groups": [],
+    "evolves_from_id": 3332,
+    "has_shiny": false
+  },
+  {
+    "id": 5030,
+    "name": "霜翼领主",
+    "egg_groups": [],
+    "evolves_from_id": 3037,
+    "has_shiny": false
+  },
+  {
+    "id": 5031,
+    "name": "霜翼领主",
+    "egg_groups": [],
+    "evolves_from_id": 3037,
+    "has_shiny": false
+  },
+  {
+    "id": 5032,
+    "name": "霜翼领主",
+    "egg_groups": [],
+    "evolves_from_id": 3037,
+    "has_shiny": false
+  },
+  {
+    "id": 5033,
+    "name": "蹦蹦果",
+    "egg_groups": [],
+    "evolves_from_id": 3019,
+    "has_shiny": false
+  },
+  {
+    "id": 5034,
+    "name": "蹦蹦果",
+    "egg_groups": [],
+    "evolves_from_id": 3019,
+    "has_shiny": false
+  },
+  {
+    "id": 5035,
+    "name": "蹦蹦果",
+    "egg_groups": [],
+    "evolves_from_id": 3019,
+    "has_shiny": false
+  },
+  {
+    "id": 5036,
+    "name": "鸭吉吉国王",
+    "egg_groups": [],
+    "evolves_from_id": 3012,
+    "has_shiny": false
+  },
+  {
+    "id": 5037,
+    "name": "鸭吉吉国王",
+    "egg_groups": [],
+    "evolves_from_id": 3012,
+    "has_shiny": false
+  },
+  {
+    "id": 5038,
+    "name": "鸭吉吉国王",
+    "egg_groups": [],
+    "evolves_from_id": 3012,
+    "has_shiny": false
+  },
+  {
+    "id": 5039,
+    "name": "鸭吉吉国王",
+    "egg_groups": [],
+    "evolves_from_id": 3012,
+    "has_shiny": false
+  },
+  {
+    "id": 5040,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5041,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5042,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5043,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5044,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5045,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5046,
+    "name": "棋契陛下",
+    "egg_groups": [],
+    "evolves_from_id": 3551,
+    "has_shiny": false
+  },
+  {
+    "id": 5047,
+    "name": "钻石蜗",
+    "egg_groups": [],
+    "evolves_from_id": 3308,
+    "has_shiny": false
+  },
+  {
+    "id": 5048,
+    "name": "钻石蜗",
+    "egg_groups": [],
+    "evolves_from_id": 3308,
+    "has_shiny": false
+  },
+  {
+    "id": 5049,
+    "name": "钻石蜗",
+    "egg_groups": [],
+    "evolves_from_id": 3308,
+    "has_shiny": false
+  },
+  {
+    "id": 5050,
+    "name": "钻石蜗",
+    "egg_groups": [],
+    "evolves_from_id": 3308,
+    "has_shiny": false
+  },
+  {
+    "id": 5051,
+    "name": "钻石蜗",
+    "egg_groups": [],
+    "evolves_from_id": 3308,
+    "has_shiny": false
+  },
+  {
+    "id": 5052,
+    "name": "鸭吉吉国王",
+    "egg_groups": [],
+    "evolves_from_id": 3012,
+    "has_shiny": false
+  },
+  {
+    "id": 6001,
+    "name": "小咪",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6002,
+    "name": "卡图斯（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6003,
+    "name": "卡图斯（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6004,
+    "name": "卡图斯（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6005,
+    "name": "戴蒙德（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6006,
+    "name": "戴蒙德（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6007,
+    "name": "戴蒙德（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6008,
+    "name": "阿克娅（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6009,
+    "name": "阿克娅（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6010,
+    "name": "阿克娅（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6011,
+    "name": "朵蕾丝（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6012,
+    "name": "朵蕾丝（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6013,
+    "name": "朵蕾丝（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6014,
+    "name": "希尔（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6015,
+    "name": "希尔（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6016,
+    "name": "希尔（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6017,
+    "name": "希巴尔巴（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6018,
+    "name": "希巴尔巴（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6019,
+    "name": "希巴尔巴（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6020,
+    "name": "艾诺菈（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6021,
+    "name": "艾诺菈（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6022,
+    "name": "艾诺菈（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6023,
+    "name": "斯皮德（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6024,
+    "name": "斯皮德（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6025,
+    "name": "斯皮德（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6026,
+    "name": "玛努斯（初级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6027,
+    "name": "玛努斯（中级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 6028,
+    "name": "玛努斯（高级）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7001,
+    "name": "恶魔狼王",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7002,
+    "name": "恶魔狼王",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7003,
+    "name": "恶魔狼王",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7004,
+    "name": "恶魔狼王",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7005,
+    "name": "圣剑骑士",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7006,
+    "name": "圣剑骑士",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7007,
+    "name": "圣剑骑士",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 7008,
+    "name": "圣剑骑士",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8001,
+    "name": "魔力喵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8002,
+    "name": "道馆绿草精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8003,
+    "name": "道馆魔草巫灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8004,
+    "name": "道馆丢丢",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8005,
+    "name": "道馆记忆石",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8006,
+    "name": "道馆幽影树",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8007,
+    "name": "迪莫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8008,
+    "name": "珂赛特老师",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8009,
+    "name": "药炉",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8010,
+    "name": "希露德老师",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8011,
+    "name": "翼龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8012,
+    "name": "记忆石",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8013,
+    "name": "冥古龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8014,
+    "name": "矮核球",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8015,
+    "name": "星脉兽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8016,
+    "name": "巡天幻星",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8017,
+    "name": "冥古龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8018,
+    "name": "裘卡老师",
+    "egg_groups": [
+      6,
+      7
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8019,
+    "name": "珂赛特老师",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8020,
+    "name": "希露德老师",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8021,
+    "name": "迷失的雪巨人",
+    "egg_groups": [
+      2,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8022,
+    "name": "斯维托维德",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8023,
+    "name": "特塞克",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 8024,
+    "name": "古路尼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9801,
+    "name": "鸭吉吉_普通",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9802,
+    "name": "鸭吉吉_草",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9803,
+    "name": "鸭吉吉_火",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9804,
+    "name": "鸭吉吉_水",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9805,
+    "name": "鸭吉吉_光",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9806,
+    "name": "鸭吉吉_地",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9807,
+    "name": "鸭吉吉_冰",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9808,
+    "name": "鸭吉吉_龙",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9809,
+    "name": "鸭吉吉_电",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9810,
+    "name": "鸭吉吉_毒",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9811,
+    "name": "鸭吉吉_虫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9812,
+    "name": "鸭吉吉_武",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9813,
+    "name": "鸭吉吉_翼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9814,
+    "name": "鸭吉吉_萌",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9815,
+    "name": "鸭吉吉_幽",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9816,
+    "name": "鸭吉吉_恶魔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9817,
+    "name": "鸭吉吉_机械",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9818,
+    "name": "鸭吉吉_幻",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9819,
+    "name": "木桶",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9901,
+    "name": "测试喵喵1",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9902,
+    "name": "测试水蓝蓝1",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9903,
+    "name": "测试火花1",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9904,
+    "name": "测试喵喵2",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9905,
+    "name": "测试水蓝蓝2",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9906,
+    "name": "测试火花2（百分百闪避）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9907,
+    "name": "无敌魔力猫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9908,
+    "name": "无敌焰火",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9909,
+    "name": "无敌水蓝蓝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9910,
+    "name": "被克制测试喵喵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9911,
+    "name": "抵抗测试喵喵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9912,
+    "name": "大世界BUFF喵喵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9913,
+    "name": "大世界BUFF水蓝蓝",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9914,
+    "name": "大世界BUFF火花",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9919,
+    "name": "幻化蓝掌测试",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9920,
+    "name": "技能鸭吉吉配置版",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9940,
+    "name": "测试AI鸭吉吉1",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9941,
+    "name": "搭配的鸭吉吉",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9987,
+    "name": "技能鸭吉吉5(布石）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9988,
+    "name": "技能魔力喵4",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9989,
+    "name": "技能魔力喵3",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9990,
+    "name": "技能魔力喵2",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9991,
+    "name": "技能魔力喵1",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9992,
+    "name": "不死鸭吉吉",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9993,
+    "name": "技能音速犬4",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9994,
+    "name": "技能鸭吉吉3",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9995,
+    "name": "技能鸭吉吉2",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9996,
+    "name": "木桩鸭吉吉",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9997,
+    "name": "技能鸭吉吉1（贪吃）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9998,
+    "name": "击退鸭吉吉",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 9999,
+    "name": "无敌鸭吉吉(测试用)",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10000,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10001,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10002,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10003,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10004,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10005,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10006,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10007,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10008,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10009,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10010,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10011,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10012,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10013,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10014,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10015,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10016,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10017,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10018,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10019,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10020,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10021,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 10022,
+    "name": "随机精灵",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103004,
+    "name": "迪莫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103005,
+    "name": "圣光迪莫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103011,
+    "name": "恶魔狼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103012,
+    "name": "恶魔狼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103061,
+    "name": "小灵面",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103142,
+    "name": "小夜",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103143,
+    "name": "紫夜",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103149,
+    "name": "空空颅",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 103154,
+    "name": "裘洛",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140001,
+    "name": "20级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140002,
+    "name": "25级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140003,
+    "name": "35级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140004,
+    "name": "40级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140005,
+    "name": "45级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140006,
+    "name": "50级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140007,
+    "name": "55级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 140008,
+    "name": "60级水桶模板",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440302,
+    "name": "库伦boss战——恶魔叮",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440303,
+    "name": "库伦booss战——雪蛮人",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440304,
+    "name": "库伦boss战——库多西",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440305,
+    "name": "A1最终战-吞噬",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440306,
+    "name": "A1最终战-吞噬2",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440307,
+    "name": "麦克达克",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440308,
+    "name": "伊里斯",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440309,
+    "name": "法瑞莎莎",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440310,
+    "name": "蛰蛰",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440311,
+    "name": "锅盔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440312,
+    "name": "芙拉沃",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440313,
+    "name": "狂风",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440314,
+    "name": "微风",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440315,
+    "name": "龙卷风",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440316,
+    "name": "小石头",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440317,
+    "name": "葛朗台",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 440318,
+    "name": "老大",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000150,
+    "name": "技能鸭吉吉5（水灵）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000151,
+    "name": "首领-魔力猫",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000152,
+    "name": "首领-恶魔狼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000153,
+    "name": "首领-奇丽花",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000154,
+    "name": "首领-布克棱岩",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000155,
+    "name": "首领-岚鸟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000156,
+    "name": "首领-千棘盔",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000157,
+    "name": "首领-花魁蜂后",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000158,
+    "name": "首领-伊里斯",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000159,
+    "name": "首领-恶魔狼",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000160,
+    "name": "首领-音速犬",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000161,
+    "name": "首领-蹦蹦花",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000162,
+    "name": "首领-晶石蜗",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000163,
+    "name": "首领-瞌睡王",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000164,
+    "name": "首领-獠牙猪",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000165,
+    "name": "首领-魔眷鸟",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000166,
+    "name": "首领-仪式巨像",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000167,
+    "name": "法瑞莎莎",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 13000168,
+    "name": "麦克达克",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 14000001,
+    "name": "果冻-剧情变形用",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 14000002,
+    "name": "自动变形测试-斑斑",
+    "egg_groups": [
+      5
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 15000001,
+    "name": "斑斑 - （玩法用）",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 16000001,
+    "name": "春团-B1小游戏变形用",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 16000002,
+    "name": "厉毒修萝-B1小游戏变形用",
+    "egg_groups": [],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 16000003,
+    "name": "地鼠-A2拾遗变形任务用",
+    "egg_groups": [
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 17000001,
+    "name": "小帕尔-变形测试用",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 17000002,
+    "name": "帕尔萨斯-变形测试用",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 17000003,
+    "name": "龙息帕尔-变形测试用",
+    "egg_groups": [
+      1
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 17000004,
+    "name": "石肤蜥-极化钝化测试用",
+    "egg_groups": [
+      3,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 18000001,
+    "name": "化蝶",
+    "egg_groups": [
+      4,
+      10
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 18000002,
+    "name": "寒音蛇",
+    "egg_groups": [
+      3,
+      6
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 18000003,
+    "name": "武者鸡",
+    "egg_groups": [
+      5,
+      9
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  },
+  {
+    "id": 18000004,
+    "name": "嘟嘟煲",
+    "egg_groups": [
+      7,
+      11
+    ],
+    "evolves_from_id": null,
+    "has_shiny": false
+  }
+]
