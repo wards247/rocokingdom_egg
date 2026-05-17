@@ -1155,6 +1155,100 @@
     exportPlacementBtn.addEventListener('click', exportPlacementImage);
     nestCountInput.addEventListener('input', refreshUI);
     nestCountInput.addEventListener('change', refreshUI);
+    // ==================== 配置导入/导出 ====================
+    function exportConfig() {
+        const config = {
+            nestCount: getNestTotal(),
+            females: [],
+            males: []
+        };
+        for (let i = 0; i < petIds.length; i++) {
+            if (femaleCounts[i] > 0) {
+                config.females.push({ id: petIds[i], name: petNames[i], count: femaleCounts[i] });
+            }
+            if (maleStock[i] > 0) {
+                config.males.push({ id: petIds[i], name: petNames[i], count: maleStock[i] });
+            }
+        }
+        const blob = new Blob([JSON.stringify(config, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = '配窝配置.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+
+    function importConfig(file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            try {
+                const config = JSON.parse(e.target.result);
+                // 清空现有数据
+                femaleCounts.fill(0);
+                maleStock.fill(0);
+                femaleCheckboxStates.fill(false);
+                maleCheckboxStates.fill(false);
+
+                // 设置窝数
+                if (typeof config.nestCount === 'number' && config.nestCount >= 1 && config.nestCount <= 10) {
+                    nestCountInput.value = config.nestCount;
+                }
+
+                // 映射ID到索引
+                const idToIndex = new Map();
+                petIds.forEach((id, idx) => idToIndex.set(id, idx));
+
+                // 填充雌性
+                if (Array.isArray(config.females)) {
+                    for (const f of config.females) {
+                        const idx = idToIndex.get(f.id);
+                        if (idx !== undefined && typeof f.count === 'number' && f.count > 0) {
+                            const maxF = getMaxFemales();
+                            const currentTotal = getFemaleTotal();
+                            const allowed = Math.min(f.count, maxF - currentTotal);
+                            if (allowed > 0) {
+                                femaleCounts[idx] = allowed;
+                                femaleCheckboxStates[idx] = true;
+                            }
+                        }
+                    }
+                }
+
+                // 填充雄性
+                if (Array.isArray(config.males)) {
+                    for (const m of config.males) {
+                        const idx = idToIndex.get(m.id);
+                        if (idx !== undefined && typeof m.count === 'number' && m.count > 0) {
+                            maleStock[idx] = m.count;
+                            maleCheckboxStates[idx] = true;
+                        }
+                    }
+                }
+
+                refreshUI();
+                globalMsg.innerHTML = '<div class="info">✅ 配置已成功导入</div>';
+            } catch (err) {
+                globalMsg.innerHTML = '<div class="warning">❌ 配置文件格式错误</div>';
+            }
+        };
+        reader.readAsText(file);
+    }
+
+    // 绑定导出/导入按钮
+    document.getElementById('exportConfigBtn').addEventListener('click', exportConfig);
+    document.getElementById('importConfigBtn').addEventListener('click', () => {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = (e) => {
+            const file = e.target.files[0];
+            if (file) importConfig(file);
+        };
+        input.click();
+    });
 
     // 启动
     const loaded = await loadPetsJSON();
