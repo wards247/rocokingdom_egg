@@ -24,7 +24,7 @@
     // ==================== 数据加载 ====================
     async function loadPetsJSON() {
         try {
-            const resp = await fetch('./data/Pets.json?t=' + Date.now());
+            const resp = await fetch('./data/pets.json?t=' + Date.now());
             if (!resp.ok) throw new Error('pets.json 加载失败');
             const pets = await resp.json();
             petIds = pets.map(p => p.id);
@@ -259,7 +259,6 @@
                 input.blur();
             }
         });
-
     }
 
     // ==================== DOM 元素 ====================
@@ -298,99 +297,93 @@
 
     // ==================== 模态框与搜索 ====================
     function renderSearchResults(results) {
-    const container = document.getElementById('searchResults');
-    container.innerHTML = '';
-    if (results.length === 0) {
-        container.innerHTML = '<div style="text-align:center;color:#999;">无匹配精灵</div>';
-        return;
-    }
-    results.sort((a, b) => petIds[a] - petIds[b]);
-    for (const idx of results) {
-        const div = document.createElement('div');
-        div.className = 'search-result-item';
-
-        // ---------- 新增：判断是否不可孵蛋 ----------
-        const isHatchable = !eggGroups[idx].includes(1);   // 蛋组包含1 → 不可孵蛋
-
-        const left = document.createElement('div');
-        left.className = 'left-info';
-        const nameSpan = document.createElement('span');
-        nameSpan.className = 'pet-name';
-        nameSpan.textContent = petNames[idx];
-        left.appendChild(nameSpan);
-
-        // 不可孵蛋提示
-        if (!isHatchable) {
-            const badSpan = document.createElement('span');
-            badSpan.style.color = '#d9534f';
-            badSpan.style.fontSize = '0.8rem';
-            badSpan.style.marginLeft = '6px';
-            badSpan.textContent = '🚫不可孵蛋';
-            left.appendChild(badSpan);
+        const container = document.getElementById('searchResults');
+        container.innerHTML = '';
+        if (results.length === 0) {
+            container.innerHTML = '<div style="text-align:center;color:#999;">无匹配精灵</div>';
+            return;
         }
+        results.sort((a, b) => petIds[a] - petIds[b]);
+        for (const idx of results) {
+            const div = document.createElement('div');
+            div.className = 'search-result-item';
 
-        // 数量控件
-        const qtyDiv = document.createElement('div');
-        qtyDiv.className = 'qty-ctrl';
-        const btnMinus = document.createElement('button');
-        btnMinus.textContent = '−';
-        const qtyInput = document.createElement('input');
-        qtyInput.type = 'number';
+            const isHatchable = !eggGroups[idx].includes(1);
 
-        // 不可孵蛋时强制置零并禁用所有控件
-        if (!isHatchable) {
-            modalTempCounts[idx] = 0;          // 强制库存为零
-            qtyInput.value = 0;
-            qtyInput.disabled = true;
-            btnMinus.disabled = true;
-        } else {
-            qtyInput.value = modalTempCounts[idx] || 0;
-        }
+            const left = document.createElement('div');
+            left.className = 'left-info';
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'pet-name';
+            nameSpan.textContent = petNames[idx];
+            left.appendChild(nameSpan);
 
-        qtyInput.min = 0;
-        qtyInput.max = modalType === 'female' ? modalMaxFemales : 99;
-        qtyInput.step = 1;
-        const btnPlus = document.createElement('button');
-        btnPlus.textContent = '+';
-
-        // 不可孵蛋时禁用加号按钮
-        if (!isHatchable) btnPlus.disabled = true;
-
-        const updateQty = (newVal) => {
-            // 不可孵蛋时不允许任何修改
-            if (!isHatchable) return;
-            let val = Math.max(0, parseInt(newVal) || 0);
-            if (modalType === 'female') {
-                const currentTotal = Object.values(modalTempCounts).reduce((s, v) => s + v, 0);
-                const other = currentTotal - (modalTempCounts[idx] || 0);
-                val = Math.min(val, modalMaxFemales - other);
+            if (!isHatchable) {
+                const badSpan = document.createElement('span');
+                badSpan.style.color = '#d9534f';
+                badSpan.style.fontSize = '0.8rem';
+                badSpan.style.marginLeft = '6px';
+                badSpan.textContent = '🚫不可孵蛋';
+                left.appendChild(badSpan);
             }
-            modalTempCounts[idx] = val;
-            qtyInput.value = val;
-        };
-        btnMinus.addEventListener('click', () => updateQty((modalTempCounts[idx] || 0) - 1));
-        btnPlus.addEventListener('click', () => updateQty((modalTempCounts[idx] || 0) + 1));
-        qtyInput.addEventListener('change', () => updateQty(parseInt(qtyInput.value) || 0));
 
-        qtyDiv.appendChild(btnMinus);
-        qtyDiv.appendChild(qtyInput);
-        qtyDiv.appendChild(btnPlus);
-        left.appendChild(qtyDiv);
-        div.appendChild(left);
+            const qtyDiv = document.createElement('div');
+            qtyDiv.className = 'qty-ctrl';
+            const btnMinus = document.createElement('button');
+            btnMinus.textContent = '−';
+            const qtyInput = document.createElement('input');
+            qtyInput.type = 'number';
 
-        const groupsDiv = document.createElement('div');
-        groupsDiv.className = 'groups';
-        const groups = eggGroups[idx];
-        for (const g of groups) {
-            const badge = document.createElement('span');
-            badge.className = 'group-badge';
-            badge.textContent = groupNames[g] || g;
-            groupsDiv.appendChild(badge);
+            if (!isHatchable) {
+                modalTempCounts[idx] = 0;
+                qtyInput.value = 0;
+                qtyInput.disabled = true;
+                btnMinus.disabled = true;
+            } else {
+                qtyInput.value = modalTempCounts[idx] || 0;
+            }
+
+            qtyInput.min = 0;
+            qtyInput.max = modalType === 'female' ? modalMaxFemales : 99;
+            qtyInput.step = 1;
+            const btnPlus = document.createElement('button');
+            btnPlus.textContent = '+';
+
+            if (!isHatchable) btnPlus.disabled = true;
+
+            const updateQty = (newVal) => {
+                if (!isHatchable) return;
+                let val = Math.max(0, parseInt(newVal) || 0);
+                if (modalType === 'female') {
+                    const currentTotal = Object.values(modalTempCounts).reduce((s, v) => s + v, 0);
+                    const other = currentTotal - (modalTempCounts[idx] || 0);
+                    val = Math.min(val, modalMaxFemales - other);
+                }
+                modalTempCounts[idx] = val;
+                qtyInput.value = val;
+            };
+            btnMinus.addEventListener('click', () => updateQty((modalTempCounts[idx] || 0) - 1));
+            btnPlus.addEventListener('click', () => updateQty((modalTempCounts[idx] || 0) + 1));
+            qtyInput.addEventListener('change', () => updateQty(parseInt(qtyInput.value) || 0));
+
+            qtyDiv.appendChild(btnMinus);
+            qtyDiv.appendChild(qtyInput);
+            qtyDiv.appendChild(btnPlus);
+            left.appendChild(qtyDiv);
+            div.appendChild(left);
+
+            const groupsDiv = document.createElement('div');
+            groupsDiv.className = 'groups';
+            const groups = eggGroups[idx];
+            for (const g of groups) {
+                const badge = document.createElement('span');
+                badge.className = 'group-badge';
+                badge.textContent = groupNames[g] || g;
+                groupsDiv.appendChild(badge);
+            }
+            div.appendChild(groupsDiv);
+            container.appendChild(div);
         }
-        div.appendChild(groupsDiv);
-        container.appendChild(div);
     }
-}
 
     function showAllShinyBaseForms() {
         const candidates = [];
@@ -699,10 +692,29 @@
         const maleSpeciesIdx = {};
         allMaleSlots.forEach((m, i) => { if (!maleSpeciesIdx[m.species]) maleSpeciesIdx[m.species] = []; maleSpeciesIdx[m.species].push({ ...m, inst: i }); });
         nestVisualDiv.innerHTML = '';
+
+        // 为未被覆盖的雌性构建 ID 集合
+        const uncoveredIds = new Set(uncoveredFemales.map(f => f.id));
+
         femaleInstances.forEach(f => {
             const total = femaleSpeciesIdx[f.species].length, idx = femaleSpeciesIdx[f.species].indexOf(f);
-            const div = document.createElement('div'); div.className = 'nest-item female';
+            const div = document.createElement('div');
+            div.className = 'nest-item female';
             div.innerHTML = `<span class="icon">♀️</span><span>${getDisplayName(f.species, idx, total)}</span>`;
+
+            // 如果是未被覆盖的雌性，添加明显的红色警告覆盖层
+            if (uncoveredIds.has(f.id)) {
+                const overlay = document.createElement('span');
+                overlay.style.cssText = 'position:absolute; top:0; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background: rgba(255,100,100,0.35); border-radius: 20px; z-index:1;';
+                const icon = document.createElement('span');
+                // 在原有样式基础上增加：上移 transform + 半透明 rgba 颜色
+                icon.style.cssText = 'font-size:2.5rem; font-weight:bold; color: rgba(221, 21, 204, 0.45); text-shadow: 0 0 8px white; line-height:1; transform: translateY(-12px);';
+                icon.textContent = '⚠️';
+                overlay.appendChild(icon);
+                div.style.position = 'relative';
+                div.appendChild(overlay);
+            }
+
             nestVisualDiv.appendChild(div);
         });
         allMaleSlots.forEach((m, i) => {
@@ -760,24 +772,48 @@
         });
     }
 
-    // ==================== 位置图生成 ====================
+    // ==================== 位置图生成（排除未被覆盖的雌性） ====================
     function generatePlacement() {
         if (!lastResultData || lastResultData.error) return;
         const res = lastResultData;
-        const femaleInstances = res.femaleInstances;
+        const originalFemaleInstances = res.femaleInstances;
+        const uncoveredFemales = res.uncoveredFemales;
+
+        // 只保留已被覆盖的雌性
+        const uncoveredIds = new Set(uncoveredFemales.map(f => f.id));
+        const coveredFemaleInstances = originalFemaleInstances.filter(f => !uncoveredIds.has(f.id));
+
+        if (coveredFemaleInstances.length === 0) {
+            globalMsg.innerHTML = '<div class="warning">没有雌性可被覆盖，无法生成位置图。</div>';
+            return;
+        }
+
         const maleSlots = res.allMaleSlots;
         const males = maleSlots.map((sm, idx) => ({ id: `m-${idx}`, species: sm.species, idx }));
+
         const maleCompatCount = new Array(males.length).fill(0);
-        femaleInstances.forEach(fi => { males.forEach(m => { if (compatibleMap.get(m.species).has(fi.species)) maleCompatCount[m.idx]++; }); });
+        coveredFemaleInstances.forEach(fi => {
+            males.forEach(m => {
+                if (compatibleMap.get(m.species).has(fi.species)) maleCompatCount[m.idx]++;
+            });
+        });
+
         const maleUniqueCount = new Array(males.length).fill(0);
-        femaleInstances.forEach(fi => {
+        coveredFemaleInstances.forEach(fi => {
             const compatibleMaleIndices = [];
-            males.forEach(m => { if (compatibleMap.get(m.species).has(fi.species)) compatibleMaleIndices.push(m.idx); });
+            males.forEach(m => {
+                if (compatibleMap.get(m.species).has(fi.species)) compatibleMaleIndices.push(m.idx);
+            });
             if (compatibleMaleIndices.length === 1) maleUniqueCount[compatibleMaleIndices[0]]++;
         });
+
         const buildNearbyTargets = (level) => males.map((_, mi) => maleCompatCount[mi] >= 4 ? Math.min(level, maleCompatCount[mi]) : 0);
-        const createFemales = (strictMode) => femaleInstances.map((fi, idx) => {
-            const fMales = []; males.forEach(m => { if (compatibleMap.get(m.species).has(fi.species)) fMales.push(m.idx); });
+
+        const createFemales = (strictMode) => coveredFemaleInstances.map((fi, idx) => {
+            const fMales = [];
+            males.forEach(m => {
+                if (compatibleMap.get(m.species).has(fi.species)) fMales.push(m.idx);
+            });
             if (fMales.length === 0) return null;
             const stepLimit = Math.min(fMales.length, 2);
             const constraints = fMales.map(mi => {
@@ -786,17 +822,29 @@
                 const maleHasUniqueDep = maleUniqueCount[mi] > 0;
                 if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4);
                 if (isUniqueDep) {
-                    if (maleUniqueCount[mi] <= 4) { minDist = 1; maxDist = Math.max(maxDist, 1); if (maleCompatCount[mi] < 4) maxDist = 1; else maxDist = Math.max(maxDist, 4); }
-                    else { minDist = 1; maxDist = Math.max(maxDist, 2); if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4); }
-                } else if (maleHasUniqueDep) { minDist = 2; maxDist = Math.max(maxDist, 2); if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4); }
-                else if (strictMode) { minDist = 1; maxDist = Math.max(maxDist, 1); if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4); }
+                    if (maleUniqueCount[mi] <= 4) {
+                        minDist = 1; maxDist = Math.max(maxDist, 1);
+                        if (maleCompatCount[mi] < 4) maxDist = 1; else maxDist = Math.max(maxDist, 4);
+                    } else {
+                        minDist = 1; maxDist = Math.max(maxDist, 2);
+                        if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4);
+                    }
+                } else if (maleHasUniqueDep) {
+                    minDist = 2; maxDist = Math.max(maxDist, 2);
+                    if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4);
+                } else if (strictMode) {
+                    minDist = 1; maxDist = Math.max(maxDist, 1);
+                    if (maleCompatCount[mi] >= 4) maxDist = Math.max(maxDist, 4);
+                }
                 return { maleIdx: mi, minDist, maxDist };
             });
-            return { id: `f-${idx}`, species: fi.species, males: fMales, stepLimit, constraints, idx };
+            return { id: fi.id, species: fi.species, males: fMales, stepLimit, constraints, idx };
         }).filter(f => f !== null);
+
         let best = null, bestArea = Infinity, found = 0;
-        const total = femaleInstances.length + maleSlots.length;
+        const total = coveredFemaleInstances.length + maleSlots.length;
         const strategyList = [{ strict: true, level: 3 }, { strict: true, level: 2 }, { strict: false, level: 3 }, { strict: false, level: 2 }];
+
         for (const strategy of strategyList) {
             const targets = buildNearbyTargets(strategy.level);
             const fem = createFemales(strategy.strict);
@@ -813,11 +861,20 @@
             }
             if (best) break;
         }
+
         if (!best) return;
         best = compactPlacement(best);
         best = centerPlacement(best);
-        currentPlacement = { maleCoords: best.maleCoords, femaleCoords: best.femaleCoords, maleSlots, femaleInstances };
-        originalPlacement = { maleCoords: best.maleCoords.map(c => ({ ...c })), femaleCoords: best.femaleCoords.map(c => ({ ...c })) };
+        currentPlacement = {
+            maleCoords: best.maleCoords,
+            femaleCoords: best.femaleCoords,
+            maleSlots: maleSlots,
+            femaleInstances: coveredFemaleInstances  // 使用过滤后的雌性列表
+        };
+        originalPlacement = {
+            maleCoords: best.maleCoords.map(c => ({ ...c })),
+            femaleCoords: best.femaleCoords.map(c => ({ ...c }))
+        };
         placementArea.style.display = 'block';
         renderSVG();
     }
