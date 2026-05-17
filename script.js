@@ -24,7 +24,7 @@
     // ==================== 数据加载 ====================
     async function loadPetsJSON() {
         try {
-            const resp = await fetch('./data/pets.json?t=' + Date.now());
+            const resp = await fetch('./data/Pets.json?t=' + Date.now());
             if (!resp.ok) throw new Error('pets.json 加载失败');
             const pets = await resp.json();
             petIds = pets.map(p => p.id);
