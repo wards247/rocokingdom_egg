@@ -7,13 +7,13 @@
 
 <p align="center">
   <a href="https://heartsarsonist.github.io/rocokingdom_egg/">🌐 在线演示</a> ·
-  <a href="https://www.bilibili.com/video/BV1qvLj67EYW/?spm_id_from=333.788.videopod.sections&vd_source=e16eca063102daa8013a6331d9d70109">🎬 B站视频教程</a> ·
+  <a href="https://www.bilibili.com/video/BV1cL5f6MEnr/?vd_source=e16eca063102daa8013a6331d9d70109#reply299779043569">🎬 B站视频教程</a> ·
 </p>
 
 ---
 
 # 🎬 B站视频教程
-[点击观看完整演示与讲解](https://www.bilibili.com/video/BV1qvLj67EYW/?spm_id_from=333.788.videopod.sections&vd_source=e16eca063102daa8013a6331d9d70109)
+[点击观看完整演示与讲解](https://www.bilibili.com/video/BV1cL5f6MEnr/?vd_source=e16eca063102daa8013a6331d9d70109#reply299779043569)
 
 ---
 
