@@ -90,7 +90,7 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3011,
@@ -349,7 +349,7 @@
       7
     ],
     "evolves_from_id": 3010,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3040,
@@ -545,7 +545,7 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3063,
@@ -555,7 +555,7 @@
       6
     ],
     "evolves_from_id": 3062,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3064,
@@ -565,7 +565,7 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3065,
@@ -662,7 +662,7 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3076,
@@ -671,7 +671,7 @@
       6
     ],
     "evolves_from_id": 3075,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3077,
@@ -680,7 +680,7 @@
       6
     ],
     "evolves_from_id": 3076,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3078,
@@ -1299,7 +1299,7 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3143,
@@ -1309,7 +1309,7 @@
       9
     ],
     "evolves_from_id": 3142,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3144,
@@ -1319,7 +1319,7 @@
       9
     ],
     "evolves_from_id": 3143,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3145,
@@ -2016,7 +2016,7 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3228,
@@ -2061,7 +2061,7 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3235,
@@ -2071,7 +2071,7 @@
       9
     ],
     "evolves_from_id": 3234,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3236,
@@ -2853,7 +2853,7 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3368,
@@ -2863,7 +2863,7 @@
       11
     ],
     "evolves_from_id": 3367,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3369,
@@ -3501,23 +3501,32 @@
   {
     "id": 3487,
     "name": "小丑豆豆",
-    "egg_groups": [],
+    "egg_groups": [
+      7,
+      9
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3488,
     "name": "小丑兔",
-    "egg_groups": [],
+    "egg_groups": [
+      7,
+      9
+    ],
     "evolves_from_id": 3487,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3489,
     "name": "小丑公爵",
-    "egg_groups": [],
+    "egg_groups": [
+      7,
+      9
+    ],
     "evolves_from_id": 3488,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3490,
@@ -3569,7 +3578,7 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3503,
@@ -4678,9 +4687,12 @@
   {
     "id": 3659,
     "name": "加油海葵",
-    "egg_groups": [],
+    "egg_groups": [
+      7,
+      13
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3660,
@@ -4804,16 +4816,20 @@
   {
     "id": 3677,
     "name": "烟花团",
-    "egg_groups": [],
+    "egg_groups": [
+      7
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3678,
     "name": "烟花伯爵",
-    "egg_groups": [],
+    "egg_groups": [
+      7
+    ],
     "evolves_from_id": 3677,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3679,
@@ -4846,16 +4862,20 @@
   {
     "id": 3683,
     "name": "咕咕帽",
-    "egg_groups": [],
+    "egg_groups": [
+      7
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3684,
     "name": "咕德帽帽",
-    "egg_groups": [],
+    "egg_groups": [
+      7
+    ],
     "evolves_from_id": 3683,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3685,
@@ -5025,16 +5045,22 @@
   {
     "id": 3708,
     "name": "小鼓象",
-    "egg_groups": [],
+    "egg_groups": [
+      7,
+      15
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3709,
     "name": "巨鼓象",
-    "egg_groups": [],
+    "egg_groups": [
+      7,
+      15
+    ],
     "evolves_from_id": 3708,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3710,
@@ -5116,9 +5142,12 @@
   {
     "id": 3730,
     "name": "音碟吼",
-    "egg_groups": [],
+    "egg_groups": [
+      7,
+      15
+    ],
     "evolves_from_id": 3729,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3731,
@@ -5158,16 +5187,20 @@
   {
     "id": 3736,
     "name": "炫光迪迪",
-    "egg_groups": [],
+    "egg_groups": [
+      6
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3737,
     "name": "​​霹雳迪迪",
-    "egg_groups": [],
+    "egg_groups": [
+      6
+    ],
     "evolves_from_id": 3736,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3740,
