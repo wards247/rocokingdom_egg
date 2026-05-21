@@ -5134,10 +5134,13 @@
   },
   {
     "id": 3729,
-    "name": "猴唛仔",
-    "egg_groups": [],
+    "name": "猴麦仔",
+    "egg_groups": [
+      7,
+      15
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": true
   },
   {
     "id": 3730,
