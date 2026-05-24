@@ -7,7 +7,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3002,
@@ -16,7 +17,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3003,
@@ -26,7 +28,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3004,
@@ -35,7 +38,8 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3005,
@@ -44,7 +48,8 @@
       12
     ],
     "evolves_from_id": 3033,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3006,
@@ -54,7 +59,8 @@
       12
     ],
     "evolves_from_id": 3032,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3007,
@@ -64,7 +70,8 @@
       9
     ],
     "evolves_from_id": 3025,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3008,
@@ -74,14 +81,16 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3009,
     "name": "赤毛鸡仔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3010,
@@ -90,7 +99,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3011,
@@ -99,7 +109,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3012,
@@ -108,7 +119,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3013,
@@ -118,7 +130,8 @@
       5
     ],
     "evolves_from_id": 3038,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3014,
@@ -128,7 +141,8 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3015,
@@ -138,7 +152,8 @@
       11
     ],
     "evolves_from_id": 3014,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3016,
@@ -148,7 +163,8 @@
       11
     ],
     "evolves_from_id": 3015,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3017,
@@ -157,7 +173,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3018,
@@ -166,7 +183,8 @@
       8
     ],
     "evolves_from_id": 3017,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3019,
@@ -175,7 +193,8 @@
       8
     ],
     "evolves_from_id": 3018,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3020,
@@ -184,7 +203,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3021,
@@ -193,7 +213,8 @@
       6
     ],
     "evolves_from_id": 3020,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3022,
@@ -202,21 +223,24 @@
       6
     ],
     "evolves_from_id": 3021,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3023,
     "name": "火云斗鸡",
     "egg_groups": [],
     "evolves_from_id": 3009,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3024,
     "name": "伊丽莎白",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3025,
@@ -226,7 +250,8 @@
       9
     ],
     "evolves_from_id": 3001,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3026,
@@ -236,7 +261,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3027,
@@ -246,7 +272,8 @@
       8
     ],
     "evolves_from_id": 3034,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3028,
@@ -255,7 +282,8 @@
       5
     ],
     "evolves_from_id": 3533,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3029,
@@ -264,7 +292,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3030,
@@ -273,7 +302,8 @@
       8
     ],
     "evolves_from_id": 3029,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3031,
@@ -282,7 +312,8 @@
       8
     ],
     "evolves_from_id": 3030,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3032,
@@ -292,7 +323,8 @@
       12
     ],
     "evolves_from_id": 3003,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3033,
@@ -301,7 +333,8 @@
       12
     ],
     "evolves_from_id": 3002,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3034,
@@ -311,7 +344,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3035,
@@ -321,7 +355,8 @@
       9
     ],
     "evolves_from_id": 3026,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3037,
@@ -330,7 +365,8 @@
       5
     ],
     "evolves_from_id": 3028,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3038,
@@ -340,7 +376,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3039,
@@ -349,7 +386,8 @@
       7
     ],
     "evolves_from_id": 3010,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3040,
@@ -358,7 +396,8 @@
       3
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3041,
@@ -367,7 +406,8 @@
       3
     ],
     "evolves_from_id": 3040,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3042,
@@ -376,7 +416,8 @@
       3
     ],
     "evolves_from_id": 3041,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3043,
@@ -386,7 +427,8 @@
       10
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3044,
@@ -396,7 +438,8 @@
       10
     ],
     "evolves_from_id": 3043,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3045,
@@ -405,7 +448,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3046,
@@ -414,7 +458,8 @@
       6
     ],
     "evolves_from_id": 3045,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3047,
@@ -423,14 +468,16 @@
       6
     ],
     "evolves_from_id": 3046,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3048,
     "name": "圣光迪莫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3049,
@@ -440,7 +487,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3050,
@@ -449,28 +497,32 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3051,
     "name": "圣草迪莫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3052,
     "name": "煤球憨憨",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3053,
     "name": "害羞球球",
     "egg_groups": [],
     "evolves_from_id": 3052,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3055,
@@ -479,7 +531,8 @@
       3
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3056,
@@ -488,7 +541,8 @@
       3
     ],
     "evolves_from_id": 3055,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3057,
@@ -497,7 +551,8 @@
       3
     ],
     "evolves_from_id": 3056,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3058,
@@ -507,7 +562,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3059,
@@ -517,7 +573,8 @@
       5
     ],
     "evolves_from_id": 3058,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3060,
@@ -526,7 +583,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3061,
@@ -535,7 +593,8 @@
       12
     ],
     "evolves_from_id": 3060,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3062,
@@ -545,7 +604,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3063,
@@ -555,7 +615,8 @@
       6
     ],
     "evolves_from_id": 3062,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3064,
@@ -565,7 +626,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3065,
@@ -575,7 +637,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3066,
@@ -585,7 +648,8 @@
       9
     ],
     "evolves_from_id": 3065,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3067,
@@ -595,7 +659,8 @@
       5
     ],
     "evolves_from_id": 3008,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3069,
@@ -605,7 +670,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3070,
@@ -614,7 +680,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3071,
@@ -623,7 +690,8 @@
       6
     ],
     "evolves_from_id": 3070,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3072,
@@ -633,7 +701,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3073,
@@ -643,7 +712,8 @@
       8
     ],
     "evolves_from_id": 3072,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3074,
@@ -653,7 +723,8 @@
       8
     ],
     "evolves_from_id": 3073,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3075,
@@ -662,7 +733,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3076,
@@ -671,7 +743,8 @@
       6
     ],
     "evolves_from_id": 3075,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3077,
@@ -680,7 +753,8 @@
       6
     ],
     "evolves_from_id": 3076,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3078,
@@ -690,7 +764,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3079,
@@ -700,7 +775,8 @@
       5
     ],
     "evolves_from_id": 3078,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3080,
@@ -710,7 +786,8 @@
       5
     ],
     "evolves_from_id": 3079,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3081,
@@ -720,7 +797,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3082,
@@ -730,7 +808,8 @@
       7
     ],
     "evolves_from_id": 3081,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3083,
@@ -740,7 +819,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3084,
@@ -750,7 +830,8 @@
       9
     ],
     "evolves_from_id": 3083,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3085,
@@ -760,7 +841,8 @@
       9
     ],
     "evolves_from_id": 3084,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3086,
@@ -770,7 +852,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3087,
@@ -780,7 +863,8 @@
       9
     ],
     "evolves_from_id": 3086,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3088,
@@ -790,7 +874,8 @@
       9
     ],
     "evolves_from_id": 3087,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3089,
@@ -800,7 +885,8 @@
       9
     ],
     "evolves_from_id": 3087,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3090,
@@ -809,7 +895,8 @@
       2
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3091,
@@ -818,7 +905,8 @@
       2
     ],
     "evolves_from_id": 3090,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3092,
@@ -827,7 +915,8 @@
       2
     ],
     "evolves_from_id": 3091,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3093,
@@ -837,7 +926,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3094,
@@ -847,7 +937,8 @@
       9
     ],
     "evolves_from_id": 3093,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3095,
@@ -857,14 +948,16 @@
       9
     ],
     "evolves_from_id": 3094,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3097,
     "name": "灵蔓草王",
     "egg_groups": [],
     "evolves_from_id": 3160,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3098,
@@ -873,7 +966,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3099,
@@ -882,7 +976,8 @@
       6
     ],
     "evolves_from_id": 3098,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3100,
@@ -891,7 +986,8 @@
       6
     ],
     "evolves_from_id": 3099,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3101,
@@ -901,7 +997,8 @@
       9
     ],
     "evolves_from_id": 3049,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3102,
@@ -911,7 +1008,8 @@
       9
     ],
     "evolves_from_id": 3101,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3103,
@@ -921,7 +1019,8 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3104,
@@ -931,7 +1030,8 @@
       11
     ],
     "evolves_from_id": 3103,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3105,
@@ -941,7 +1041,8 @@
       11
     ],
     "evolves_from_id": 3104,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3106,
@@ -951,7 +1052,8 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3107,
@@ -961,7 +1063,8 @@
       11
     ],
     "evolves_from_id": 3106,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3108,
@@ -971,7 +1074,8 @@
       11
     ],
     "evolves_from_id": 3107,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3109,
@@ -981,7 +1085,8 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3110,
@@ -991,7 +1096,8 @@
       11
     ],
     "evolves_from_id": 3109,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3111,
@@ -1001,7 +1107,8 @@
       11
     ],
     "evolves_from_id": 3110,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3112,
@@ -1011,7 +1118,8 @@
       10
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3113,
@@ -1021,7 +1129,8 @@
       10
     ],
     "evolves_from_id": 3112,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3114,
@@ -1031,7 +1140,8 @@
       10
     ],
     "evolves_from_id": 3113,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3115,
@@ -1041,7 +1151,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3116,
@@ -1051,7 +1162,8 @@
       13
     ],
     "evolves_from_id": 3115,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3117,
@@ -1061,7 +1173,8 @@
       13
     ],
     "evolves_from_id": 3116,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3118,
@@ -1071,7 +1184,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3119,
@@ -1081,7 +1195,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3120,
@@ -1091,7 +1206,8 @@
       13
     ],
     "evolves_from_id": 3119,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3121,
@@ -1101,7 +1217,10 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": [
+      1002
+    ]
   },
   {
     "id": 3122,
@@ -1111,7 +1230,10 @@
       9
     ],
     "evolves_from_id": 3121,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": [
+      1002
+    ]
   },
   {
     "id": 3123,
@@ -1121,7 +1243,10 @@
       9
     ],
     "evolves_from_id": 3122,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": [
+      1002
+    ]
   },
   {
     "id": 3124,
@@ -1131,7 +1256,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3125,
@@ -1141,7 +1267,8 @@
       12
     ],
     "evolves_from_id": 3124,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3126,
@@ -1151,7 +1278,8 @@
       12
     ],
     "evolves_from_id": 3125,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3127,
@@ -1161,7 +1289,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3128,
@@ -1171,7 +1300,8 @@
       6
     ],
     "evolves_from_id": 3127,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3129,
@@ -1181,7 +1311,8 @@
       6
     ],
     "evolves_from_id": 3128,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3130,
@@ -1190,7 +1321,8 @@
       4
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3131,
@@ -1199,7 +1331,8 @@
       4
     ],
     "evolves_from_id": 3130,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3132,
@@ -1208,28 +1341,32 @@
       4
     ],
     "evolves_from_id": 3131,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3133,
     "name": "小螂",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3134,
     "name": "兵螂",
     "egg_groups": [],
     "evolves_from_id": 3133,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3135,
     "name": "飞天刀螂",
     "egg_groups": [],
     "evolves_from_id": 3134,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3136,
@@ -1239,7 +1376,8 @@
       10
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3137,
@@ -1249,7 +1387,8 @@
       10
     ],
     "evolves_from_id": 3136,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3138,
@@ -1259,7 +1398,8 @@
       10
     ],
     "evolves_from_id": 3137,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3139,
@@ -1269,7 +1409,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3140,
@@ -1279,7 +1420,8 @@
       9
     ],
     "evolves_from_id": 3139,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3141,
@@ -1289,7 +1431,8 @@
       9
     ],
     "evolves_from_id": 3140,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3142,
@@ -1299,7 +1442,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3143,
@@ -1309,7 +1453,8 @@
       9
     ],
     "evolves_from_id": 3142,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3144,
@@ -1319,7 +1464,8 @@
       9
     ],
     "evolves_from_id": 3143,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3145,
@@ -1329,7 +1475,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3146,
@@ -1339,7 +1486,8 @@
       12
     ],
     "evolves_from_id": 3145,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3147,
@@ -1349,7 +1497,8 @@
       12
     ],
     "evolves_from_id": 3146,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3148,
@@ -1359,7 +1508,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3149,
@@ -1369,7 +1519,8 @@
       12
     ],
     "evolves_from_id": 3148,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3150,
@@ -1379,7 +1530,8 @@
       12
     ],
     "evolves_from_id": 3149,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3151,
@@ -1388,7 +1540,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3152,
@@ -1397,7 +1550,8 @@
       9
     ],
     "evolves_from_id": 3151,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3153,
@@ -1406,7 +1560,8 @@
       9
     ],
     "evolves_from_id": 3152,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3154,
@@ -1416,7 +1571,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3155,
@@ -1426,7 +1582,8 @@
       7
     ],
     "evolves_from_id": 3154,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3156,
@@ -1436,7 +1593,8 @@
       7
     ],
     "evolves_from_id": 3155,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3157,
@@ -1446,28 +1604,32 @@
       5
     ],
     "evolves_from_id": 3059,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3158,
     "name": "武斗酷猫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3159,
     "name": "紫蔓宝宝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3160,
     "name": "紫蔓祭祀",
     "egg_groups": [],
     "evolves_from_id": 3159,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3161,
@@ -1477,7 +1639,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3162,
@@ -1487,7 +1650,8 @@
       7
     ],
     "evolves_from_id": 3161,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3165,
@@ -1496,7 +1660,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3166,
@@ -1505,7 +1670,8 @@
       6
     ],
     "evolves_from_id": 3165,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3167,
@@ -1514,7 +1680,8 @@
       6
     ],
     "evolves_from_id": 3166,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3168,
@@ -1523,7 +1690,8 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3169,
@@ -1532,7 +1700,8 @@
       1
     ],
     "evolves_from_id": 3168,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3170,
@@ -1542,7 +1711,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3171,
@@ -1552,7 +1722,8 @@
       12
     ],
     "evolves_from_id": 3170,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3172,
@@ -1562,7 +1733,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3173,
@@ -1572,7 +1744,8 @@
       9
     ],
     "evolves_from_id": 3172,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3174,
@@ -1582,7 +1755,8 @@
       9
     ],
     "evolves_from_id": 3173,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3175,
@@ -1591,7 +1765,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3176,
@@ -1600,7 +1775,8 @@
       5
     ],
     "evolves_from_id": 3175,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3177,
@@ -1609,7 +1785,8 @@
       5
     ],
     "evolves_from_id": 3176,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3178,
@@ -1619,7 +1796,8 @@
       4
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3179,
@@ -1629,7 +1807,8 @@
       4
     ],
     "evolves_from_id": 3178,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3180,
@@ -1638,7 +1817,8 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3181,
@@ -1647,7 +1827,8 @@
       1
     ],
     "evolves_from_id": 3180,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3182,
@@ -1656,7 +1837,8 @@
       1
     ],
     "evolves_from_id": 3181,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3183,
@@ -1666,7 +1848,8 @@
       4
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3184,
@@ -1676,7 +1859,8 @@
       4
     ],
     "evolves_from_id": 3183,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3185,
@@ -1686,21 +1870,24 @@
       4
     ],
     "evolves_from_id": 3184,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3186,
     "name": "小光",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3187,
     "name": "迷迷眼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3188,
@@ -1709,7 +1896,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3189,
@@ -1718,7 +1906,8 @@
       7
     ],
     "evolves_from_id": 3188,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3190,
@@ -1727,7 +1916,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3191,
@@ -1736,7 +1926,8 @@
       6
     ],
     "evolves_from_id": 3190,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3192,
@@ -1745,7 +1936,8 @@
       6
     ],
     "evolves_from_id": 3191,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3193,
@@ -1754,7 +1946,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3194,
@@ -1763,7 +1956,8 @@
       6
     ],
     "evolves_from_id": 3193,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3195,
@@ -1772,7 +1966,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3196,
@@ -1781,7 +1976,8 @@
       12
     ],
     "evolves_from_id": 3195,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3197,
@@ -1790,7 +1986,8 @@
       12
     ],
     "evolves_from_id": 3196,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3198,
@@ -1800,7 +1997,8 @@
       10
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3199,
@@ -1810,7 +2008,8 @@
       10
     ],
     "evolves_from_id": 3198,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3200,
@@ -1820,7 +2019,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3201,
@@ -1830,7 +2030,8 @@
       15
     ],
     "evolves_from_id": 3200,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3202,
@@ -1840,7 +2041,8 @@
       15
     ],
     "evolves_from_id": 3201,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3203,
@@ -1849,7 +2051,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3204,
@@ -1858,7 +2061,8 @@
       15
     ],
     "evolves_from_id": 3203,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3205,
@@ -1867,7 +2071,8 @@
       15
     ],
     "evolves_from_id": 3204,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3206,
@@ -1877,7 +2082,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3207,
@@ -1887,7 +2093,8 @@
       15
     ],
     "evolves_from_id": 3206,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3208,
@@ -1897,7 +2104,8 @@
       15
     ],
     "evolves_from_id": 3207,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3209,
@@ -1907,7 +2115,8 @@
       14
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3210,
@@ -1917,7 +2126,8 @@
       14
     ],
     "evolves_from_id": 3209,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3211,
@@ -1926,21 +2136,24 @@
       14
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3213,
     "name": "黑炎宝宝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3214,
     "name": "黑炎",
     "egg_groups": [],
     "evolves_from_id": 3213,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3215,
@@ -1950,7 +2163,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3216,
@@ -1960,7 +2174,8 @@
       6
     ],
     "evolves_from_id": 3215,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3217,
@@ -1969,7 +2184,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3218,
@@ -1978,7 +2194,8 @@
       9
     ],
     "evolves_from_id": 3217,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3219,
@@ -1987,7 +2204,8 @@
       9
     ],
     "evolves_from_id": 3218,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3225,
@@ -1997,7 +2215,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3226,
@@ -2007,7 +2226,8 @@
       6
     ],
     "evolves_from_id": 3225,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3227,
@@ -2016,42 +2236,48 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3228,
     "name": "友爱天天",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3229,
     "name": "友爱星飞",
     "egg_groups": [],
     "evolves_from_id": 3228,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3230,
     "name": "加灵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3231,
     "name": "加益",
     "egg_groups": [],
     "evolves_from_id": 3230,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3232,
     "name": "加尔",
     "egg_groups": [],
     "evolves_from_id": 3231,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3234,
@@ -2061,7 +2287,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3235,
@@ -2071,14 +2298,16 @@
       9
     ],
     "evolves_from_id": 3234,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3236,
     "name": "超能球球",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3237,
@@ -2088,7 +2317,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3238,
@@ -2098,7 +2328,8 @@
       9
     ],
     "evolves_from_id": 3237,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3239,
@@ -2107,7 +2338,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3240,
@@ -2116,7 +2348,8 @@
       8
     ],
     "evolves_from_id": 3239,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3241,
@@ -2125,21 +2358,24 @@
       8
     ],
     "evolves_from_id": 3240,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3242,
     "name": "呆火鸟",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3243,
     "name": "喷火鸟",
     "egg_groups": [],
     "evolves_from_id": 3242,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3244,
@@ -2148,7 +2384,8 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3245,
@@ -2157,7 +2394,8 @@
       1
     ],
     "evolves_from_id": 3244,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3246,
@@ -2166,21 +2404,24 @@
       1
     ],
     "evolves_from_id": 3245,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3248,
     "name": "绿洲象",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3249,
     "name": "流星猛犸",
     "egg_groups": [],
     "evolves_from_id": 3248,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3250,
@@ -2189,7 +2430,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3251,
@@ -2198,7 +2440,8 @@
       5
     ],
     "evolves_from_id": 3250,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3252,
@@ -2207,21 +2450,24 @@
       5
     ],
     "evolves_from_id": 3251,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3253,
     "name": "速粒小子",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3254,
     "name": "速粒冲锋",
     "egg_groups": [],
     "evolves_from_id": 3253,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3255,
@@ -2231,7 +2477,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3256,
@@ -2241,7 +2488,8 @@
       9
     ],
     "evolves_from_id": 3255,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3257,
@@ -2251,7 +2499,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3258,
@@ -2261,7 +2510,8 @@
       13
     ],
     "evolves_from_id": 3257,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3259,
@@ -2271,21 +2521,24 @@
       13
     ],
     "evolves_from_id": 3258,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3260,
     "name": "古拉海象",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3261,
     "name": "大古拉海象",
     "egg_groups": [],
     "evolves_from_id": 3260,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3262,
@@ -2294,7 +2547,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3263,
@@ -2303,7 +2557,8 @@
       6
     ],
     "evolves_from_id": 3262,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3264,
@@ -2312,7 +2567,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3265,
@@ -2321,7 +2577,8 @@
       7
     ],
     "evolves_from_id": 3264,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3266,
@@ -2330,7 +2587,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3267,
@@ -2339,7 +2597,8 @@
       13
     ],
     "evolves_from_id": 3266,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3268,
@@ -2349,7 +2608,8 @@
       14
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3269,
@@ -2359,7 +2619,8 @@
       14
     ],
     "evolves_from_id": 3268,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3276,
@@ -2369,7 +2630,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3277,
@@ -2379,7 +2641,8 @@
       7
     ],
     "evolves_from_id": 3276,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3278,
@@ -2389,7 +2652,8 @@
       7
     ],
     "evolves_from_id": 3277,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3279,
@@ -2398,7 +2662,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3307,
@@ -2408,7 +2673,8 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3308,
@@ -2418,7 +2684,8 @@
       11
     ],
     "evolves_from_id": 3307,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3309,
@@ -2427,7 +2694,8 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3310,
@@ -2436,7 +2704,8 @@
       1
     ],
     "evolves_from_id": 3309,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3311,
@@ -2445,28 +2714,32 @@
       1
     ],
     "evolves_from_id": 3310,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3312,
     "name": "若叶蜥",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3313,
     "name": "立叶蜥",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3314,
     "name": "蝶叶巨蜥",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3315,
@@ -2476,7 +2749,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3316,
@@ -2486,7 +2760,8 @@
       6
     ],
     "evolves_from_id": 3315,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3317,
@@ -2496,7 +2771,8 @@
       6
     ],
     "evolves_from_id": 3316,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3319,
@@ -2506,7 +2782,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3320,
@@ -2516,49 +2793,56 @@
       7
     ],
     "evolves_from_id": 3319,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3321,
     "name": "觅觅蝠",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3322,
     "name": "翻翻蝠",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3323,
     "name": "夜游魔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3327,
     "name": "独角龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3328,
     "name": "坚角龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3329,
     "name": "爆角龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3330,
@@ -2568,7 +2852,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3331,
@@ -2578,7 +2863,8 @@
       13
     ],
     "evolves_from_id": 3330,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3332,
@@ -2588,7 +2874,8 @@
       13
     ],
     "evolves_from_id": 3331,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3333,
@@ -2597,7 +2884,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3334,
@@ -2606,7 +2894,8 @@
       7
     ],
     "evolves_from_id": 3333,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3335,
@@ -2615,63 +2904,72 @@
       7
     ],
     "evolves_from_id": 3334,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3336,
     "name": "格格布",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3337,
     "name": "格布布",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3338,
     "name": "冰虎宝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3339,
     "name": "冰晶虎",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3340,
     "name": "古齿帝牙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3341,
     "name": "雪灵兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3342,
     "name": "幻雪兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3343,
     "name": "饮雪狂兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3344,
@@ -2681,7 +2979,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3345,
@@ -2691,7 +2990,8 @@
       5
     ],
     "evolves_from_id": 3344,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3346,
@@ -2701,28 +3001,32 @@
       5
     ],
     "evolves_from_id": 3345,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3347,
     "name": "芽眼魔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3348,
     "name": "叶眼魔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3349,
     "name": "障眼魔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3350,
@@ -2732,49 +3036,56 @@
       7
     ],
     "evolves_from_id": 3082,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3351,
     "name": "霹雳宝宝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3352,
     "name": "雷鸣小子",
     "egg_groups": [],
     "evolves_from_id": 3351,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3353,
     "name": "雷暴奔奔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3354,
     "name": "钻地小子",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3355,
     "name": "闪电小子",
     "egg_groups": [],
     "evolves_from_id": 3354,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3356,
     "name": "魔能陀螺",
     "egg_groups": [],
     "evolves_from_id": 3355,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3357,
@@ -2783,7 +3094,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3358,
@@ -2792,7 +3104,8 @@
       6
     ],
     "evolves_from_id": 3357,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3359,
@@ -2801,49 +3114,56 @@
       6
     ],
     "evolves_from_id": 3358,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3360,
     "name": "蝴蝶陶陶",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3361,
     "name": "铆钉毛毛",
     "egg_groups": [],
     "evolves_from_id": 3360,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3362,
     "name": "徘徊爪爪",
     "egg_groups": [],
     "evolves_from_id": 3361,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3363,
     "name": "路路",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3364,
     "name": "路路尼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3365,
     "name": "古路尼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3367,
@@ -2853,7 +3173,8 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3368,
@@ -2863,7 +3184,8 @@
       11
     ],
     "evolves_from_id": 3367,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3369,
@@ -2873,7 +3195,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3370,
@@ -2883,7 +3206,8 @@
       7
     ],
     "evolves_from_id": 3369,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3371,
@@ -2893,7 +3217,8 @@
       7
     ],
     "evolves_from_id": 3370,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3372,
@@ -2903,7 +3228,8 @@
       7
     ],
     "evolves_from_id": 3162,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3373,
@@ -2913,7 +3239,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3374,
@@ -2923,7 +3250,8 @@
       6
     ],
     "evolves_from_id": 3373,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3375,
@@ -2933,7 +3261,8 @@
       6
     ],
     "evolves_from_id": 3374,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3376,
@@ -2943,7 +3272,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3377,
@@ -2953,7 +3283,8 @@
       8
     ],
     "evolves_from_id": 3483,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3378,
@@ -2962,7 +3293,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3379,
@@ -2971,7 +3303,8 @@
       8
     ],
     "evolves_from_id": 3378,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3380,
@@ -2980,7 +3313,8 @@
       8
     ],
     "evolves_from_id": 3379,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3381,
@@ -2990,7 +3324,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3382,
@@ -2999,7 +3334,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3383,
@@ -3008,7 +3344,8 @@
       13
     ],
     "evolves_from_id": 3382,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3384,
@@ -3018,7 +3355,8 @@
       14
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3385,
@@ -3028,7 +3366,8 @@
       14
     ],
     "evolves_from_id": 3384,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3386,
@@ -3038,21 +3377,24 @@
       14
     ],
     "evolves_from_id": 3385,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3387,
     "name": "科多多",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3388,
     "name": "科多索",
     "egg_groups": [],
     "evolves_from_id": 3387,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3392,
@@ -3061,7 +3403,8 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3393,
@@ -3070,7 +3413,8 @@
       1
     ],
     "evolves_from_id": 3392,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3394,
@@ -3079,7 +3423,8 @@
       1
     ],
     "evolves_from_id": 3393,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3395,
@@ -3088,7 +3433,8 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3396,
@@ -3097,7 +3443,8 @@
       1
     ],
     "evolves_from_id": 3395,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3397,
@@ -3106,7 +3453,8 @@
       1
     ],
     "evolves_from_id": 3396,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3398,
@@ -3115,7 +3463,8 @@
       4
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3399,
@@ -3124,7 +3473,8 @@
       4
     ],
     "evolves_from_id": 3398,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3400,
@@ -3133,35 +3483,40 @@
       4
     ],
     "evolves_from_id": 3399,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3401,
     "name": "伊里斯",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3402,
     "name": "碎晶蝎",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3403,
     "name": "晶尾蝎",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3404,
     "name": "蝎子王",
     "egg_groups": [],
     "evolves_from_id": 3403,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3405,
@@ -3170,7 +3525,8 @@
       12
     ],
     "evolves_from_id": 3061,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3406,
@@ -3179,7 +3535,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3407,
@@ -3188,7 +3545,8 @@
       15
     ],
     "evolves_from_id": 3406,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3408,
@@ -3197,7 +3555,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3409,
@@ -3206,7 +3565,8 @@
       15
     ],
     "evolves_from_id": 3408,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3410,
@@ -3215,7 +3575,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3411,
@@ -3224,7 +3585,8 @@
       15
     ],
     "evolves_from_id": 3410,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3412,
@@ -3233,7 +3595,8 @@
       14
     ],
     "evolves_from_id": 3211,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3416,
@@ -3242,7 +3605,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3417,
@@ -3251,7 +3615,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3418,
@@ -3260,7 +3625,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3419,
@@ -3270,7 +3636,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3420,
@@ -3280,70 +3647,80 @@
       9
     ],
     "evolves_from_id": 3419,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3421,
     "name": "破梦者",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3422,
     "name": "食梦者",
     "egg_groups": [],
     "evolves_from_id": 3421,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3423,
     "name": "空灵兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3424,
     "name": "空灵斗士",
     "egg_groups": [],
     "evolves_from_id": 3423,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3425,
     "name": "三叶草龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3426,
     "name": "花叶龙",
     "egg_groups": [],
     "evolves_from_id": 3425,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3427,
     "name": "麦香驼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3428,
     "name": "臭臭锥",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3429,
     "name": "埃欧熔锥",
     "egg_groups": [],
     "evolves_from_id": 3428,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3430,
@@ -3353,7 +3730,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3434,
@@ -3362,7 +3740,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3435,
@@ -3371,7 +3750,8 @@
       5
     ],
     "evolves_from_id": 3434,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3436,
@@ -3381,7 +3761,8 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3437,
@@ -3391,7 +3772,8 @@
       8
     ],
     "evolves_from_id": 3436,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3438,
@@ -3401,7 +3783,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3439,
@@ -3411,7 +3794,8 @@
       12
     ],
     "evolves_from_id": 3438,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3444,
@@ -3421,14 +3805,16 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3445,
     "name": "雪毛角羚牛",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3457,
@@ -3438,7 +3824,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3466,
@@ -3448,7 +3835,8 @@
       12
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3473,
@@ -3457,7 +3845,8 @@
       3
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3474,
@@ -3466,7 +3855,8 @@
       3
     ],
     "evolves_from_id": 3473,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3483,
@@ -3476,7 +3866,8 @@
       8
     ],
     "evolves_from_id": 3376,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3484,
@@ -3486,7 +3877,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3485,
@@ -3496,7 +3888,8 @@
       7
     ],
     "evolves_from_id": 3319,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3487,
@@ -3506,7 +3899,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3488,
@@ -3516,7 +3910,8 @@
       9
     ],
     "evolves_from_id": 3487,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3489,
@@ -3526,7 +3921,8 @@
       9
     ],
     "evolves_from_id": 3488,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3490,
@@ -3536,7 +3932,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3491,
@@ -3546,7 +3943,8 @@
       5
     ],
     "evolves_from_id": 3490,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3492,
@@ -3555,21 +3953,24 @@
       8
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3493,
     "name": "肥草球",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3494,
     "name": "赫拉",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3499,
@@ -3578,28 +3979,32 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3503,
     "name": "线球鼠",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3504,
     "name": "慈母鼠",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3505,
     "name": "夜回犀牛",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3506,
@@ -3609,7 +4014,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3507,
@@ -3619,7 +4025,8 @@
       13
     ],
     "evolves_from_id": 3506,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3508,
@@ -3629,7 +4036,8 @@
       11
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3509,
@@ -3639,7 +4047,8 @@
       11
     ],
     "evolves_from_id": 3508,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3510,
@@ -3649,35 +4058,40 @@
       11
     ],
     "evolves_from_id": 3509,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3514,
     "name": "圣水迪莫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3515,
     "name": "圣火迪莫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3519,
     "name": "海闪星",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3520,
     "name": "海魔星",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3521,
@@ -3687,28 +4101,32 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3522,
     "name": "水星尾",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3523,
     "name": "水星龙弦",
     "egg_groups": [],
     "evolves_from_id": 3522,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3524,
     "name": "阿瓦鲨",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3526,
@@ -3718,7 +4136,8 @@
       13
     ],
     "evolves_from_id": 3118,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3527,
@@ -3727,7 +4146,8 @@
       13
     ],
     "evolves_from_id": 3118,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3528,
@@ -3736,7 +4156,8 @@
       13
     ],
     "evolves_from_id": 3118,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3529,
@@ -3746,7 +4167,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3530,
@@ -3756,21 +4178,28 @@
       13
     ],
     "evolves_from_id": 3529,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3531,
     "name": "小雪人",
-    "egg_groups": [],
+    "egg_groups": [
+      1
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3532,
     "name": "雪怪",
-    "egg_groups": [],
+    "egg_groups": [
+      1
+    ],
     "evolves_from_id": 3531,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3534,
@@ -3779,7 +4208,8 @@
       5
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3535,
@@ -3788,7 +4218,8 @@
       5
     ],
     "evolves_from_id": 3534,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3536,
@@ -3797,7 +4228,8 @@
       2
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3537,
@@ -3806,7 +4238,8 @@
       2
     ],
     "evolves_from_id": 3536,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3538,
@@ -3815,14 +4248,16 @@
       2
     ],
     "evolves_from_id": 3537,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3542,
     "name": "未完虫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3543,
@@ -3832,7 +4267,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3544,
@@ -3842,7 +4278,8 @@
       9
     ],
     "evolves_from_id": 3543,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3545,
@@ -3852,7 +4289,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3546,
@@ -3862,7 +4300,8 @@
       15
     ],
     "evolves_from_id": 3545,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3547,
@@ -3872,21 +4311,24 @@
       15
     ],
     "evolves_from_id": 3484,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3548,
     "name": "小银翼龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3549,
     "name": "银翼龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3550,
@@ -3895,7 +4337,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3551,
@@ -3904,7 +4347,8 @@
       7
     ],
     "evolves_from_id": 3550,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3552,
@@ -3913,7 +4357,8 @@
       7
     ],
     "evolves_from_id": 3550,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3553,
@@ -3922,7 +4367,8 @@
       7
     ],
     "evolves_from_id": 3550,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3554,
@@ -3931,42 +4377,48 @@
       7
     ],
     "evolves_from_id": 3550,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3560,
     "name": "乌咩",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3561,
     "name": "乌角驮驮",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3562,
     "name": "堇楹苞",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3563,
     "name": "蔓羽兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3564,
     "name": "厉毒鸩兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3565,
@@ -3976,7 +4428,8 @@
       10
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3566,
@@ -3986,7 +4439,8 @@
       10
     ],
     "evolves_from_id": 3565,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3568,
@@ -3996,7 +4450,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3569,
@@ -4006,14 +4461,16 @@
       7
     ],
     "evolves_from_id": 3568,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3570,
     "name": "河马巴斯",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3571,
@@ -4023,42 +4480,52 @@
       5
     ],
     "evolves_from_id": 3345,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3572,
     "name": "爆焰仔",
-    "egg_groups": [],
+    "egg_groups": [
+      1
+    ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3573,
     "name": "爆焰喷喷",
-    "egg_groups": [],
+    "egg_groups": [
+      1
+    ],
     "evolves_from_id": 3572,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3574,
     "name": "热团团",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3575,
     "name": "焰米龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3576,
     "name": "圣凯布米龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3577,
@@ -4068,7 +4535,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3578,
@@ -4078,7 +4546,8 @@
       13
     ],
     "evolves_from_id": 3577,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3579,
@@ -4088,21 +4557,24 @@
       13
     ],
     "evolves_from_id": 3577,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3580,
     "name": "利刺毒蝎",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3581,
     "name": "剧毒魔蝎",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3582,
@@ -4111,7 +4583,8 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3583,
@@ -4120,63 +4593,72 @@
       13
     ],
     "evolves_from_id": 3582,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3586,
     "name": "梦残卷",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3587,
     "name": "曲率龙卷",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3588,
     "name": "曲率飞鱼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3589,
     "name": "玳龟",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3590,
     "name": "玳塔",
     "egg_groups": [],
     "evolves_from_id": 3589,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3591,
     "name": "十字蝌蚪",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3592,
     "name": "十字蛙",
     "egg_groups": [],
     "evolves_from_id": 3591,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3593,
     "name": "深渊蛙",
     "egg_groups": [],
     "evolves_from_id": 3592,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3594,
@@ -4185,7 +4667,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3595,
@@ -4194,7 +4677,8 @@
       6
     ],
     "evolves_from_id": 3594,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3596,
@@ -4203,7 +4687,8 @@
       6
     ],
     "evolves_from_id": 3595,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3597,
@@ -4213,7 +4698,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3598,
@@ -4223,7 +4709,8 @@
       7
     ],
     "evolves_from_id": 3597,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3599,
@@ -4233,7 +4720,8 @@
       7
     ],
     "evolves_from_id": 3598,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3600,
@@ -4242,7 +4730,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3601,
@@ -4251,7 +4740,8 @@
       6
     ],
     "evolves_from_id": 3600,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3602,
@@ -4260,7 +4750,8 @@
       6
     ],
     "evolves_from_id": 3601,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3603,
@@ -4270,7 +4761,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3604,
@@ -4280,7 +4772,8 @@
       7
     ],
     "evolves_from_id": 3603,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3605,
@@ -4290,7 +4783,8 @@
       7
     ],
     "evolves_from_id": 3603,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3606,
@@ -4300,7 +4794,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3607,
@@ -4310,7 +4805,8 @@
       7
     ],
     "evolves_from_id": 3606,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3608,
@@ -4320,7 +4816,8 @@
       7
     ],
     "evolves_from_id": 3607,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3609,
@@ -4330,7 +4827,8 @@
       7
     ],
     "evolves_from_id": 3607,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3610,
@@ -4340,7 +4838,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3611,
@@ -4350,7 +4849,8 @@
       7
     ],
     "evolves_from_id": 3610,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3612,
@@ -4360,7 +4860,8 @@
       7
     ],
     "evolves_from_id": 3611,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3613,
@@ -4370,7 +4871,8 @@
       7
     ],
     "evolves_from_id": 3611,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3614,
@@ -4379,7 +4881,8 @@
       4
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3615,
@@ -4388,7 +4891,8 @@
       4
     ],
     "evolves_from_id": 3614,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3616,
@@ -4398,7 +4902,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3617,
@@ -4408,7 +4913,8 @@
       15
     ],
     "evolves_from_id": 3616,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3618,
@@ -4418,7 +4924,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3619,
@@ -4428,7 +4935,8 @@
       15
     ],
     "evolves_from_id": 3618,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3620,
@@ -4437,252 +4945,288 @@
       1
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3623,
     "name": "噬影蚕",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3624,
     "name": "吞噬",
     "egg_groups": [],
     "evolves_from_id": 3623,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3625,
     "name": "小冥龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3626,
     "name": "冥古龙",
     "egg_groups": [],
     "evolves_from_id": 3625,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3627,
     "name": "矮核球",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3628,
     "name": "星脉兽",
     "egg_groups": [],
     "evolves_from_id": 3627,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3629,
     "name": "巡天幻星",
     "egg_groups": [],
     "evolves_from_id": 3628,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3630,
     "name": "地银链",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3632,
     "name": "地底银鳞",
     "egg_groups": [],
     "evolves_from_id": 3630,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3633,
     "name": "荆伞兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3634,
     "name": "荆棘魔伞",
     "egg_groups": [],
     "evolves_from_id": 3633,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3635,
     "name": "蝶兰花",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3636,
     "name": "蝶兰花仙",
     "egg_groups": [],
     "evolves_from_id": 3635,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3637,
     "name": "桃花苞",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3638,
     "name": "桃胖子",
     "egg_groups": [],
     "evolves_from_id": 3637,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3639,
     "name": "桃花仙",
     "egg_groups": [],
     "evolves_from_id": 3638,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3640,
     "name": "菌宝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3641,
     "name": "竹笙仔",
     "egg_groups": [],
     "evolves_from_id": 3640,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3642,
     "name": "鬼笔伯爵",
     "egg_groups": [],
     "evolves_from_id": 3641,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3643,
     "name": "芝芝酥",
     "egg_groups": [],
     "evolves_from_id": 3640,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3644,
     "name": "药尾灵螈",
     "egg_groups": [],
     "evolves_from_id": 3643,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3645,
     "name": "三坛枞",
     "egg_groups": [],
     "evolves_from_id": 3640,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3646,
     "name": "六月星菌",
     "egg_groups": [],
     "evolves_from_id": 3645,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3647,
     "name": "小红侍",
     "egg_groups": [],
     "evolves_from_id": 3640,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3648,
     "name": "红膏女爵",
     "egg_groups": [],
     "evolves_from_id": 3647,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3649,
     "name": "鹿鸣笙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3650,
     "name": "笙韵鹿灵",
     "egg_groups": [],
     "evolves_from_id": 3649,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3651,
     "name": "笔童",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3652,
     "name": "笔仙",
     "egg_groups": [],
     "evolves_from_id": 3651,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3653,
     "name": "笔圣",
     "egg_groups": [],
     "evolves_from_id": 3652,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3654,
     "name": "好鳄椰",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3655,
     "name": "超级鳄椰",
     "egg_groups": [],
     "evolves_from_id": 3654,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3656,
     "name": "海豚宝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3657,
     "name": "泡泡豚",
     "egg_groups": [],
     "evolves_from_id": 3656,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3658,
     "name": "海豚勇士",
     "egg_groups": [],
     "evolves_from_id": 3657,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3659,
@@ -4692,126 +5236,144 @@
       13
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3660,
     "name": "加油蟹",
     "egg_groups": [],
     "evolves_from_id": 3659,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3661,
     "name": "脆鸣鸟",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3662,
     "name": "警卫鸟",
     "egg_groups": [],
     "evolves_from_id": 3661,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3663,
     "name": "量风碗",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3664,
     "name": "测风蝉",
     "egg_groups": [],
     "evolves_from_id": 3663,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3665,
     "name": "丁丁猫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3666,
     "name": "猫山咪钥",
     "egg_groups": [],
     "evolves_from_id": 3665,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3667,
     "name": "仙羽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3668,
     "name": "一点红",
     "egg_groups": [],
     "evolves_from_id": 3667,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3669,
     "name": "念珠鹤",
     "egg_groups": [],
     "evolves_from_id": 3668,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3670,
     "name": "蛐曲儿",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3671,
     "name": "长翎将军",
     "egg_groups": [],
     "evolves_from_id": 3670,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3672,
     "name": "曲鸣大将",
     "egg_groups": [],
     "evolves_from_id": 3670,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3673,
     "name": "荆棘笼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3674,
     "name": "惩戒巨笼",
     "egg_groups": [],
     "evolves_from_id": 3673,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3675,
     "name": "守夜烛",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3676,
     "name": "流明坎德拉",
     "egg_groups": [],
     "evolves_from_id": 3675,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3677,
@@ -4820,7 +5382,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3678,
@@ -4829,35 +5392,40 @@
       7
     ],
     "evolves_from_id": 3677,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3679,
     "name": "蒸汽胖胖",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3680,
     "name": "蒸汽胖可",
     "egg_groups": [],
     "evolves_from_id": 3679,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3681,
     "name": "剪影影",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3682,
     "name": "影子剪纸",
     "egg_groups": [],
     "evolves_from_id": 3681,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3683,
@@ -4866,7 +5434,8 @@
       7
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3684,
@@ -4875,140 +5444,160 @@
       7
     ],
     "evolves_from_id": 3683,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3685,
     "name": "幽冥狐",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3686,
     "name": "魅惑狐仙",
     "egg_groups": [],
     "evolves_from_id": 3685,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3687,
     "name": "丹凤蓝狐",
     "egg_groups": [],
     "evolves_from_id": 3686,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3688,
     "name": "蔷薇茧",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3689,
     "name": "具足秘剑",
     "egg_groups": [],
     "evolves_from_id": 3688,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3690,
     "name": "问卜兽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3691,
     "name": "卜甲梦龟",
     "egg_groups": [],
     "evolves_from_id": 3690,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3692,
     "name": "梦杯",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3693,
     "name": "长生梦兽",
     "egg_groups": [],
     "evolves_from_id": 3692,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3694,
     "name": "毛线虫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3695,
     "name": "梭织团团",
     "egg_groups": [],
     "evolves_from_id": 3694,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3696,
     "name": "针织哼哼",
     "egg_groups": [],
     "evolves_from_id": 3694,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3697,
     "name": "稻草人",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3698,
     "name": "稻草守护者",
     "egg_groups": [],
     "evolves_from_id": 3697,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3699,
     "name": "不香芋",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3700,
     "name": "去污香芋",
     "egg_groups": [],
     "evolves_from_id": 3699,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3701,
     "name": "嗜污香芋",
     "egg_groups": [],
     "evolves_from_id": 3699,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3702,
     "name": "啄疫鸟",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3703,
     "name": "瘟疫医鸟",
     "egg_groups": [],
     "evolves_from_id": 3702,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3704,
@@ -5017,7 +5606,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3705,
@@ -5026,21 +5616,24 @@
       6
     ],
     "evolves_from_id": 3704,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3706,
     "name": "蜜果骸",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3707,
     "name": "半朽蜜果灵",
     "egg_groups": [],
     "evolves_from_id": 3706,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3708,
@@ -5050,7 +5643,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3709,
@@ -5060,77 +5654,88 @@
       15
     ],
     "evolves_from_id": 3708,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3710,
     "name": "咬咬小子",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3711,
     "name": "胡桃王子",
     "egg_groups": [],
     "evolves_from_id": 3710,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3712,
     "name": "封印守卫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3713,
     "name": "封印使者",
     "egg_groups": [],
     "evolves_from_id": 3712,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3714,
     "name": "上古战龙",
     "egg_groups": [],
     "evolves_from_id": 3713,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3715,
     "name": "格斗小七",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3716,
     "name": "糖串串",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3717,
     "name": "可烤汪",
     "egg_groups": [],
     "evolves_from_id": 3716,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3718,
     "name": "足尖元件",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3719,
     "name": "离心舞者",
     "egg_groups": [],
     "evolves_from_id": 3718,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3729,
@@ -5140,7 +5745,8 @@
       15
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3730,
@@ -5150,42 +5756,48 @@
       15
     ],
     "evolves_from_id": 3729,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3731,
     "name": "骨朵鸟",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3732,
     "name": "紫花雀",
     "egg_groups": [],
     "evolves_from_id": 3731,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3733,
     "name": "钨丝贝贝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3734,
     "name": "辉光幕机",
     "egg_groups": [],
     "evolves_from_id": 3733,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3735,
     "name": "机墓方舟",
     "egg_groups": [],
     "evolves_from_id": 3734,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3736,
@@ -5194,7 +5806,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3737,
@@ -5203,7 +5816,8 @@
       6
     ],
     "evolves_from_id": 3736,
-    "has_shiny": true
+    "has_shiny": 102,
+    "special_tags": []
   },
   {
     "id": 3740,
@@ -5213,7 +5827,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3741,
@@ -5223,7 +5838,8 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 3744,
@@ -5232,7 +5848,8 @@
       6
     ],
     "evolves_from_id": null,
-    "has_shiny": true
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3745,
@@ -5241,7 +5858,8 @@
       6
     ],
     "evolves_from_id": 3744,
-    "has_shiny": false
+    "has_shiny": 101,
+    "special_tags": []
   },
   {
     "id": 3746,
@@ -5251,539 +5869,616 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4005,
     "name": "圣水守护",
     "egg_groups": [],
     "evolves_from_id": 3005,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4006,
     "name": "烈火战神",
     "egg_groups": [],
     "evolves_from_id": 3006,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4007,
     "name": "叶冕魔力猫",
     "egg_groups": [],
     "evolves_from_id": 3007,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4011,
     "name": "恶魔狼王",
     "egg_groups": [],
     "evolves_from_id": 3011,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4012,
     "name": "鸭吉吉国王",
     "egg_groups": [],
     "evolves_from_id": 3012,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4019,
     "name": "蹦蹦果",
     "egg_groups": [],
     "evolves_from_id": 3019,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4020,
     "name": "千棘海针",
     "egg_groups": [],
     "evolves_from_id": 3332,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4021,
     "name": "女王蜂",
     "egg_groups": [],
     "evolves_from_id": 3157,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4022,
     "name": "奇丽果",
     "egg_groups": [],
     "evolves_from_id": 3031,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4050,
     "name": "首领-记忆石",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4064,
     "name": "幻影荆棘",
     "egg_groups": [],
     "evolves_from_id": 3064,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4069,
     "name": "首领-锤头鹳",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4070,
     "name": "首领-火羽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4071,
     "name": "首领-蒲公英",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4072,
     "name": "迷嶂布莱克",
     "egg_groups": [],
     "evolves_from_id": 3105,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4073,
     "name": "神谕鲨",
     "egg_groups": [],
     "evolves_from_id": 3117,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4074,
     "name": "霜翼领主",
     "egg_groups": [],
     "evolves_from_id": 3037,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4075,
     "name": "首领-罗隐",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4077,
     "name": "噜噜",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4078,
     "name": "风暴战犬",
     "egg_groups": [],
     "evolves_from_id": 3071,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4079,
     "name": "钻石蜗",
     "egg_groups": [],
     "evolves_from_id": 3308,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4080,
     "name": "首领-瞌睡王",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4081,
     "name": "首领-獠牙猪",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4082,
     "name": "首领-魔眷鸟",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4083,
     "name": "黑猫密探",
     "egg_groups": [],
     "evolves_from_id": 3569,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4084,
     "name": "祭礼巨像",
     "egg_groups": [],
     "evolves_from_id": 3111,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4085,
     "name": "雪影冰灵",
     "egg_groups": [],
     "evolves_from_id": 3123,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4086,
     "name": "棋契陛下",
     "egg_groups": [],
     "evolves_from_id": 3551,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4087,
     "name": "奇梦咪",
     "egg_groups": [],
     "evolves_from_id": 3375,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4088,
     "name": "波普鹿",
     "egg_groups": [],
     "evolves_from_id": 3359,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4089,
     "name": "圣剑骑士",
     "egg_groups": [],
     "evolves_from_id": 3546,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4090,
     "name": "伊兰龙",
     "egg_groups": [],
     "evolves_from_id": 3412,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4091,
     "name": "裘卡老师",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4092,
     "name": "首领-厉毒修萝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4094,
     "name": "琉璃君主",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4101,
     "name": "暮风隐者",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4102,
     "name": "淤泥乌泽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 4103,
     "name": "卷发巨獭",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 5002,
     "name": "彩虹独角兽",
     "egg_groups": [],
     "evolves_from_id": 3063,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6001,
     "name": "小咪",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6002,
     "name": "卡图斯（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6003,
     "name": "卡图斯（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6004,
     "name": "卡图斯（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6005,
     "name": "戴蒙德（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6006,
     "name": "戴蒙德（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6007,
     "name": "戴蒙德（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6008,
     "name": "阿克娅（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6009,
     "name": "阿克娅（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6010,
     "name": "阿克娅（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6011,
     "name": "朵蕾丝（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6012,
     "name": "朵蕾丝（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6013,
     "name": "朵蕾丝（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6014,
     "name": "希尔（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6015,
     "name": "希尔（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6016,
     "name": "希尔（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6017,
     "name": "希巴尔巴（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6018,
     "name": "希巴尔巴（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6019,
     "name": "希巴尔巴（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6020,
     "name": "艾诺菈（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6021,
     "name": "艾诺菈（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6022,
     "name": "艾诺菈（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6023,
     "name": "斯皮德（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6024,
     "name": "斯皮德（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6025,
     "name": "斯皮德（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6026,
     "name": "玛努斯（初级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6027,
     "name": "玛努斯（中级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 6028,
     "name": "玛努斯（高级）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8001,
     "name": "魔力喵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8002,
     "name": "道馆绿草精灵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8003,
     "name": "道馆魔草巫灵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8004,
     "name": "道馆丢丢",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8005,
     "name": "道馆记忆石",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8006,
     "name": "道馆幽影树",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8008,
     "name": "珂赛特老师",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8009,
     "name": "药炉",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8010,
     "name": "希露德老师",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8021,
@@ -5793,719 +6488,727 @@
       9
     ],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8022,
     "name": "斯维托维德",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 8023,
     "name": "特塞克",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9801,
     "name": "鸭吉吉_普通",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9802,
     "name": "鸭吉吉_草",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9803,
     "name": "鸭吉吉_火",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9804,
     "name": "鸭吉吉_水",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9805,
     "name": "鸭吉吉_光",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9806,
     "name": "鸭吉吉_地",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9807,
     "name": "鸭吉吉_冰",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9808,
     "name": "鸭吉吉_龙",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9809,
     "name": "鸭吉吉_电",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9810,
     "name": "鸭吉吉_毒",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9811,
     "name": "鸭吉吉_虫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9812,
     "name": "鸭吉吉_武",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9813,
     "name": "鸭吉吉_翼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9814,
     "name": "鸭吉吉_萌",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9815,
     "name": "鸭吉吉_幽",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9816,
     "name": "鸭吉吉_恶魔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9817,
     "name": "鸭吉吉_机械",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9818,
     "name": "鸭吉吉_幻",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9819,
     "name": "木桶",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9901,
     "name": "测试喵喵1",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9902,
     "name": "测试水蓝蓝1",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9903,
     "name": "测试火花1",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9904,
     "name": "测试喵喵2",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9905,
     "name": "测试水蓝蓝2",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9906,
     "name": "测试火花2（百分百闪避）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9907,
     "name": "无敌魔力猫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9908,
     "name": "无敌焰火",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9909,
     "name": "无敌水蓝蓝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9910,
     "name": "被克制测试喵喵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9911,
     "name": "抵抗测试喵喵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9912,
     "name": "大世界BUFF喵喵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9913,
     "name": "大世界BUFF水蓝蓝",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9914,
     "name": "大世界BUFF火花",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9919,
     "name": "幻化蓝掌测试",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9920,
     "name": "技能鸭吉吉配置版",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9940,
     "name": "测试AI鸭吉吉1",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9941,
     "name": "搭配的鸭吉吉",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9987,
     "name": "技能鸭吉吉5(布石）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9988,
     "name": "技能魔力喵4",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9989,
     "name": "技能魔力喵3",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9990,
     "name": "技能魔力喵2",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9991,
     "name": "技能魔力喵1",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9992,
     "name": "不死鸭吉吉",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9993,
     "name": "技能音速犬4",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9994,
     "name": "技能鸭吉吉3",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9995,
     "name": "技能鸭吉吉2",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9996,
     "name": "木桩鸭吉吉",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9997,
     "name": "技能鸭吉吉1（贪吃）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9998,
     "name": "击退鸭吉吉",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 9999,
     "name": "无敌鸭吉吉(测试用)",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 10000,
     "name": "随机精灵",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140001,
     "name": "20级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140002,
     "name": "25级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140003,
     "name": "35级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140004,
     "name": "40级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140005,
     "name": "45级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140006,
     "name": "50级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140007,
     "name": "55级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 140008,
     "name": "60级水桶模板",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440302,
     "name": "库伦boss战——恶魔叮",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440303,
     "name": "库伦booss战——雪蛮人",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440304,
     "name": "库伦boss战——库多西",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440305,
     "name": "A1最终战-吞噬",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440306,
     "name": "A1最终战-吞噬2",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440307,
     "name": "麦克达克",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440309,
     "name": "法瑞莎莎",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440310,
     "name": "蛰蛰",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440311,
     "name": "锅盔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440312,
     "name": "芙拉沃",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440313,
     "name": "狂风",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440314,
     "name": "微风",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440315,
     "name": "龙卷风",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440316,
     "name": "小石头",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440317,
     "name": "葛朗台",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 440318,
     "name": "老大",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000150,
     "name": "技能鸭吉吉5（水灵）",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000151,
     "name": "首领-魔力猫",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000152,
     "name": "首领-恶魔狼",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000153,
     "name": "首领-奇丽花",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000154,
     "name": "首领-布克棱岩",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000155,
     "name": "首领-岚鸟",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000156,
     "name": "首领-千棘盔",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000157,
     "name": "首领-花魁蜂后",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000158,
     "name": "首领-伊里斯",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000160,
     "name": "首领-音速犬",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000161,
     "name": "首领-蹦蹦花",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000162,
     "name": "首领-晶石蜗",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   },
   {
     "id": 13000166,
     "name": "首领-仪式巨像",
     "egg_groups": [],
     "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 14000001,
-    "name": "果冻-剧情变形用",
-    "egg_groups": [],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 14000002,
-    "name": "自动变形测试-斑斑",
-    "egg_groups": [
-      5
-    ],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 15000001,
-    "name": "斑斑 - （玩法用）",
-    "egg_groups": [],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 16000001,
-    "name": "春团-B1小游戏变形用",
-    "egg_groups": [],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 16000002,
-    "name": "厉毒修萝-B1小游戏变形用",
-    "egg_groups": [],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 16000003,
-    "name": "地鼠-A2拾遗变形任务用",
-    "egg_groups": [
-      6
-    ],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 17000001,
-    "name": "小帕尔-变形测试用",
-    "egg_groups": [
-      1
-    ],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 17000002,
-    "name": "帕尔萨斯-变形测试用",
-    "egg_groups": [
-      1
-    ],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 17000003,
-    "name": "龙息帕尔-变形测试用",
-    "egg_groups": [
-      1
-    ],
-    "evolves_from_id": null,
-    "has_shiny": false
-  },
-  {
-    "id": 17000004,
-    "name": "石肤蜥-极化钝化测试用",
-    "egg_groups": [
-      3,
-      11
-    ],
-    "evolves_from_id": null,
-    "has_shiny": false
+    "has_shiny": null,
+    "special_tags": []
   }
 ]
