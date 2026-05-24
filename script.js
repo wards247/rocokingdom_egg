@@ -4,21 +4,27 @@
     let petNames = [];
     let eggGroups = [];
     let evolvesFromId = [];
-    let hasShiny = [];
-    let femaleCounts = [];
-    let maleStock = [];
+    let petTags = [];               // 合并后的标签：special_tags + has_shiny
+    // 普通/异色分离存储（索引 -> 数量）
+    let femaleNormal = [];
+    let femaleShiny = [];
+    let maleNormal = [];
+    let maleShiny = [];
     let femaleCheckboxStates = [];
     let maleCheckboxStates = [];
     let compatibleMap = new Map();
     let groupNames = {};
+    let specialTagNames = {};
+    let seasonNames = {};
 
     let modalType = null;
-    let modalTempCounts = null;
+    let modalTempCounts = null;          // 普通数量（临时）
+    let modalTempShinyCounts = null;     // 异色数量（临时）
     let modalSavedCounts = null;
+    let modalSavedShinyCounts = null;
     let modalSavedCheckboxStates = null;
     let modalMaxFemales = 0;
     let modalSearchResults = [];
-    let isShinyMode = false;
     const evolutionChainCache = new Map();
 
     // ==================== 数据加载 ====================
@@ -31,10 +37,16 @@
             petNames = pets.map(p => p.name);
             eggGroups = pets.map(p => p.egg_groups || []);
             evolvesFromId = pets.map(p => p.evolves_from_id ?? null);
-            hasShiny = pets.map(p => p.has_shiny === true);
+            petTags = pets.map(p => {
+                const tags = [...(p.special_tags || [])];
+                if (p.has_shiny !== null && typeof p.has_shiny === 'number') {
+                    tags.push(p.has_shiny);
+                }
+                return tags;
+            });
             buildCompatibilityMap();
             resetCounters();
-            await loadGroupNames();
+            await loadDefinitions();
             refreshUI();
             return true;
         } catch (err) {
@@ -43,16 +55,23 @@
         }
     }
 
-    async function loadGroupNames() {
+    async function loadDefinitions() {
         try {
-            const resp = await fetch('./data/groups.json?t=' + Date.now());
+            const resp = await fetch('./data/defines.json?t=' + Date.now());
             if (resp.ok) {
-                const groups = await resp.json();
-                Object.assign(groupNames, groups);
+                const defs = await resp.json();
+                if (defs.egg_groups) Object.assign(groupNames, defs.egg_groups);
+                if (defs.season) {
+                    Object.assign(seasonNames, defs.season);
+                    Object.assign(specialTagNames, defs.season);
+                }
+                if (defs.special_tags) Object.assign(specialTagNames, defs.special_tags);
             }
         } catch (e) {
             for (let i = 1; i <= 15; i++) groupNames[i] = i;
         }
+        if (!specialTagNames[1001]) specialTagNames[1001] = '只有雄性';
+        if (!specialTagNames[1002]) specialTagNames[1002] = '只有雌性';
     }
 
     function buildCompatibilityMap() {
@@ -60,10 +79,10 @@
         const n = petIds.length;
         for (let i = 0; i < n; i++) compatibleMap.set(i, new Set());
         for (let i = 0; i < n; i++) {
-            if (eggGroups[i].length === 0) continue;
-            compatibleMap.get(i).add(i); // 自身可配
+            if (eggGroups[i].length === 0 || isNonBreedable(i)) continue;
+            compatibleMap.get(i).add(i);
             for (let j = i + 1; j < n; j++) {
-                if (eggGroups[j].length === 0) continue;
+                if (eggGroups[j].length === 0 || isNonBreedable(j)) continue;
                 if (hasCommonGroup(eggGroups[i], eggGroups[j])) {
                     compatibleMap.get(i).add(j);
                     compatibleMap.get(j).add(i);
@@ -77,21 +96,29 @@
         return false;
     }
 
+    function isNonBreedable(idx) {
+        return eggGroups[idx].includes(1) || petTags[idx].includes(300);
+    }
+
     function resetCounters() {
         const n = petIds.length;
-        femaleCounts = new Array(n).fill(0);
-        maleStock = new Array(n).fill(0);
+        femaleNormal = new Array(n).fill(0);
+        femaleShiny = new Array(n).fill(0);
+        maleNormal = new Array(n).fill(0);
+        maleShiny = new Array(n).fill(0);
         femaleCheckboxStates = new Array(n).fill(false);
         maleCheckboxStates = new Array(n).fill(false);
     }
 
     function buildDefaultData() {
-        petIds = [3001, 3011, 3151];
-        petNames = ['喵喵', '恶魔狼', '多多'];
-        eggGroups = [[6, 9], [6], [9]];
+        petIds = [3081, 3011, 3151];
+        petNames = ['治愈兔', '恶魔狼', '多多'];
+        eggGroups = [[6, 7], [6], [9]];
         evolvesFromId = [null, null, null];
-        hasShiny = [false, true, true];
-        groupNames = { 6: '植物', 9: '天空' };
+        petTags = [[101], [100], [100]];
+        groupNames = { 6: '动物组', 7: '妖精组', 9: '拟人组' };
+        seasonNames = { 101: 'S1 暗夜拾光', 102: 'S2 狂欢怪谈' };
+        specialTagNames = { ...seasonNames, 1001: '只有雄性', 1002: '只有雌性' };
         buildCompatibilityMap();
         resetCounters();
         refreshUI();
@@ -147,8 +174,8 @@
 
     function getNestTotal() { return Math.max(1, Math.min(10, parseInt(nestCountInput.value) || 10)); }
     function getMaxFemales() { return Math.max(0, getNestTotal() - 1); }
-    function getFemaleTotal() { return femaleCounts.reduce((a, b) => a + b, 0); }
-    function getMaleStockTotal() { return maleStock.reduce((a, b) => a + b, 0); }
+    function getFemaleTotal() { return femaleNormal.reduce((a, b) => a + b, 0) + femaleShiny.reduce((a, b) => a + b, 0); }
+    function getMaleStockTotal() { return maleNormal.reduce((a, b) => a + b, 0) + maleShiny.reduce((a, b) => a + b, 0); }
 
     function refreshUI() {
         const maxF = getMaxFemales();
@@ -172,15 +199,16 @@
         femaleSelectedDisplay.innerHTML = '';
         let hasFemale = false;
         petNames.forEach((_, idx) => {
-            if (femaleCounts[idx] > 0) {
+            // 显示普通雌性
+            if (femaleNormal[idx] > 0) {
                 hasFemale = true;
-                const tag = document.createElement('span');
-                tag.className = 'pet-tag female-tag';
-                tag.innerHTML = `<span>♀ ${petNames[idx]}</span><span class="tag-qty">×${femaleCounts[idx]}</span><button class="tag-remove" data-pet-index="${idx}" data-type="female">✕</button>`;
-                tag.addEventListener('click', (e) => {
-                    if (e.target.closest('.tag-remove')) return;
-                    startInlineEdit(tag, idx, 'female');
-                });
+                const tag = createPetTag(idx, 'female', false, femaleNormal[idx]);
+                femaleSelectedDisplay.appendChild(tag);
+            }
+            // 显示异色雌性
+            if (femaleShiny[idx] > 0) {
+                hasFemale = true;
+                const tag = createPetTag(idx, 'female', true, femaleShiny[idx]);
                 femaleSelectedDisplay.appendChild(tag);
             }
         });
@@ -189,42 +217,63 @@
         maleSelectedDisplay.innerHTML = '';
         let hasMale = false;
         petNames.forEach((_, idx) => {
-            if (maleStock[idx] > 0) {
+            if (maleNormal[idx] > 0) {
                 hasMale = true;
-                const tag = document.createElement('span');
-                tag.className = 'pet-tag male-tag';
-                tag.innerHTML = `<span>♂ ${petNames[idx]}</span><span class="tag-qty">×${maleStock[idx]}</span><button class="tag-remove" data-pet-index="${idx}" data-type="male">✕</button>`;
-                tag.addEventListener('click', (e) => {
-                    if (e.target.closest('.tag-remove')) return;
-                    startInlineEdit(tag, idx, 'male');
-                });
+                const tag = createPetTag(idx, 'male', false, maleNormal[idx]);
+                maleSelectedDisplay.appendChild(tag);
+            }
+            if (maleShiny[idx] > 0) {
+                hasMale = true;
+                const tag = createPetTag(idx, 'male', true, maleShiny[idx]);
                 maleSelectedDisplay.appendChild(tag);
             }
         });
         if (!hasMale) maleSelectedDisplay.innerHTML = '<span class="empty-hint">暂未选择</span>';
 
-        // 移除按钮事件
         document.querySelectorAll('.tag-remove').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const idx = parseInt(btn.dataset.petIndex);
+                const isShiny = btn.dataset.shiny === 'true';
                 if (btn.dataset.type === 'female') {
-                    femaleCounts[idx] = 0;
-                    femaleCheckboxStates[idx] = false;
+                    if (isShiny) {
+                        femaleShiny[idx] = 0;
+                    } else {
+                        femaleNormal[idx] = 0;
+                    }
+                    femaleCheckboxStates[idx] = (femaleNormal[idx] + femaleShiny[idx] > 0);
                 } else {
-                    maleStock[idx] = 0;
-                    maleCheckboxStates[idx] = false;
+                    if (isShiny) {
+                        maleShiny[idx] = 0;
+                    } else {
+                        maleNormal[idx] = 0;
+                    }
+                    maleCheckboxStates[idx] = (maleNormal[idx] + maleShiny[idx] > 0);
                 }
                 refreshUI();
             });
         });
     }
 
-    // 内联编辑
-    function startInlineEdit(tag, idx, type) {
+    function createPetTag(idx, type, isShiny, qty) {
+        const tag = document.createElement('span');
+        tag.className = 'pet-tag ' + (type === 'female' ? 'female-tag' : 'male-tag');
+        let prefix = type === 'female' ? '♀' : '♂';
+        if (isShiny) prefix = '⭐ ' + prefix;   // 标注“⭐”
+        tag.innerHTML = `<span>${prefix} ${petNames[idx]}</span><span class="tag-qty">×${qty}</span><button class="tag-remove" data-pet-index="${idx}" data-type="${type}" data-shiny="${isShiny}">✕</button>`;
+        tag.addEventListener('click', (e) => {
+            if (e.target.closest('.tag-remove')) return;
+            startInlineEdit(tag, idx, type, isShiny);
+        });
+        return tag;
+    }
+
+    function startInlineEdit(tag, idx, type, isShiny) {
         const qtySpan = tag.querySelector('.tag-qty');
         if (!qtySpan) return;
-        const currentVal = type === 'female' ? femaleCounts[idx] : maleStock[idx];
+        const currentVal = type === 'female'
+            ? (isShiny ? femaleShiny[idx] : femaleNormal[idx])
+            : (isShiny ? maleShiny[idx] : maleNormal[idx]);
         const input = document.createElement('input');
         input.type = 'number';
         input.min = 0;
@@ -239,14 +288,22 @@
             let newVal = Math.max(0, parseInt(input.value) || 0);
             if (type === 'female') {
                 const maxF = getMaxFemales();
-                const currentTotal = femaleCounts.reduce((a, b) => a + b, 0);
+                const currentTotal = getFemaleTotal();
                 const other = currentTotal - currentVal;
                 newVal = Math.min(newVal, maxF - other);
-                femaleCounts[idx] = newVal;
-                femaleCheckboxStates[idx] = newVal > 0;
+                if (isShiny) {
+                    femaleShiny[idx] = newVal;
+                } else {
+                    femaleNormal[idx] = newVal;
+                }
+                femaleCheckboxStates[idx] = (femaleNormal[idx] + femaleShiny[idx] > 0);
             } else {
-                maleStock[idx] = newVal;
-                maleCheckboxStates[idx] = newVal > 0;
+                if (isShiny) {
+                    maleShiny[idx] = newVal;
+                } else {
+                    maleNormal[idx] = newVal;
+                }
+                maleCheckboxStates[idx] = (maleNormal[idx] + maleShiny[idx] > 0);
             }
             refreshUI();
         };
@@ -290,11 +347,28 @@
     const modalCloseBtn = document.getElementById('modalCloseBtn');
     const modalCancel = document.getElementById('modalCancel');
     const modalConfirm = document.getElementById('modalConfirm');
-    const toggleShinyBtn = document.getElementById('toggleShinyBtn');
-    const shinyModeStatus = document.getElementById('shinyModeStatus');
     const searchBox = document.getElementById('searchBox');
+    const groupFilter = document.getElementById('groupFilter');
+    const seasonFilter = document.getElementById('seasonFilter');
 
     // ==================== 模态框与搜索 ====================
+    function populateFilters() {
+        groupFilter.innerHTML = '<option value="">点击选择蛋组</option>';
+        for (const [id, name] of Object.entries(groupNames)) {
+            const option = document.createElement('option');
+            option.value = id;
+            option.textContent = name;
+            groupFilter.appendChild(option);
+        }
+        seasonFilter.innerHTML = '<option value="">点击选择赛季异色</option>';
+        for (const [id, name] of Object.entries(seasonNames)) {
+            const option = document.createElement('option');
+            option.value = id;
+            option.textContent = name;
+            seasonFilter.appendChild(option);
+        }
+    }
+
     function renderSearchResults(results) {
         const container = document.getElementById('searchResults');
         container.innerHTML = '';
@@ -306,55 +380,60 @@
         for (const idx of results) {
             const div = document.createElement('div');
             div.className = 'search-result-item';
-
-            const isHatchable = !eggGroups[idx].includes(1);
-
+            const isHatchable = !isNonBreedable(idx);
             const left = document.createElement('div');
             left.className = 'left-info';
+
             const nameSpan = document.createElement('span');
             nameSpan.className = 'pet-name';
             nameSpan.textContent = petNames[idx];
             left.appendChild(nameSpan);
 
+            // 性别限制标签
+            if (petTags[idx].includes(1001)) {
+                const tag = document.createElement('span');
+                tag.style.cssText = 'color:#2c3e50; font-size:0.65rem; background:#dce6f5; border-radius:8px; padding:1px 6px; margin-left:6px;';
+                tag.textContent = '仅雄性';
+                left.appendChild(tag);
+            }
+            if (petTags[idx].includes(1002)) {
+                const tag = document.createElement('span');
+                tag.style.cssText = 'color:#2c3e50; font-size:0.65rem; background:#fde8e8; border-radius:8px; padding:1px 6px; margin-left:6px;';
+                tag.textContent = '仅雌性';
+                left.appendChild(tag);
+            }
+
             if (!isHatchable) {
                 const badSpan = document.createElement('span');
-                badSpan.style.color = '#d9534f';
-                badSpan.style.fontSize = '0.8rem';
-                badSpan.style.marginLeft = '6px';
+                badSpan.style.cssText = 'color:#d9534f; font-size:0.8rem; margin-left:6px;';
                 badSpan.textContent = '🚫不可孵蛋';
                 left.appendChild(badSpan);
             }
 
-            const qtyDiv = document.createElement('div');
-            qtyDiv.className = 'qty-ctrl';
-            const btnMinus = document.createElement('button');
-            btnMinus.textContent = '−';
-            const qtyInput = document.createElement('input');
-            qtyInput.type = 'number';
+            const qtyRow = document.createElement('div');
+            qtyRow.style.cssText = 'display: flex; align-items: center; gap: 12px; margin-top: 8px;';
 
-            if (!isHatchable) {
-                modalTempCounts[idx] = 0;
-                qtyInput.value = 0;
-                qtyInput.disabled = true;
-                btnMinus.disabled = true;
-            } else {
-                qtyInput.value = modalTempCounts[idx] || 0;
-            }
+            const maxLimit = modalType === 'female' ? modalMaxFemales : 99;
+            const seasonTags = petTags[idx].filter(t => seasonNames[t]);
 
-            qtyInput.min = 0;
-            qtyInput.max = modalType === 'female' ? modalMaxFemales : 99;
-            qtyInput.step = 1;
-            const btnPlus = document.createElement('button');
-            btnPlus.textContent = '+';
-
+            // 普通数量控件
+            const normalDiv = document.createElement('div');
+            normalDiv.className = 'qty-ctrl';
+            const btnMinus = document.createElement('button'); btnMinus.textContent = '−';
+            const qtyInput = document.createElement('input'); qtyInput.type = 'number';
+            qtyInput.min = 0; qtyInput.max = maxLimit; qtyInput.step = 1;
+            qtyInput.value = modalTempCounts[idx] || 0;
+            if (!isHatchable) { qtyInput.disabled = true; btnMinus.disabled = true; }
+            const btnPlus = document.createElement('button'); btnPlus.textContent = '+';
             if (!isHatchable) btnPlus.disabled = true;
 
             const updateQty = (newVal) => {
                 if (!isHatchable) return;
                 let val = Math.max(0, parseInt(newVal) || 0);
                 if (modalType === 'female') {
-                    const currentTotal = Object.values(modalTempCounts).reduce((s, v) => s + v, 0);
-                    const other = currentTotal - (modalTempCounts[idx] || 0);
+                    const currentTotal = Object.values(modalTempCounts).reduce((s, v) => s + v, 0)
+                        + Object.values(modalTempShinyCounts).reduce((s, v) => s + v, 0);
+                    const other = currentTotal - (modalTempCounts[idx] || 0) - (modalTempShinyCounts[idx] || 0);
                     val = Math.min(val, modalMaxFemales - other);
                 }
                 modalTempCounts[idx] = val;
@@ -363,17 +442,60 @@
             btnMinus.addEventListener('click', () => updateQty((modalTempCounts[idx] || 0) - 1));
             btnPlus.addEventListener('click', () => updateQty((modalTempCounts[idx] || 0) + 1));
             qtyInput.addEventListener('change', () => updateQty(parseInt(qtyInput.value) || 0));
+            normalDiv.appendChild(btnMinus);
+            normalDiv.appendChild(qtyInput);
+            normalDiv.appendChild(btnPlus);
+            qtyRow.appendChild(normalDiv);
 
-            qtyDiv.appendChild(btnMinus);
-            qtyDiv.appendChild(qtyInput);
-            qtyDiv.appendChild(btnPlus);
-            left.appendChild(qtyDiv);
+            // 异色数量控件（有赛季标签时显示，并添加边框）
+            if (seasonTags.length > 0) {
+                const shinyBox = document.createElement('div');
+                shinyBox.style.cssText = 'border: 2px solid #e6a317; border-radius: 10px; padding: 4px 8px; display: flex; flex-direction: column; align-items: center; background: #fffdf5;';
+
+                const shinyDiv = document.createElement('div');
+                shinyDiv.className = 'qty-ctrl';
+                const sMinus = document.createElement('button'); sMinus.textContent = '−';
+                const sInput = document.createElement('input'); sInput.type = 'number';
+                sInput.min = 0; sInput.max = maxLimit; sInput.step = 1;
+                sInput.value = modalTempShinyCounts[idx] || 0;
+                if (!isHatchable) { sInput.disabled = true; sMinus.disabled = true; }
+                const sPlus = document.createElement('button'); sPlus.textContent = '+';
+                if (!isHatchable) sPlus.disabled = true;
+
+                const updateShiny = (newVal) => {
+                    if (!isHatchable) return;
+                    let val = Math.max(0, parseInt(newVal) || 0);
+                    if (modalType === 'female') {
+                        const currentTotal = Object.values(modalTempCounts).reduce((s, v) => s + v, 0)
+                            + Object.values(modalTempShinyCounts).reduce((s, v) => s + v, 0);
+                        const other = currentTotal - (modalTempCounts[idx] || 0) - (modalTempShinyCounts[idx] || 0);
+                        val = Math.min(val, modalMaxFemales - other);
+                    }
+                    modalTempShinyCounts[idx] = val;
+                    sInput.value = val;
+                };
+                sMinus.addEventListener('click', () => updateShiny((modalTempShinyCounts[idx] || 0) - 1));
+                sPlus.addEventListener('click', () => updateShiny((modalTempShinyCounts[idx] || 0) + 1));
+                sInput.addEventListener('change', () => updateShiny(parseInt(sInput.value) || 0));
+                shinyDiv.appendChild(sMinus);
+                shinyDiv.appendChild(sInput);
+                shinyDiv.appendChild(sPlus);
+                shinyBox.appendChild(shinyDiv);
+
+                const seasonBadge = document.createElement('span');
+                seasonBadge.style.cssText = 'font-size:0.6rem; color:#b06030; margin-top:2px;';
+                seasonBadge.textContent = seasonTags.map(t => seasonNames[t]).join('/');
+                shinyBox.appendChild(seasonBadge);
+
+                qtyRow.appendChild(shinyBox);
+            }
+
+            left.appendChild(qtyRow);
             div.appendChild(left);
 
             const groupsDiv = document.createElement('div');
             groupsDiv.className = 'groups';
-            const groups = eggGroups[idx];
-            for (const g of groups) {
+            for (const g of eggGroups[idx]) {
                 const badge = document.createElement('span');
                 badge.className = 'group-badge';
                 badge.textContent = groupNames[g] || g;
@@ -384,69 +506,72 @@
         }
     }
 
-    function showAllShinyBaseForms() {
+    function performFilteredSearch(keyword) {
+        const groupVal = groupFilter.value ? parseInt(groupFilter.value) : null;
+        const seasonVal = seasonFilter.value ? parseInt(seasonFilter.value) : null;
+        const lowerKeyword = keyword.trim().toLowerCase();
+
         const candidates = [];
         for (let i = 0; i < petIds.length; i++) {
             if (eggGroups[i].length === 0) continue;
-            if (hasShiny[i] && evolvesFromId[i] === null) candidates.push(i);
+            if (modalType === 'female' && petTags[i].includes(1001)) continue;
+            if (modalType === 'male' && petTags[i].includes(1002)) continue;
+            if (groupVal !== null && !eggGroups[i].includes(groupVal)) continue;
+            if (seasonVal !== null && !petTags[i].includes(seasonVal)) continue;
+            if (lowerKeyword && !petNames[i].toLowerCase().includes(lowerKeyword)) continue;
+            candidates.push(i);
         }
-        modalSearchResults = candidates;
-        renderSearchResults(candidates);
-    }
 
-    function performSearch(keyword) {
-        if (!keyword.trim()) {
-            if (isShinyMode) {
-                showAllShinyBaseForms();
-            } else {
-                document.getElementById('searchResults').innerHTML = '';
-                modalSearchResults = [];
-            }
+        if (groupVal === null && seasonVal === null && !lowerKeyword) {
+            document.getElementById('searchResults').innerHTML = '';
+            modalSearchResults = [];
             return;
         }
-        const lowerKeyword = keyword.trim().toLowerCase();
-        const matchedIndices = new Set();
-        for (let i = 0; i < petNames.length; i++) {
-            if (eggGroups[i].length === 0) continue;
-            if (petNames[i].toLowerCase().includes(lowerKeyword)) {
-                if (isShinyMode && !(hasShiny[i] && evolvesFromId[i] === null)) continue;
-                matchedIndices.add(i);
-            }
-        }
-        const fullChainIndices = getEvolutionChain(Array.from(matchedIndices));
-        if (isShinyMode) {
-            modalSearchResults = fullChainIndices.filter(i => hasShiny[i] && evolvesFromId[i] === null && eggGroups[i].length > 0);
-        } else {
-            modalSearchResults = Array.from(fullChainIndices).filter(i => eggGroups[i].length > 0);
-        }
-        renderSearchResults(modalSearchResults);
+
+        const chainIndices = getEvolutionChain(candidates);
+        const filtered = chainIndices.filter(i => {
+            if (eggGroups[i].length === 0) return false;
+            if (modalType === 'female' && petTags[i].includes(1001)) return false;
+            if (modalType === 'male' && petTags[i].includes(1002)) return false;
+            if (groupVal !== null && !eggGroups[i].includes(groupVal)) return false;
+            if (seasonVal !== null && !petTags[i].includes(seasonVal)) return false;
+            return true;
+        });
+
+        modalSearchResults = filtered;
+        renderSearchResults(filtered);
     }
 
     function openModal(type) {
         modalType = type;
         modalMaxFemales = getMaxFemales();
+        const n = petIds.length;
         if (type === 'female') {
-            modalSavedCounts = [...femaleCounts];
+            modalSavedCounts = [...femaleNormal];
+            modalSavedShinyCounts = [...femaleShiny];
             modalSavedCheckboxStates = [...femaleCheckboxStates];
-            modalTempCounts = [...femaleCounts];
+            modalTempCounts = [...femaleNormal];
+            modalTempShinyCounts = new Array(n).fill(0);
+            // 恢复已有异色数量
+            for (let i = 0; i < n; i++) modalTempShinyCounts[i] = femaleShiny[i];
         } else {
-            modalSavedCounts = [...maleStock];
+            modalSavedCounts = [...maleNormal];
+            modalSavedShinyCounts = [...maleShiny];
             modalSavedCheckboxStates = [...maleCheckboxStates];
-            modalTempCounts = [...maleStock];
+            modalTempCounts = [...maleNormal];
+            modalTempShinyCounts = new Array(n).fill(0);
+            for (let i = 0; i < n; i++) modalTempShinyCounts[i] = maleShiny[i];
         }
         modalTitle.innerHTML = type === 'female'
             ? `🌸 选择雌性精灵 <span style="font-size:0.8rem;">(上限${modalMaxFemales}只)</span>`
             : '♂️ 选择雄性精灵（库存）';
         document.getElementById('petSearchInput').value = '';
+        document.getElementById('searchResults').innerHTML = '';
+        modalSearchResults = [];
 
-        if (isShinyMode) {
-            searchBox.style.display = 'none';
-            performSearch('');
-        } else {
-            searchBox.style.display = 'flex';
-            document.getElementById('searchResults').innerHTML = '';
-            modalSearchResults = [];
-        }
+        populateFilters();
+        groupFilter.value = '';
+        seasonFilter.value = '';
 
         modalOverlay.style.display = 'flex';
         document.body.style.overflow = 'hidden';
@@ -455,20 +580,24 @@
 
     function closeModal(confirmed) {
         if (confirmed && modalType) {
+            const n = petIds.length;
             if (modalType === 'female') {
-                for (let i = 0; i < petIds.length; i++) {
-                    femaleCounts[i] = modalTempCounts[i] || 0;
-                    femaleCheckboxStates[i] = (femaleCounts[i] > 0);
+                for (let i = 0; i < n; i++) {
+                    femaleNormal[i] = modalTempCounts[i] || 0;
+                    femaleShiny[i] = modalTempShinyCounts[i] || 0;
+                    femaleCheckboxStates[i] = (femaleNormal[i] + femaleShiny[i] > 0);
                 }
             } else {
-                for (let i = 0; i < petIds.length; i++) {
-                    maleStock[i] = modalTempCounts[i] || 0;
-                    maleCheckboxStates[i] = (maleStock[i] > 0);
+                for (let i = 0; i < n; i++) {
+                    maleNormal[i] = modalTempCounts[i] || 0;
+                    maleShiny[i] = modalTempShinyCounts[i] || 0;
+                    maleCheckboxStates[i] = (maleNormal[i] + maleShiny[i] > 0);
                 }
             }
         }
         modalType = null;
         modalTempCounts = null;
+        modalTempShinyCounts = null;
         modalOverlay.style.display = 'none';
         document.body.style.overflow = '';
         nestCountInput.disabled = false;
@@ -476,24 +605,19 @@
         refreshUI();
     }
 
-    function cancelModal() {
-        closeModal(false);
-    }
-
-    toggleShinyBtn.addEventListener('click', () => {
-        isShinyMode = !isShinyMode;
-        if (isShinyMode) {
-            toggleShinyBtn.textContent = '🔄 切换至普通配对模式';
-            shinyModeStatus.textContent = '当前：异色配对模式';
-        } else {
-            toggleShinyBtn.textContent = '🔄 切换至异色配对模式';
-            shinyModeStatus.textContent = '当前：普通模式';
-        }
-    });
+    function cancelModal() { closeModal(false); }
 
     // ==================== 事件绑定 ====================
-    clearFemaleBtn.addEventListener('click', () => { femaleCounts.fill(0); femaleCheckboxStates.fill(false); refreshUI(); });
-    clearMaleBtn.addEventListener('click', () => { maleStock.fill(0); maleCheckboxStates.fill(false); refreshUI(); });
+    clearFemaleBtn.addEventListener('click', () => {
+        femaleNormal.fill(0); femaleShiny.fill(0);
+        femaleCheckboxStates.fill(false);
+        refreshUI();
+    });
+    clearMaleBtn.addEventListener('click', () => {
+        maleNormal.fill(0); maleShiny.fill(0);
+        maleCheckboxStates.fill(false);
+        refreshUI();
+    });
     modalCloseBtn.addEventListener('click', cancelModal);
     modalCancel.addEventListener('click', cancelModal);
     modalConfirm.addEventListener('click', () => closeModal(true));
@@ -501,10 +625,21 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && modalOverlay.style.display === 'flex') cancelModal(); });
     openFemaleModalBtn.addEventListener('click', () => openModal('female'));
     openMaleModalBtn.addEventListener('click', () => openModal('male'));
-    document.getElementById('searchBtn').addEventListener('click', () => performSearch(document.getElementById('petSearchInput').value));
-    document.getElementById('petSearchInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') performSearch(e.target.value); });
 
-    // ==================== 配窝推荐算法（修复溢出） ====================
+    groupFilter.addEventListener('change', () => performFilteredSearch(document.getElementById('petSearchInput').value));
+    seasonFilter.addEventListener('change', () => performFilteredSearch(document.getElementById('petSearchInput').value));
+
+    document.getElementById('resetFiltersBtn').addEventListener('click', () => {
+        groupFilter.value = '';
+        seasonFilter.value = '';
+        document.getElementById('petSearchInput').value = '';
+        performFilteredSearch('');
+    });
+
+    document.getElementById('searchBtn').addEventListener('click', () => performFilteredSearch(document.getElementById('petSearchInput').value));
+    document.getElementById('petSearchInput').addEventListener('keypress', (e) => { if (e.key === 'Enter') performFilteredSearch(e.target.value); });
+
+    // ==================== 配窝推荐算法 ====================
     let lastResultData = null;
     const GRID_SIZE = 7;
     let currentPlacement = { maleCoords: [], femaleCoords: [], maleSlots: [], femaleInstances: [] };
@@ -524,132 +659,169 @@
     }
 
     function computeRecommendation() {
-        const nestTotal = getNestTotal();
-        const femaleInstances = [];
-        femaleCounts.forEach((cnt, sp) => { for (let i = 0; i < cnt; i++) femaleInstances.push({ species: sp, id: `f-${sp}-${i}` }); });
-        const requiredMales = nestTotal - femaleInstances.length;
-        if (requiredMales <= 0) return { error: '雌性已占满所有窝，请留至少一个雄性窝。' };
-        const stockMap = new Map();
-        maleStock.forEach((cnt, idx) => { if (cnt > 0) stockMap.set(idx, cnt); });
-        if (stockMap.size === 0) return { error: '雄性库存为空。' };
+    const nestTotal = getNestTotal();
+    const femaleInstances = [];
+    femaleNormal.forEach((cnt, sp) => {
+        for (let i = 0; i < cnt; i++) femaleInstances.push({ species: sp, id: `f-${sp}-${i}`, isShiny: false });
+    });
+    femaleShiny.forEach((cnt, sp) => {
+        for (let i = 0; i < cnt; i++) femaleInstances.push({ species: sp, id: `fs-${sp}-${i}`, isShiny: true });
+    });
 
-        const maleLimit = new Map();
-        for (const [mSp] of stockMap) maleLimit.set(mSp, femaleInstances.filter(f => compatibleMap.get(mSp).has(f.species)).length);
-        const femaleDeps = femaleInstances.map(f => {
-            const possible = [];
-            for (const [mSp, cnt] of stockMap) if (compatibleMap.get(mSp).has(f.species) && cnt > 0) possible.push(mSp);
-            return { female: f, possible };
-        });
+    const requiredMales = nestTotal - femaleInstances.length;
+    if (requiredMales <= 0) return { error: '雌性已占满所有窝，请留至少一个雄性窝。' };
 
-        const reservedPairs = [], reservedMales = new Set(), lockedFemaleIds = new Set();
-        const tempReserve = new Map(stockMap);
-        const uniqueDeps = femaleDeps.filter(d => d.possible.length === 1 && tempReserve.get(d.possible[0]) === 1);
-        const usedUnique = new Set();
-        for (const dep of uniqueDeps) {
-            const mSp = dep.possible[0];
-            if (usedUnique.has(mSp)) continue;
-            if (tempReserve.get(mSp) >= 1) {
-                reservedPairs.push({ femaleId: dep.female.id, maleSpecies: mSp });
-                reservedMales.add(mSp);
-                usedUnique.add(mSp);
-                lockedFemaleIds.add(dep.female.id);
-                tempReserve.set(mSp, tempReserve.get(mSp) - 1);
-                if (tempReserve.get(mSp) <= 0) tempReserve.delete(mSp);
-            }
+    // 分开普通和异色库存
+    const stockNormal = new Map();
+    const stockShiny = new Map();
+    maleNormal.forEach((cnt, idx) => { if (cnt > 0) stockNormal.set(idx, cnt); });
+    maleShiny.forEach((cnt, idx) => { if (cnt > 0) stockShiny.set(idx, cnt); });
+
+    const totalStock = new Map();
+    stockNormal.forEach((cnt, idx) => totalStock.set(idx, (totalStock.get(idx) || 0) + cnt));
+    stockShiny.forEach((cnt, idx) => totalStock.set(idx, (totalStock.get(idx) || 0) + cnt));
+    if (totalStock.size === 0) return { error: '雄性库存为空。' };
+
+    const consumeMale = (species) => {
+        if (stockNormal.get(species) > 0) {
+            stockNormal.set(species, stockNormal.get(species) - 1);
+            totalStock.set(species, totalStock.get(species) - 1);
+            return { species, isShiny: false };
+        } else if (stockShiny.get(species) > 0) {
+            stockShiny.set(species, stockShiny.get(species) - 1);
+            totalStock.set(species, totalStock.get(species) - 1);
+            return { species, isShiny: true };
         }
+        return null;
+    };
 
-        // ★ 修复：如果预留数量超过所需雄性数量，截断并保留最稀缺的配对
-        if (reservedPairs.length > requiredMales) {
-            const maleCoverCount = new Map();
-            for (const [mSp] of stockMap) {
-                maleCoverCount.set(mSp, femaleInstances.filter(f => compatibleMap.get(mSp).has(f.species)).length);
-            }
-            reservedPairs.sort((a, b) => (maleCoverCount.get(a.maleSpecies) || 0) - (maleCoverCount.get(b.maleSpecies) || 0));
-            const removedPairs = reservedPairs.splice(requiredMales);
-            for (const rp of removedPairs) {
-                lockedFemaleIds.delete(rp.femaleId);
-                reservedMales.delete(rp.maleSpecies);
-                tempReserve.set(rp.maleSpecies, (tempReserve.get(rp.maleSpecies) || 0) + 1);
-            }
-        }
-
-        const workingStock = new Map(stockMap);
-        reservedPairs.forEach(rp => {
-            workingStock.set(rp.maleSpecies, workingStock.get(rp.maleSpecies) - 1);
-            if (workingStock.get(rp.maleSpecies) <= 0) workingStock.delete(rp.maleSpecies);
-        });
-
-        const remainingSlots = requiredMales - reservedPairs.length;
-        const selectedExtra = [];
-        const uncoveredFemaleIds = new Set(femaleInstances.map(f => f.id));
-        reservedPairs.forEach(rp => {
-            const comp = compatibleMap.get(rp.maleSpecies);
-            femaleInstances.forEach(f => { if (comp.has(f.species)) uncoveredFemaleIds.delete(f.id); });
-        });
-
-        const tempStock = new Map(workingStock);
-        for (let i = 0; i < remainingSlots; i++) {
-            let best = -1, bestNew = -1, bestTotal = -1;
-            for (const [mSp, cnt] of tempStock) {
-                if (cnt <= 0) continue;
-                const curCnt = reservedPairs.filter(r => r.maleSpecies === mSp).length + selectedExtra.filter(s => s === mSp).length;
-                if (curCnt >= (maleLimit.get(mSp) || 0)) continue;
-                const comp = compatibleMap.get(mSp);
-                let newC = 0, total = 0;
-                femaleInstances.forEach(f => { if (comp.has(f.species)) { total++; if (uncoveredFemaleIds.has(f.id)) newC++; } });
-                if (newC > bestNew || (newC === bestNew && total > bestTotal)) { bestNew = newC; bestTotal = total; best = mSp; }
-            }
-            if (best === -1) break;
-            selectedExtra.push(best);
-            tempStock.set(best, tempStock.get(best) - 1);
-            if (tempStock.get(best) <= 0) tempStock.delete(best);
-            const cov = compatibleMap.get(best);
-            femaleInstances.forEach(f => { if (cov.has(f.species)) uncoveredFemaleIds.delete(f.id); });
-        }
-        while (selectedExtra.length < remainingSlots && tempStock.size > 0) {
-            let best = -1, bestTotal = -1;
-            for (const [mSp, cnt] of tempStock) {
-                if (cnt <= 0) continue;
-                const curCnt = reservedPairs.filter(r => r.maleSpecies === mSp).length + selectedExtra.filter(s => s === mSp).length;
-                if (curCnt >= (maleLimit.get(mSp) || 0)) continue;
-                let total = 0;
-                const comp = compatibleMap.get(mSp);
-                femaleInstances.forEach(f => { if (comp.has(f.species)) total++; });
-                if (total > bestTotal) { bestTotal = total; best = mSp; }
-            }
-            if (best === -1) break;
-            selectedExtra.push(best);
-            tempStock.set(best, tempStock.get(best) - 1);
-            if (tempStock.get(best) <= 0) tempStock.delete(best);
-        }
-
-        let allMaleSlots = reservedPairs.map(rp => ({ species: rp.maleSpecies, locked: true, lockedForIds: [] }));
-        selectedExtra.forEach(sp => allMaleSlots.push({ species: sp, locked: false, lockedForIds: [] }));
-
-        const optimized = ensureHallCondition(femaleInstances, allMaleSlots);
-        const finalMaleSlots = optimized.map(m => ({ ...m, lockedForIds: [] }));
-        const emptySlots = requiredMales - finalMaleSlots.length;
-
-        calcUniquePairs(femaleInstances, finalMaleSlots);
-
-        const coveredFemaleIds = new Set();
-        finalMaleSlots.forEach(m => {
-            const comp = compatibleMap.get(m.species);
-            femaleInstances.forEach(f => { if (comp.has(f.species)) coveredFemaleIds.add(f.id); });
-        });
-        const uncoveredFemales = femaleInstances.filter(f => !coveredFemaleIds.has(f.id));
-
-        const maleCoverDetails = finalMaleSlots.map(m => {
-            const comp = compatibleMap.get(m.species);
-            const covered = femaleInstances.filter(f => comp.has(f.species));
-            return {
-                species: m.species, locked: m.locked, lockedForIds: m.lockedForIds,
-                coveredNames: covered.map(f => petNames[f.species]),
-                coveredIds: covered.map(f => f.id)
-            };
-        });
-        return { femaleInstances, allMaleSlots: finalMaleSlots, emptySlots, uncoveredFemales, maleCoverDetails };
+    const maleLimit = new Map();
+    for (const [mSp] of totalStock) {
+        maleLimit.set(mSp, femaleInstances.filter(f => compatibleMap.get(mSp).has(f.species)).length);
     }
+
+    const femaleDeps = femaleInstances.map(f => {
+        const possible = [];
+        for (const [mSp, cnt] of totalStock) {
+            if (compatibleMap.get(mSp).has(f.species) && cnt > 0) possible.push(mSp);
+        }
+        return { female: f, possible };
+    });
+
+    // 预留唯一依赖
+    const reservedPairs = [], reservedMales = new Set(), lockedFemaleIds = new Set();
+    const uniqueDeps = femaleDeps.filter(d => d.possible.length === 1 && totalStock.get(d.possible[0]) === 1);
+    const usedUnique = new Set();
+    for (const dep of uniqueDeps) {
+        const mSp = dep.possible[0];
+        if (usedUnique.has(mSp)) continue;
+        if (totalStock.get(mSp) >= 1) {
+            const male = consumeMale(mSp);
+            if (!male) continue;
+            reservedPairs.push({ femaleId: dep.female.id, maleSpecies: mSp, isShiny: male.isShiny });
+            reservedMales.add(mSp);
+            usedUnique.add(mSp);
+            lockedFemaleIds.add(dep.female.id);
+        }
+    }
+
+    // 截断修复
+    if (reservedPairs.length > requiredMales) {
+        const maleCoverCount = new Map();
+        for (const [mSp] of totalStock) {
+            maleCoverCount.set(mSp, femaleInstances.filter(f => compatibleMap.get(mSp).has(f.species)).length);
+        }
+        reservedPairs.sort((a, b) => (maleCoverCount.get(a.maleSpecies) || 0) - (maleCoverCount.get(b.maleSpecies) || 0));
+        const removedPairs = reservedPairs.splice(requiredMales);
+        for (const rp of removedPairs) {
+            lockedFemaleIds.delete(rp.femaleId);
+            reservedMales.delete(rp.maleSpecies);
+            if (rp.isShiny) {
+                stockShiny.set(rp.maleSpecies, (stockShiny.get(rp.maleSpecies) || 0) + 1);
+            } else {
+                stockNormal.set(rp.maleSpecies, (stockNormal.get(rp.maleSpecies) || 0) + 1);
+            }
+            totalStock.set(rp.maleSpecies, (totalStock.get(rp.maleSpecies) || 0) + 1);
+        }
+    }
+
+    const remainingSlots = requiredMales - reservedPairs.length;
+    const selectedExtra = [];
+    const uncoveredFemaleIds = new Set(femaleInstances.map(f => f.id));
+    reservedPairs.forEach(rp => {
+        const comp = compatibleMap.get(rp.maleSpecies);
+        femaleInstances.forEach(f => { if (comp.has(f.species)) uncoveredFemaleIds.delete(f.id); });
+    });
+
+    // 贪心选择
+    for (let i = 0; i < remainingSlots; i++) {
+        let bestSp = -1, bestNew = -1, bestTotal = -1;
+        for (const [mSp, cnt] of totalStock) {
+            if (cnt <= 0) continue;
+            const curCnt = reservedPairs.filter(r => r.maleSpecies === mSp).length + selectedExtra.filter(s => s.species === mSp).length;
+            if (curCnt >= (maleLimit.get(mSp) || 0)) continue;
+            const comp = compatibleMap.get(mSp);
+            let newC = 0, total = 0;
+            femaleInstances.forEach(f => { if (comp.has(f.species)) { total++; if (uncoveredFemaleIds.has(f.id)) newC++; } });
+            if (newC > bestNew || (newC === bestNew && total > bestTotal)) { bestNew = newC; bestTotal = total; bestSp = mSp; }
+        }
+        if (bestSp === -1) break;
+        const male = consumeMale(bestSp);
+        if (!male) break;
+        selectedExtra.push(male);
+        const cov = compatibleMap.get(bestSp);
+        femaleInstances.forEach(f => { if (cov.has(f.species)) uncoveredFemaleIds.delete(f.id); });
+    }
+
+    while (selectedExtra.length < remainingSlots && totalStock.size > 0) {
+        let bestSp = -1, bestTotal = -1;
+        for (const [mSp, cnt] of totalStock) {
+            if (cnt <= 0) continue;
+            const curCnt = reservedPairs.filter(r => r.maleSpecies === mSp).length + selectedExtra.filter(s => s.species === mSp).length;
+            if (curCnt >= (maleLimit.get(mSp) || 0)) continue;
+            let total = 0;
+            const comp = compatibleMap.get(mSp);
+            femaleInstances.forEach(f => { if (comp.has(f.species)) total++; });
+            if (total > bestTotal) { bestTotal = total; bestSp = mSp; }
+        }
+        if (bestSp === -1) break;
+        const male = consumeMale(bestSp);
+        if (!male) break;
+        selectedExtra.push(male);
+    }
+
+    let allMaleSlots = reservedPairs.map(rp => ({ species: rp.maleSpecies, locked: true, lockedForIds: [], isShiny: rp.isShiny }));
+    selectedExtra.forEach(m => allMaleSlots.push({ species: m.species, locked: false, lockedForIds: [], isShiny: m.isShiny }));
+
+    const optimized = ensureHallCondition(femaleInstances, allMaleSlots);
+    const finalMaleSlots = optimized.map(m => ({ ...m, lockedForIds: [] }));
+    const emptySlots = requiredMales - finalMaleSlots.length;
+
+    calcUniquePairs(femaleInstances, finalMaleSlots);
+
+    const coveredFemaleIds = new Set();
+    finalMaleSlots.forEach(m => {
+        const comp = compatibleMap.get(m.species);
+        femaleInstances.forEach(f => { if (comp.has(f.species)) coveredFemaleIds.add(f.id); });
+    });
+    const uncoveredFemales = femaleInstances.filter(f => !coveredFemaleIds.has(f.id));
+
+    // ★ 关键修改：coveredIds 使用物种索引和异色标记
+    const maleCoverDetails = finalMaleSlots.map(m => {
+        const comp = compatibleMap.get(m.species);
+        const covered = femaleInstances.filter(f => comp.has(f.species));
+        return {
+            species: m.species,
+            locked: m.locked,
+            lockedForIds: m.lockedForIds,
+            isShiny: m.isShiny,
+            coveredNames: covered.map(f => petNames[f.species]),
+            coveredIds: covered.map(f => ({ id: f.species, isShiny: f.isShiny }))
+        };
+    });
+
+    return { femaleInstances, allMaleSlots: finalMaleSlots, emptySlots, uncoveredFemales, maleCoverDetails };
+}
 
     function maxMatching(females, maleList) {
         const n = maleList.length;
@@ -690,81 +862,118 @@
     }
 
     function renderResult(result) {
-        if (result.error) {
-            globalMsg.innerHTML = `<div class="warning">${result.error}</div>`;
-            resultArea.style.display = 'none';
-            placementArea.style.display = 'none';
-            placementBtn.style.display = 'none';
-            return;
-        }
-        globalMsg.innerHTML = '';
-        resultArea.style.display = 'block';
-        placementBtn.style.display = 'inline-flex';
-        const { femaleInstances, allMaleSlots, emptySlots, uncoveredFemales, maleCoverDetails } = result;
-        const femaleSpeciesIdx = {};
-        femaleInstances.forEach(f => { if (!femaleSpeciesIdx[f.species]) femaleSpeciesIdx[f.species] = []; femaleSpeciesIdx[f.species].push(f); });
-        const maleSpeciesIdx = {};
-        allMaleSlots.forEach((m, i) => { if (!maleSpeciesIdx[m.species]) maleSpeciesIdx[m.species] = []; maleSpeciesIdx[m.species].push({ ...m, inst: i }); });
-        nestVisualDiv.innerHTML = '';
-
-        const uncoveredIds = new Set(uncoveredFemales.map(f => f.id));
-
-        femaleInstances.forEach(f => {
-            const total = femaleSpeciesIdx[f.species].length, idx = femaleSpeciesIdx[f.species].indexOf(f);
-            const div = document.createElement('div');
-            div.className = 'nest-item female';
-            div.innerHTML = `<span class="icon">♀️</span><span>${getDisplayName(f.species, idx, total)}</span>`;
-
-            if (uncoveredIds.has(f.id)) {
-                const overlay = document.createElement('span');
-                overlay.style.cssText = 'position:absolute; top:0; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background: rgba(255,100,100,0.35); border-radius: 20px; z-index:1;';
-                const icon = document.createElement('span');
-                icon.style.cssText = 'font-size:2.5rem; font-weight:bold; color: rgba(221, 21, 204, 0.45); text-shadow: 0 0 8px white; line-height:1; transform: translateY(-12px);';
-                icon.textContent = '⚠️';
-                overlay.appendChild(icon);
-                div.style.position = 'relative';
-                div.appendChild(overlay);
-            }
-
-            nestVisualDiv.appendChild(div);
-        });
-        allMaleSlots.forEach((m, i) => {
-            const total = maleSpeciesIdx[m.species].length, info = maleSpeciesIdx[m.species].find(x => x.inst === i);
-            const idx = info ? maleSpeciesIdx[m.species].indexOf(info) : 0;
-            const div = document.createElement('div'); div.className = 'nest-item male';
-            div.innerHTML = `<span class="icon">${m.locked ? '🔒♂️' : '♂️'}</span><span>${getDisplayName(m.species, idx, total)}</span>`;
-            nestVisualDiv.appendChild(div);
-        });
-        for (let i = 0; i < emptySlots; i++) {
-            const div = document.createElement('div'); div.className = 'nest-item male'; div.style.opacity = '0.5';
-            div.innerHTML = '<span class="icon">♂️</span><span>(空窝)</span>';
-            nestVisualDiv.appendChild(div);
-        }
-        maleDetailsDiv.innerHTML = '';
-        maleCoverDetails.forEach((md, i) => {
-            const total = maleSpeciesIdx[md.species].length, info = maleSpeciesIdx[md.species].find(x => x.inst === i);
-            const idx = info ? maleSpeciesIdx[md.species].indexOf(info) : 0;
-            const card = document.createElement('div'); card.className = 'male-card';
-            const lockedNames = (md.lockedForIds || []).map(id => petNames[parseInt(id.split('-')[1])]).join('、');
-            const lockBadge = lockedNames ? `<span style="color:#b06030;font-weight:700;">🔒 唯一依赖·专属配对：${lockedNames}</span>` : '';
-            const tags = md.coveredNames.map(n => `<span class="tag">${n}</span>`).join(' ');
-            const groups = eggGroups[md.species].map(g => groupNames[g] || g).join('/');
-            card.innerHTML = `
-                <div class="card-header">
-                    <strong>♂ ${getDisplayName(md.species, idx, total)}</strong>
-                    <span class="egg-groups">${groups}</span>
-                </div>
-                <div>(窝${femaleInstances.length + i + 1}) ${lockBadge}</div>
-                <div style="font-size:0.8rem;">可配雌性：${tags || '<span style="color:#999;">无</span>'}</div>
-            `;
-            maleDetailsDiv.appendChild(card);
-        });
-        let summary = '';
-        if (uncoveredFemales.length > 0) summary += `<span style="color:#b34a4a;">⚠️ 以下雌性无法被覆盖：${uncoveredFemales.map(f => petNames[f.species]).join('、')}</span><br>`;
-        else summary += `<span style="color:#2d5a27;">✅ 所有雌性均已覆盖！</span><br>`;
-        if (emptySlots > 0) summary += `<span style="color:#ab6d2a;">📌 为防止雄性闲置，自动少放${emptySlots}只雄性。</span><br>`;
-        coverageSummaryDiv.innerHTML = summary;
+    if (result.error) {
+        globalMsg.innerHTML = `<div class="warning">${result.error}</div>`;
+        resultArea.style.display = 'none';
+        placementArea.style.display = 'none';
+        placementBtn.style.display = 'none';
+        return;
     }
+    globalMsg.innerHTML = '';
+    resultArea.style.display = 'block';
+    placementBtn.style.display = 'inline-flex';
+    const { femaleInstances, allMaleSlots, emptySlots, uncoveredFemales, maleCoverDetails } = result;
+    const femaleSpeciesIdx = {};
+    femaleInstances.forEach(f => {
+        if (!femaleSpeciesIdx[f.species]) femaleSpeciesIdx[f.species] = [];
+        femaleSpeciesIdx[f.species].push(f);
+    });
+    const maleSpeciesIdx = {};
+    allMaleSlots.forEach((m, i) => {
+        if (!maleSpeciesIdx[m.species]) maleSpeciesIdx[m.species] = [];
+        maleSpeciesIdx[m.species].push({ ...m, inst: i });
+    });
+    nestVisualDiv.innerHTML = '';
+    const uncoveredIds = new Set(uncoveredFemales.map(f => f.id));
+
+    femaleInstances.forEach(f => {
+        const total = femaleSpeciesIdx[f.species].length,
+              idx = femaleSpeciesIdx[f.species].indexOf(f);
+        const div = document.createElement('div');
+        div.className = 'nest-item female';
+        div.style.position = 'relative';
+        div.innerHTML = `<span class="icon">♀️</span><span>${getDisplayName(f.species, idx, total)}</span>`;
+
+        if (f.isShiny) {
+            const star = document.createElement('span');
+            star.style.cssText = 'position:absolute; top:-4px; right:2px; font-size:1.2rem; color:#e6a317; text-shadow:0 0 4px gold;';
+            star.textContent = '⭐';
+            div.appendChild(star);
+        }
+
+        if (uncoveredIds.has(f.id)) {
+            const overlay = document.createElement('span');
+            overlay.style.cssText = 'position:absolute; top:0; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background: rgba(255,100,100,0.35); border-radius: 20px; z-index:1;';
+            const icon = document.createElement('span');
+            icon.style.cssText = 'font-size:2.5rem; font-weight:bold; color: rgba(221, 21, 204, 0.45); text-shadow: 0 0 8px white; line-height:1; transform: translateY(-12px);';
+            icon.textContent = '⚠️';
+            overlay.appendChild(icon);
+            div.appendChild(overlay);
+        }
+
+        nestVisualDiv.appendChild(div);
+    });
+
+    allMaleSlots.forEach((m, i) => {
+        const total = maleSpeciesIdx[m.species].length,
+              info = maleSpeciesIdx[m.species].find(x => x.inst === i);
+        const idx = info ? maleSpeciesIdx[m.species].indexOf(info) : 0;
+        const div = document.createElement('div');
+        div.className = 'nest-item male';
+        div.style.position = 'relative';
+        div.innerHTML = `<span class="icon">${m.locked ? '🔒♂️' : '♂️'}</span><span>${getDisplayName(m.species, idx, total)}</span>`;
+
+        if (m.isShiny) {
+            const star = document.createElement('span');
+            star.style.cssText = 'position:absolute; top:-4px; right:2px; font-size:1.2rem; color:#e6a317; text-shadow:0 0 4px gold;';
+            star.textContent = '⭐';
+            div.appendChild(star);
+        }
+
+        nestVisualDiv.appendChild(div);
+    });
+
+    for (let i = 0; i < emptySlots; i++) {
+        const div = document.createElement('div'); div.className = 'nest-item male'; div.style.opacity = '0.5';
+        div.innerHTML = '<span class="icon">♂️</span><span>(空窝)</span>';
+        nestVisualDiv.appendChild(div);
+    }
+
+    maleDetailsDiv.innerHTML = '';
+    maleCoverDetails.forEach((md, i) => {
+        const total = maleSpeciesIdx[md.species].length,
+              info = maleSpeciesIdx[md.species].find(x => x.inst === i);
+        const idx = info ? maleSpeciesIdx[md.species].indexOf(info) : 0;
+        const card = document.createElement('div'); card.className = 'male-card';
+        const lockedNames = (md.lockedForIds || []).map(id => petNames[parseInt(id.split('-')[1])]).join('、');
+        const lockBadge = lockedNames ? `<span style="color:#b06030;font-weight:700;">🔒 唯一依赖·专属配对：${lockedNames}</span>` : '';
+
+        // ★ 使用新的 coveredIds 结构（{id: species, isShiny}）
+        const coveredEntries = (md.coveredIds || []).map(c => {
+            const name = petNames[c.id] || `?`;
+            return { name, isShiny: c.isShiny };
+        });
+        const tags = coveredEntries.map(e => `<span class="tag">${e.name}${e.isShiny ? '⭐' : ''}</span>`).join(' ');
+        const groups = eggGroups[md.species].map(g => groupNames[g] || g).join('/');
+        const maleStar = md.isShiny ? '⭐' : '';
+
+        card.innerHTML = `
+            <div class="card-header">
+                <strong>♂ ${getDisplayName(md.species, idx, total)}${maleStar}</strong>
+                <span class="egg-groups">${groups}</span>
+            </div>
+            <div>(窝${femaleInstances.length + i + 1}) ${lockBadge}</div>
+            <div style="font-size:0.8rem;">可配雌性：${tags || '<span style="color:#999;">无</span>'}</div>
+        `;
+        maleDetailsDiv.appendChild(card);
+    });
+
+    let summary = '';
+    if (uncoveredFemales.length > 0) summary += `<span style="color:#b34a4a;">⚠️ 以下雌性无法被覆盖：${uncoveredFemales.map(f => petNames[f.species]).join('、')}</span><br>`;
+    else summary += `<span style="color:#2d5a27;">✅ 所有雌性均已覆盖！</span><br>`;
+    if (emptySlots > 0) summary += `<span style="color:#ab6d2a;">📌 为防止雄性闲置，自动少放${emptySlots}只雄性。</span><br>`;
+    coverageSummaryDiv.innerHTML = summary;
+}
 
     function doGenerate() {
         if (getFemaleTotal() === 0) { globalMsg.innerHTML = '<div class="warning">🌸 请至少选择一只雌性。</div>'; return; }
@@ -783,7 +992,7 @@
         });
     }
 
-    // ==================== 位置图生成（排除未被覆盖雌性） ====================
+    // ==================== 位置图生成 ====================
     function generatePlacement() {
         if (!lastResultData || lastResultData.error) return;
         const res = lastResultData;
@@ -848,7 +1057,7 @@
                 }
                 return { maleIdx: mi, minDist, maxDist };
             });
-            return { id: fi.id, species: fi.species, males: fMales, stepLimit, constraints, idx };
+            return { id: fi.id, species: fi.species, males: fMales, stepLimit, constraints, idx, isShiny: fi.isShiny };
         }).filter(f => f !== null);
 
         let best = null, bestArea = Infinity, found = 0;
@@ -1054,33 +1263,137 @@
             });
         }
         function drawSquares() {
-            squaresGroup.innerHTML = '';
-            const { maleCoords, femaleCoords, maleSlots, femaleInstances } = currentPlacement;
-            femaleCoords.forEach((coord, i) => {
-                const cx = toSvgX(coord.x) + scale / 2, cy = toSvgY(coord.y) + scale / 2;
-                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-                rect.setAttribute('x', toSvgX(coord.x) + 2); rect.setAttribute('y', toSvgY(coord.y) + 2);
-                rect.setAttribute('width', scale - 4); rect.setAttribute('height', scale - 4);
-                rect.setAttribute('fill', 'rgba(248,200,200,0.8)'); rect.setAttribute('stroke', '#d89b9b'); rect.setAttribute('stroke-width', '2'); rect.setAttribute('rx', '6');
-                rect.classList.add('female-square'); rect.dataset.type = 'female'; rect.dataset.index = i;
-                squaresGroup.appendChild(rect);
-                const ti = document.createElementNS('http://www.w3.org/2000/svg', 'text'); ti.setAttribute('x', cx); ti.setAttribute('y', cy - 7); ti.setAttribute('text-anchor', 'middle'); ti.setAttribute('fill', '#8b3a3a'); ti.setAttribute('font-size', '14'); ti.textContent = '♀️'; ti.setAttribute('pointer-events', 'none'); ti.style.userSelect = 'none'; squaresGroup.appendChild(ti);
-                const tn = document.createElementNS('http://www.w3.org/2000/svg', 'text'); tn.setAttribute('x', cx); tn.setAttribute('y', cy + 11); tn.setAttribute('text-anchor', 'middle'); tn.setAttribute('fill', '#8b3a3a'); tn.setAttribute('font-size', '10'); tn.textContent = getDisplayName(femaleInstances[i].species, i, femaleInstances.filter(f => f.species === femaleInstances[i].species).length); tn.setAttribute('pointer-events', 'none'); tn.style.userSelect = 'none'; squaresGroup.appendChild(tn);
-            });
-            maleCoords.forEach((coord, i) => {
-                const cx = toSvgX(coord.x) + scale / 2, cy = toSvgY(coord.y) + scale / 2;
-                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-                rect.setAttribute('x', toSvgX(coord.x) + 2); rect.setAttribute('y', toSvgY(coord.y) + 2);
-                rect.setAttribute('width', scale - 4); rect.setAttribute('height', scale - 4);
-                rect.setAttribute('fill', 'rgba(200,220,240,0.8)'); rect.setAttribute('stroke', '#7a9bcb'); rect.setAttribute('stroke-width', '2'); rect.setAttribute('rx', '6');
-                rect.classList.add('male-square'); rect.dataset.type = 'male'; rect.dataset.index = i;
-                squaresGroup.appendChild(rect);
-                const icon = maleSlots[i].locked ? '🔒♂️' : '♂️';
-                const ti = document.createElementNS('http://www.w3.org/2000/svg', 'text'); ti.setAttribute('x', cx); ti.setAttribute('y', cy - 7); ti.setAttribute('text-anchor', 'middle'); ti.setAttribute('fill', '#2c3e50'); ti.setAttribute('font-size', '14'); ti.textContent = icon; ti.setAttribute('pointer-events', 'none'); ti.style.userSelect = 'none'; squaresGroup.appendChild(ti);
-                const tn = document.createElementNS('http://www.w3.org/2000/svg', 'text'); tn.setAttribute('x', cx); tn.setAttribute('y', cy + 11); tn.setAttribute('text-anchor', 'middle'); tn.setAttribute('fill', '#2c3e50'); tn.setAttribute('font-size', '10'); tn.textContent = getDisplayName(maleSlots[i].species, i, maleSlots.filter(m => m.species === maleSlots[i].species).length); tn.setAttribute('pointer-events', 'none'); tn.style.userSelect = 'none'; squaresGroup.appendChild(tn);
-            });
-            attachDragEvents();
+    squaresGroup.innerHTML = '';
+    const { maleCoords, femaleCoords, maleSlots, femaleInstances } = currentPlacement;
+
+    // 绘制雌性方格
+    femaleCoords.forEach((coord, i) => {
+        const fi = femaleInstances[i];
+        if (!fi) return; // 安全保护
+        const cx = toSvgX(coord.x) + scale / 2,
+              cy = toSvgY(coord.y) + scale / 2;
+
+        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        rect.setAttribute('x', toSvgX(coord.x) + 2);
+        rect.setAttribute('y', toSvgY(coord.y) + 2);
+        rect.setAttribute('width', scale - 4);
+        rect.setAttribute('height', scale - 4);
+        rect.setAttribute('fill', 'rgba(248,200,200,0.8)');
+        rect.setAttribute('stroke', '#d89b9b');
+        rect.setAttribute('stroke-width', '2');
+        rect.setAttribute('rx', '6');
+        rect.classList.add('female-square');
+        rect.dataset.type = 'female';
+        rect.dataset.index = i;
+        squaresGroup.appendChild(rect);
+
+        // 图标
+        const iconText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        iconText.setAttribute('x', cx);
+        iconText.setAttribute('y', cy - 7);
+        iconText.setAttribute('text-anchor', 'middle');
+        iconText.setAttribute('fill', '#8b3a3a');
+        iconText.setAttribute('font-size', '14');
+        iconText.textContent = '♀️';
+        iconText.setAttribute('pointer-events', 'none');
+        iconText.style.userSelect = 'none';
+        squaresGroup.appendChild(iconText);
+
+        // 名字
+        const nameText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        nameText.setAttribute('x', cx);
+        nameText.setAttribute('y', cy + 11);
+        nameText.setAttribute('text-anchor', 'middle');
+        nameText.setAttribute('fill', '#8b3a3a');
+        nameText.setAttribute('font-size', '10');
+        nameText.textContent = getDisplayName(
+            fi.species,
+            i,
+            femaleInstances.filter(f => f.species === fi.species).length
+        );
+        nameText.setAttribute('pointer-events', 'none');
+        nameText.style.userSelect = 'none';
+        squaresGroup.appendChild(nameText);
+
+        // 异色星星
+        if (fi.isShiny) {
+            const star = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            star.setAttribute('x', cx + scale / 2 - 8);
+            star.setAttribute('y', cy - scale / 2 + 14);
+            star.setAttribute('text-anchor', 'middle');
+            star.setAttribute('fill', '#e6a317');
+            star.setAttribute('font-size', '14');
+            star.setAttribute('font-weight', 'bold');
+            star.textContent = '⭐';
+            star.setAttribute('pointer-events', 'none');
+            squaresGroup.appendChild(star);
         }
+    });
+
+    // 绘制雄性方格
+    maleCoords.forEach((coord, i) => {
+        const ms = maleSlots[i];
+        if (!ms) return;
+        const cx = toSvgX(coord.x) + scale / 2,
+              cy = toSvgY(coord.y) + scale / 2;
+
+        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        rect.setAttribute('x', toSvgX(coord.x) + 2);
+        rect.setAttribute('y', toSvgY(coord.y) + 2);
+        rect.setAttribute('width', scale - 4);
+        rect.setAttribute('height', scale - 4);
+        rect.setAttribute('fill', 'rgba(200,220,240,0.8)');
+        rect.setAttribute('stroke', '#7a9bcb');
+        rect.setAttribute('stroke-width', '2');
+        rect.setAttribute('rx', '6');
+        rect.classList.add('male-square');
+        rect.dataset.type = 'male';
+        rect.dataset.index = i;
+        squaresGroup.appendChild(rect);
+
+        const iconText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        iconText.setAttribute('x', cx);
+        iconText.setAttribute('y', cy - 7);
+        iconText.setAttribute('text-anchor', 'middle');
+        iconText.setAttribute('fill', '#2c3e50');
+        iconText.setAttribute('font-size', '14');
+        iconText.textContent = ms.locked ? '🔒♂️' : '♂️';
+        iconText.setAttribute('pointer-events', 'none');
+        iconText.style.userSelect = 'none';
+        squaresGroup.appendChild(iconText);
+
+        const nameText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        nameText.setAttribute('x', cx);
+        nameText.setAttribute('y', cy + 11);
+        nameText.setAttribute('text-anchor', 'middle');
+        nameText.setAttribute('fill', '#2c3e50');
+        nameText.setAttribute('font-size', '10');
+        nameText.textContent = getDisplayName(
+            ms.species,
+            i,
+            maleSlots.filter(m => m.species === ms.species).length
+        );
+        nameText.setAttribute('pointer-events', 'none');
+        nameText.style.userSelect = 'none';
+        squaresGroup.appendChild(nameText);
+
+        // 异色星星
+        if (ms.isShiny) {
+            const star = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            star.setAttribute('x', cx + scale / 2 - 8);
+            star.setAttribute('y', cy - scale / 2 + 14);
+            star.setAttribute('text-anchor', 'middle');
+            star.setAttribute('fill', '#e6a317');
+            star.setAttribute('font-size', '14');
+            star.setAttribute('font-weight', 'bold');
+            star.textContent = '⭐';
+            star.setAttribute('pointer-events', 'none');
+            squaresGroup.appendChild(star);
+        }
+    });
+
+    attachDragEvents();
+}
         function attachDragEvents() {
             const draggableElements = svg.querySelectorAll('.female-square, .male-square');
             let dragTarget = null, originalCoord = null, startClientX = 0, startClientY = 0;
@@ -1142,7 +1455,8 @@
     // ==================== 按钮事件 ====================
     generateBtn.addEventListener('click', doGenerate);
     resetBtn.addEventListener('click', () => {
-        femaleCounts.fill(0); maleStock.fill(0);
+        femaleNormal.fill(0); femaleShiny.fill(0);
+        maleNormal.fill(0); maleShiny.fill(0);
         femaleCheckboxStates.fill(false); maleCheckboxStates.fill(false);
         nestCountInput.value = 10; nestCountInput.disabled = false;
         resultArea.style.display = 'none'; placementArea.style.display = 'none'; placementBtn.style.display = 'none';
@@ -1155,6 +1469,7 @@
     exportPlacementBtn.addEventListener('click', exportPlacementImage);
     nestCountInput.addEventListener('input', refreshUI);
     nestCountInput.addEventListener('change', refreshUI);
+
     // ==================== 配置导入/导出 ====================
     function exportConfig() {
         const config = {
@@ -1163,12 +1478,10 @@
             males: []
         };
         for (let i = 0; i < petIds.length; i++) {
-            if (femaleCounts[i] > 0) {
-                config.females.push({ id: petIds[i], name: petNames[i], count: femaleCounts[i] });
-            }
-            if (maleStock[i] > 0) {
-                config.males.push({ id: petIds[i], name: petNames[i], count: maleStock[i] });
-            }
+            if (femaleNormal[i] > 0) config.females.push({ id: petIds[i], name: petNames[i], count: femaleNormal[i], shiny: false });
+            if (femaleShiny[i] > 0) config.females.push({ id: petIds[i], name: petNames[i], count: femaleShiny[i], shiny: true });
+            if (maleNormal[i] > 0) config.males.push({ id: petIds[i], name: petNames[i], count: maleNormal[i], shiny: false });
+            if (maleShiny[i] > 0) config.males.push({ id: petIds[i], name: petNames[i], count: maleShiny[i], shiny: true });
         }
         const blob = new Blob([JSON.stringify(config, null, 2)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
@@ -1187,21 +1500,17 @@
             try {
                 const config = JSON.parse(e.target.result);
                 // 清空现有数据
-                femaleCounts.fill(0);
-                maleStock.fill(0);
-                femaleCheckboxStates.fill(false);
-                maleCheckboxStates.fill(false);
+                femaleNormal.fill(0); femaleShiny.fill(0);
+                maleNormal.fill(0); maleShiny.fill(0);
+                femaleCheckboxStates.fill(false); maleCheckboxStates.fill(false);
 
-                // 设置窝数
                 if (typeof config.nestCount === 'number' && config.nestCount >= 1 && config.nestCount <= 10) {
                     nestCountInput.value = config.nestCount;
                 }
 
-                // 映射ID到索引
                 const idToIndex = new Map();
                 petIds.forEach((id, idx) => idToIndex.set(id, idx));
 
-                // 填充雌性
                 if (Array.isArray(config.females)) {
                     for (const f of config.females) {
                         const idx = idToIndex.get(f.id);
@@ -1210,19 +1519,25 @@
                             const currentTotal = getFemaleTotal();
                             const allowed = Math.min(f.count, maxF - currentTotal);
                             if (allowed > 0) {
-                                femaleCounts[idx] = allowed;
+                                if (f.shiny) {
+                                    femaleShiny[idx] = allowed;
+                                } else {
+                                    femaleNormal[idx] = allowed;
+                                }
                                 femaleCheckboxStates[idx] = true;
                             }
                         }
                     }
                 }
-
-                // 填充雄性
                 if (Array.isArray(config.males)) {
                     for (const m of config.males) {
                         const idx = idToIndex.get(m.id);
                         if (idx !== undefined && typeof m.count === 'number' && m.count > 0) {
-                            maleStock[idx] = m.count;
+                            if (m.shiny) {
+                                maleShiny[idx] = m.count;
+                            } else {
+                                maleNormal[idx] = m.count;
+                            }
                             maleCheckboxStates[idx] = true;
                         }
                     }
@@ -1237,7 +1552,6 @@
         reader.readAsText(file);
     }
 
-    // 绑定导出/导入按钮
     document.getElementById('exportConfigBtn').addEventListener('click', exportConfig);
     document.getElementById('importConfigBtn').addEventListener('click', () => {
         const input = document.createElement('input');
