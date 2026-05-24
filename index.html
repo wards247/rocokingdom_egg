@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <header class="app-header">
-            <h1>🥚 S2智能配窝助手
+            <h1>🥚 S2 智能配窝助手
                 <a href="https://github.com/heartsArsonist/rocokingdom_egg" target="_blank" title="📙点击可转跳到B站相关视频查看使用说明"
                     style="display:inline-block;
             width:24px; height:24px;
@@ -43,27 +43,23 @@
             ⭐ GitHub 开源项目，点击访问
         </a>
 
+        <!-- 导入导出工具栏 -->
+        <div class="io-bar">
+            <button id="exportConfigBtn" class="btn btn-outline">📥 导出配置</button>
+            <button id="importConfigBtn" class="btn btn-outline">📤 导入配置</button>
+        </div>
 
         <div class="control-stack">
-            <!-- 1. 精灵窝数量，内置模式切换 -->
+            <!-- 1. 精灵窝数量 -->
             <div class="control-card nest-card">
                 <label>🏠 精灵窝数量</label>
                 <div class="nest-row-inline">
                     <input type="number" id="nestCount" value="10" min="1" max="10" step="1">
                     <span class="unit">个窝</span>
                     <span class="badge" id="capacityHint">至少留1个雄性窝</span>
-                    <!-- 模式切换移至右侧 -->
-                    <div class="mode-area" style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
-                        <button id="toggleShinyBtn" class="btn btn-outline mode-btn">🔄 切换至异色配对模式</button>
-                        <span id="shinyModeStatus" class="mode-status">当前：普通模式</span>
-                    </div>
                 </div>
             </div>
-             <div class="io-bar">
-            <button id="exportConfigBtn" class="btn btn-outline">📥 导出配置</button>
-            <button id="importConfigBtn" class="btn btn-outline">📤 导入配置</button>
-        </div>
-<span class="badge" id="capacityHint">S2蛋组数据来自网络，仅供参考，具体信息以游戏内为准</span>
+
             <!-- 2. 雌性选择 -->
             <div class="control-card female-card">
                 <label>♀️ 雌性精灵</label>
@@ -145,6 +141,17 @@
                 <button class="modal-close-btn" id="modalCloseBtn">✕</button>
             </div>
             <div class="modal-body">
+                <!-- 筛选栏：搜索框上方 -->
+                <div class="filter-bar">
+                    <select id="groupFilter" class="filter-select">
+                        <option value="">蛋组</option>
+                    </select>
+                    <select id="seasonFilter" class="filter-select">
+                        <option value="">赛季</option>
+                    </select>
+                    <button id="resetFiltersBtn" class="btn btn-outline" style="padding:8px 14px;">🔄 重置</button>
+                </div>
+                <!-- 搜索框 -->
                 <div class="search-box" id="searchBox">
                     <input type="text" id="petSearchInput" placeholder="输入名称关键词（如“喵喵”）" autocomplete="off">
                     <button id="searchBtn" class="btn">🔍 搜索</button>
