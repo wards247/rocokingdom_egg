@@ -770,7 +770,51 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .dual-panel { flex-direction: column; }
-    .display-panel { max-height: 90px; }
-    .container { padding: 20px 16px; }
+    .dual-panel {
+        flex-direction: column;
+    }
+    .display-panel {
+        max-height: 90px;
+    }
+    .container {
+        padding: 20px 16px;
+    }
+
+    /* 筛选栏和搜索框整体改为纵向排列 */
+    .filter-bar {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .filter-bar select {
+        flex: 1 1 100%;          /* 下拉框占满整行 */
+        min-width: 0;
+    }
+    .filter-bar button {
+        flex: 1 1 auto;          /* 重置按钮自适应 */
+        white-space: nowrap;
+    }
+
+    /* 搜索框也纵向排列 */
+    .search-box {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .search-box input {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+    .search-box button {
+        flex: 1 1 auto;
+    }
+
+    /* 弹窗内容区域减少内边距，留出更多空间 */
+    .modal-body {
+        padding: 12px 16px;
+    }
+
+    /* 搜索结果条目允许换行 */
+    .search-result-item {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
 }
