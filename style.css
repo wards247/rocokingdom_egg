@@ -701,6 +701,29 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+    align-items: center;
+}
+.filter-select {
+    flex: 1;
+    padding: 10px 14px;
+    border: 2px solid #dbbc8c;
+    border-radius: 18px;
+    font-size: 0.9rem;
+    background: #fffefb;
+    color: var(--text);
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+}
+.filter-select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(194, 139, 92, 0.15);
+}
 .group-badge {
     background: #e4edf7;
     border-radius: 12px;
