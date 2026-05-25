@@ -5741,7 +5741,7 @@
     "id": 3729,
     "name": "猴麦仔",
     "egg_groups": [
-      7,
+      6,
       15
     ],
     "evolves_from_id": null,
@@ -5752,7 +5752,7 @@
     "id": 3730,
     "name": "音碟吼",
     "egg_groups": [
-      7,
+      6,
       15
     ],
     "evolves_from_id": 3729,
