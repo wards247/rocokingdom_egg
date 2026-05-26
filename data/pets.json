@@ -5379,7 +5379,8 @@
     "id": 3677,
     "name": "烟花团",
     "egg_groups": [
-      7
+      12,
+      15
     ],
     "evolves_from_id": null,
     "has_shiny": 102,
@@ -5389,7 +5390,8 @@
     "id": 3678,
     "name": "烟花伯爵",
     "egg_groups": [
-      7
+      12,
+      15
     ],
     "evolves_from_id": 3677,
     "has_shiny": 102,
@@ -5639,7 +5641,7 @@
     "id": 3708,
     "name": "小鼓象",
     "egg_groups": [
-      7,
+      6,
       15
     ],
     "evolves_from_id": null,
@@ -5650,7 +5652,7 @@
     "id": 3709,
     "name": "巨鼓象",
     "egg_groups": [
-      7,
+      6,
       15
     ],
     "evolves_from_id": 3708,
@@ -5803,7 +5805,8 @@
     "id": 3736,
     "name": "炫光迪迪",
     "egg_groups": [
-      6
+      6,
+      11
     ],
     "evolves_from_id": null,
     "has_shiny": 102,
@@ -5813,7 +5816,8 @@
     "id": 3737,
     "name": "​​霹雳迪迪",
     "egg_groups": [
-      6
+      6,
+      11
     ],
     "evolves_from_id": 3736,
     "has_shiny": 102,
