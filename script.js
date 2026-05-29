@@ -20,12 +20,14 @@
     let modalType = null;
     let modalTempCounts = null;          // 普通数量（临时）
     let modalTempShinyCounts = null;     // 异色数量（临时）
+    let modalTempTotal = 0;
     let modalSavedCounts = null;
     let modalSavedShinyCounts = null;
     let modalSavedCheckboxStates = null;
     let modalMaxFemales = 0;
     let modalSearchResults = [];
     const evolutionChainCache = new Map();
+    const SEARCH_RENDER_BATCH = 120;
 
     // ==================== 数据加载 ====================
     async function loadPetsJSON() {
@@ -369,7 +371,7 @@
         }
     }
 
-    function renderSearchResults(results) {
+    function renderSearchResults(results, limit = SEARCH_RENDER_BATCH) {
         const container = document.getElementById('searchResults');
         container.innerHTML = '';
         if (results.length === 0) {
@@ -377,7 +379,9 @@
             return;
         }
         results.sort((a, b) => petIds[a] - petIds[b]);
-        for (const idx of results) {
+        const fragment = document.createDocumentFragment();
+        const visibleResults = results.slice(0, limit);
+        for (const idx of visibleResults) {
             const div = document.createElement('div');
             div.className = 'search-result-item';
             const isHatchable = !isNonBreedable(idx);
@@ -431,11 +435,10 @@
                 if (!isHatchable) return;
                 let val = Math.max(0, parseInt(newVal) || 0);
                 if (modalType === 'female') {
-                    const currentTotal = Object.values(modalTempCounts).reduce((s, v) => s + v, 0)
-                        + Object.values(modalTempShinyCounts).reduce((s, v) => s + v, 0);
-                    const other = currentTotal - (modalTempCounts[idx] || 0) - (modalTempShinyCounts[idx] || 0);
-                    val = Math.min(val, modalMaxFemales - other);
+                    const other = modalTempTotal - (modalTempCounts[idx] || 0) - (modalTempShinyCounts[idx] || 0);
+                    val = Math.max(0, Math.min(val, modalMaxFemales - other));
                 }
+                modalTempTotal += val - (modalTempCounts[idx] || 0);
                 modalTempCounts[idx] = val;
                 qtyInput.value = val;
             };
@@ -466,11 +469,10 @@
                     if (!isHatchable) return;
                     let val = Math.max(0, parseInt(newVal) || 0);
                     if (modalType === 'female') {
-                        const currentTotal = Object.values(modalTempCounts).reduce((s, v) => s + v, 0)
-                            + Object.values(modalTempShinyCounts).reduce((s, v) => s + v, 0);
-                        const other = currentTotal - (modalTempCounts[idx] || 0) - (modalTempShinyCounts[idx] || 0);
-                        val = Math.min(val, modalMaxFemales - other);
+                        const other = modalTempTotal - (modalTempCounts[idx] || 0) - (modalTempShinyCounts[idx] || 0);
+                        val = Math.max(0, Math.min(val, modalMaxFemales - other));
                     }
+                    modalTempTotal += val - (modalTempShinyCounts[idx] || 0);
                     modalTempShinyCounts[idx] = val;
                     sInput.value = val;
                 };
@@ -502,7 +504,17 @@
                 groupsDiv.appendChild(badge);
             }
             div.appendChild(groupsDiv);
-            container.appendChild(div);
+            fragment.appendChild(div);
+        }
+        container.appendChild(fragment);
+
+        if (results.length > visibleResults.length) {
+            const moreBtn = document.createElement('button');
+            moreBtn.type = 'button';
+            moreBtn.className = 'btn btn-outline load-more-btn';
+            moreBtn.textContent = `显示更多 (${visibleResults.length}/${results.length})`;
+            moreBtn.addEventListener('click', () => renderSearchResults(results, limit + SEARCH_RENDER_BATCH));
+            container.appendChild(moreBtn);
         }
     }
 
@@ -562,6 +574,8 @@
             modalTempShinyCounts = new Array(n).fill(0);
             for (let i = 0; i < n; i++) modalTempShinyCounts[i] = maleShiny[i];
         }
+        modalTempTotal = modalTempCounts.reduce((sum, value) => sum + value, 0)
+            + modalTempShinyCounts.reduce((sum, value) => sum + value, 0);
         modalTitle.innerHTML = type === 'female'
             ? `🌸 选择雌性精灵 <span style="font-size:0.8rem;">(上限${modalMaxFemales}只)</span>`
             : '♂️ 选择雄性精灵（库存）';
@@ -598,6 +612,7 @@
         modalType = null;
         modalTempCounts = null;
         modalTempShinyCounts = null;
+        modalTempTotal = 0;
         modalOverlay.style.display = 'none';
         document.body.style.overflow = '';
         nestCountInput.disabled = false;
@@ -1444,11 +1459,19 @@
         }
     });
 
-    attachDragEvents();
 }
-        function attachDragEvents() {
-            const draggableElements = svg.querySelectorAll('.female-square, .male-square');
+        function setupDragEvents() {
             let dragTarget = null, originalCoord = null, startClientX = 0, startClientY = 0;
+            let pendingDragRender = false;
+            const schedulePlacementDraw = () => {
+                if (pendingDragRender) return;
+                pendingDragRender = true;
+                requestAnimationFrame(() => {
+                    pendingDragRender = false;
+                    drawSquares();
+                    drawLines();
+                });
+            };
             function onStart(e, type, index) {
                 e.preventDefault();
                 const clientX = e.touches ? e.touches[0].clientX : e.clientX, clientY = e.touches ? e.touches[0].clientY : e.clientY;
@@ -1480,7 +1503,7 @@
                     if (oldCoord.x !== freePos.x || oldCoord.y !== freePos.y) {
                         points[dragTarget.index] = { x: freePos.x, y: freePos.y };
                         if (freePos.x !== desiredX || freePos.y !== desiredY) { originalCoord = { x: freePos.x, y: freePos.y }; startClientX = clientX; startClientY = clientY; }
-                        drawSquares(); drawLines();
+                        schedulePlacementDraw();
                     }
                 }
             }
@@ -1489,11 +1512,15 @@
                 dragTarget = null; window.removeEventListener('mousemove', onMove); window.removeEventListener('mouseup', onEnd);
                 window.removeEventListener('touchmove', onMove); window.removeEventListener('touchend', onEnd);
             }
-            draggableElements.forEach(el => {
-                el.addEventListener('mousedown', (e) => onStart(e, el.dataset.type, parseInt(el.dataset.index)));
-                el.addEventListener('touchstart', (e) => onStart(e, el.dataset.type, parseInt(el.dataset.index)), { passive: false });
-            });
+            const startFromEvent = (e) => {
+                const target = e.target.closest && e.target.closest('.female-square, .male-square');
+                if (!target || !svg.contains(target)) return;
+                onStart(e, target.dataset.type, parseInt(target.dataset.index));
+            };
+            svg.addEventListener('mousedown', startFromEvent);
+            svg.addEventListener('touchstart', startFromEvent, { passive: false });
         }
+        setupDragEvents();
         drawSquares(); drawLines(); svgContainer.appendChild(svg);
     }
 
