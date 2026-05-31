@@ -673,7 +673,6 @@
     document.getElementById('resetFiltersBtn').addEventListener('click', () => {
         groupFilter.value = '';
         seasonFilter.value = '';
-        searchBtn.value = '';
         document.getElementById('petSearchInput').value = '';
         performFilteredSearch('');
     });
@@ -1535,8 +1534,16 @@
                 return null;
             }
 
+            // 情况4：只剩一个雄性、没有雌性 → 放在 (0, 2)
+            if (subMales.length === 1 && subFemales.length === 0) {
+                const mCoords = new Array(1);
+                mCoords[0] = { x: 0 + shiftX, y: 2 + shiftY };
+                return { maleCoords: mCoords, femaleCoords: [] };
+            }
+
             // 情况3：无唯一依赖雄性，剩余 ≤ 4 个
             if (subMales.length + subFemales.length > 4) return null;
+
 
             const mCoords = new Array(subMales.length);
             const fCoords = new Array(subFemales.length);
@@ -2133,7 +2140,7 @@
                             gy = uniq[rand].y;
                             placed = true;
                         } else {
-                                                        range += 2; // 4 → 6 再试
+                            range += 2; // 4 → 6 再试
                         }
                     }
                     if (!placed) {
