@@ -1722,7 +1722,8 @@
                         if (isUniqueDep) {
                             maxDist = Math.max(maxDist, 2);
                         } else if (compatArr[mi] >= 4) {
-                            if (uniqueArr[mi] === 0) maxDist = Math.max(maxDist, 4);
+                                        maxDist = Math.max(maxDist, 4);
+
                         }
                         if (uniqueArr[mi] > 0 && !isUniqueDep) minDist = Math.max(minDist, 2);
                         return { maleIdx: mi, minDist, maxDist };
