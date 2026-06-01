@@ -1242,8 +1242,8 @@
                         clusterMaleSet = new Set(threeMales); clusterFemaleSet = compFemSet;
                         clusterMaleCoords = [{ x: 0.5, y: 0 }, { x: -0.5, y: 0 }, { x: 0, y: -1 }];
                         clusterFemalePositions = [
-                            { x: 1.5, y: 0 }, { x: -1.5, y: 0 }, { x: 0, y: -2 },
-                            { x: 1, y: -1 }, { x: -1, y: -1 }, { x: 0.5, y: 1 }, { x: -0.5, y: 1 }
+                            { x: 1.5, y: 0 }, { x: 1, y: -1 }, { x: -1, y: -1 },
+                            { x: -1.5, y: 0 }, { x: 0, y: -2 }, { x: -0.5, y: 1 }, { x: 0.5, y: 1 },
                         ];
                         break;
                     }
@@ -1262,10 +1262,10 @@
                         clusterMaleSet = new Set(twoMales); clusterFemaleSet = compFemSet;
                         clusterMaleCoords = [{ x: 0.5, y: 0 }, { x: -0.5, y: 0 }];
                         clusterFemalePositions = [
-                            { x: 1.5, y: 0 }, { x: -1.5, y: 0 }, { x: 1, y: 1 }, { x: 1, y: -1 },
-                            { x: -1, y: 1 }, { x: -1, y: -1 }, { x: 0, y: 1 }, { x: 0, y: -1 },
-                            { x: 0, y: 2 }, { x: 0, y: -2 }
+                            { x: 1, y: -1 }, { x: 1.5, y: 0 }, { x: 1, y: 1 }, { x: 0, y: 1 },
+                            { x: -1, y: 1 }, { x: -1.5, y: 0 }, { x: -1, y: -1 }, { x: 0, y: -1 },
                         ];
+
                         break;
                     } else if (compFemSet.size <= 6) {
                         if (candidates.length >= 2) {
@@ -1281,8 +1281,8 @@
                                 clusterMaleSet = new Set(threeMales); clusterFemaleSet = comp3;
                                 clusterMaleCoords = [{ x: 0.5, y: 0 }, { x: -0.5, y: 0 }, { x: 0, y: -1 }];
                                 clusterFemalePositions = [
-                                    { x: 1.5, y: 0 }, { x: -1.5, y: 0 }, { x: 0, y: -2 },
-                                    { x: 1, y: -1 }, { x: -1, y: -1 }, { x: 0.5, y: 1 }, { x: -0.5, y: 1 }
+                                    { x: 1.5, y: 0 }, { x: 1, y: -1 }, { x: -1, y: -1 },
+                                    { x: -1.5, y: 0 }, { x: 0, y: -2 }, { x: -0.5, y: 1 }, { x: 0.5, y: 1 },
                                 ];
                                 break;
                             }
@@ -1290,10 +1290,10 @@
                         clusterMaleSet = new Set(twoMales); clusterFemaleSet = compFemSet;
                         clusterMaleCoords = [{ x: 0.5, y: 0 }, { x: -0.5, y: 0 }];
                         clusterFemalePositions = [
-                            { x: 1.5, y: 0 }, { x: -1.5, y: 0 }, { x: 1, y: 1 }, { x: 1, y: -1 },
-                            { x: -1, y: 1 }, { x: -1, y: -1 }, { x: 0, y: 1 }, { x: 0, y: -1 },
-                            { x: 0, y: 2 }, { x: 0, y: -2 }
+                            { x: 1, y: -1 }, { x: 1.5, y: 0 }, { x: 1, y: 1 }, { x: 0, y: 1 },
+                            { x: -1, y: 1 }, { x: -1.5, y: 0 }, { x: -1, y: -1 }, { x: 0, y: -1 },
                         ];
+
                         break;
                     }
                 }
@@ -1412,7 +1412,7 @@
             const allSlots = [
                 { x: -0.5, y: 1 },  // 优先给与聚合雌性有共同蛋组的雄性
                 { x: 0.5, y: 1 },   // 第二雄性
-                { x: -1.5, y: -1 }  // 剩余位置
+                { x: 0, y: 2 }  // 剩余位置
             ];
             const used = [false, false, false];
 
@@ -1722,7 +1722,7 @@
                         if (isUniqueDep) {
                             maxDist = Math.max(maxDist, 2);
                         } else if (compatArr[mi] >= 4) {
-                                        maxDist = Math.max(maxDist, 4);
+                            maxDist = Math.max(maxDist, 4);
 
                         }
                         if (uniqueArr[mi] > 0 && !isUniqueDep) minDist = Math.max(minDist, 2);
@@ -2552,12 +2552,18 @@
             females: [],
             males: []
         };
-        for (let i = 0; i < petIds.length; i++) {
-            if (femaleNormal[i] > 0) config.females.push({ id: petIds[i], name: petNames[i], count: femaleNormal[i], shiny: false });
-            if (femaleShiny[i] > 0) config.females.push({ id: petIds[i], name: petNames[i], count: femaleShiny[i], shiny: true });
-            if (maleNormal[i] > 0) config.males.push({ id: petIds[i], name: petNames[i], count: maleNormal[i], shiny: false });
-            if (maleShiny[i] > 0) config.males.push({ id: petIds[i], name: petNames[i], count: maleShiny[i], shiny: true });
+        /** 将蛋组 ID 数组转为名称数组（方便跨环境阅读） */
+        function eggGroupNames(groups) {
+            return groups.map(g => groupNames[g] || String(g));
         }
+        for (let i = 0; i < petIds.length; i++) {
+            const groups = eggGroupNames(eggGroups[i]);
+            if (femaleNormal[i] > 0) config.females.push({ id: petIds[i], name: petNames[i], egg_groups: groups, count: femaleNormal[i], shiny: false });
+            if (femaleShiny[i] > 0) config.females.push({ id: petIds[i], name: petNames[i], egg_groups: groups, count: femaleShiny[i], shiny: true });
+            if (maleNormal[i] > 0) config.males.push({ id: petIds[i], name: petNames[i], egg_groups: groups, count: maleNormal[i], shiny: false });
+            if (maleShiny[i] > 0) config.males.push({ id: petIds[i], name: petNames[i], egg_groups: groups, count: maleShiny[i], shiny: true });
+        }
+
         const blob = new Blob([JSON.stringify(config, null, 2)], { type: 'application/json' });
         const a = document.createElement('a'); a.download = '配窝配置.json'; a.href = URL.createObjectURL(blob); a.click();
     }
@@ -2572,24 +2578,50 @@
                 femaleNormal.fill(0); femaleShiny.fill(0);
                 maleNormal.fill(0); maleShiny.fill(0);
                 if (config.nestCount) nestCountInput.value = config.nestCount;
+
+                /** 根据 ID、名称、蛋组匹配精灵索引；当跨环境 ID 不一致时，用名称+蛋组模糊匹配 */
+                function resolvePetIndex(entry) {
+                    // 1) 精确 ID 匹配
+                    let idx = petIds.indexOf(entry.id);
+                    if (idx !== -1) return idx;
+                    // 2) 名称匹配
+                    idx = petNames.indexOf(entry.name);
+                    if (idx !== -1) return idx;
+                    // 3) 名称+蛋组模糊匹配（取第一个名称相同且有蛋组交集的）
+                    if (entry.egg_groups && entry.egg_groups.length > 0) {
+                        const entryGroups = new Set(entry.egg_groups);
+                        for (let i = 0; i < petNames.length; i++) {
+                            if (petNames[i] !== entry.name) continue;
+                            const petGroups = eggGroups[i].map(g => groupNames[g] || String(g));
+                            if (petGroups.some(g => entryGroups.has(g))) return i;
+                        }
+                    }
+                    return -1;
+                }
+
                 if (config.females) {
                     config.females.forEach(f => {
-                        const idx = petIds.indexOf(f.id);
+                        const idx = resolvePetIndex(f);
                         if (idx !== -1) {
                             if (f.shiny) femaleShiny[idx] = (femaleShiny[idx] || 0) + f.count;
                             else femaleNormal[idx] = (femaleNormal[idx] || 0) + f.count;
+                        } else {
+                            console.warn(`导入失败：未找到雌性 "${f.name}"（ID:${f.id}, 蛋组:${f.egg_groups?.join(',')}）`);
                         }
                     });
                 }
                 if (config.males) {
                     config.males.forEach(m => {
-                        const idx = petIds.indexOf(m.id);
+                        const idx = resolvePetIndex(m);
                         if (idx !== -1) {
                             if (m.shiny) maleShiny[idx] = (maleShiny[idx] || 0) + m.count;
                             else maleNormal[idx] = (maleNormal[idx] || 0) + m.count;
+                        } else {
+                            console.warn(`导入失败：未找到雄性 "${m.name}"（ID:${m.id}, 蛋组:${m.egg_groups?.join(',')}）`);
                         }
                     });
                 }
+
                 refreshUI();
             } catch (err) {
                 alert('配置文件格式错误');
